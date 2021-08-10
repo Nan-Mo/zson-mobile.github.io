@@ -2,7 +2,7 @@
 
 <div align="center">
 
-基于 React 研发的一款移动端 UI 组件库。
+基于 React、React-Native 研发的一款移动端 UI 组件库。
 
 </div>
 
