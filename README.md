@@ -6,11 +6,6 @@
 
 </div>
 
-## 预览
-
-<img width="200" src="https://user-images.githubusercontent.com/9812721/116021555-ffa29c80-a67a-11eb-8068-614bd912c894.png" />
-
-[https://zson.design/demo.html#/](https://zson.design/demo.html#/)
 
 ## 浏览器支持
 
