@@ -1,0 +1,12 @@
+{
+    "packages": ["package/*"],
+    "version": "independent",
+    "npmClient": "yarn",
+    "command": {
+        "publish": {
+            "conventionalCommits": false,
+            "message": "chore(release): publish new version"
+        }
+    },
+    "useWorkspaces": true
+}

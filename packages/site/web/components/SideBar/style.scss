@@ -1,0 +1,21 @@
+.side-bar {
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  width: 280px;
+  border-right: 1px solid #ebedf0;
+  background-color: #fff;
+  margin-right: -1px;
+  padding: 30px 0 50px;
+  overflow-y: scroll;
+  z-index: 100;
+  .zw-menu-item--active{
+    color: #2f54ec;
+    background: rgba(47,84, 236, 0.1);
+  }
+  .zw-menu-item {
+    &:hover{
+      color: #2f54ec;
+    }
+  }
+}

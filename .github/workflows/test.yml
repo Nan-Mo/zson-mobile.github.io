@@ -1,0 +1,368 @@
+name: Test
+on: [push, pull_request]
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Cache lerna
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn
+
+  setup-react-16:
+    name: Setup react@16
+    runs-on: ubuntu-latest
+    env:
+      REACT: 16
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Cache lerna
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-react16-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install React@16
+        run: lerna exec --scope zson -- yarn install-react-16
+    needs: setup
+
+  test-cli:
+    name: Testing @zson-design/cli on Node.js
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 12, 10]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+        with:
+          # codecov.io requires a fetch depth > 1.
+          fetch-depth: 2
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Test
+        run: lerna exec --scope @zson-design/cli -- yarn coverage
+      
+      - name: Coverage
+        run: bash <(curl -s https://codecov.io/bash)
+    needs: setup
+
+  compile-cli:
+    name: Compile @zson-design/cli
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Cache @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Compile @zson-design/cli
+        run: lerna exec --scope @zson-design/cli -- yarn build
+    needs: setup
+
+  compile-icons:
+    name: Compile @zson-design/icons
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Cache @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Compile @zson-design/icons
+        run: lerna exec --scope @zson-design/icons -- yarn build
+    needs: compile-cli
+
+  compile:
+    name: Compile zson in react@17
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Compile
+        run: |
+          lerna exec --scope zson -- yarn build:es
+          lerna exec --scope zson -- yarn build:lib
+    needs: [compile-cli, compile-icons]
+
+  compile-react-16:
+    name: Compile zson in react@16
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Compile
+        run: |
+          lerna exec --scope zson -- yarn build:es
+          lerna exec --scope zson -- yarn build:lib
+    needs: [setup-react-16, compile-cli, compile-icons]
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Lint
+        run: yarn lint
+    needs: setup
+
+  test-react-17:
+    name: Testing zson in react@17
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+        with:
+          # codecov.io requires a fetch depth > 1.
+          fetch-depth: 2
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Test
+        run: lerna exec --scope zson -- yarn coverage
+      
+      - name: Coverage
+        run: bash <(curl -s https://codecov.io/bash)
+    needs: [compile-cli, compile-icons]
+
+  test-react-17-dist:
+    name: Testing zson/umd in react@17
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Dist
+        run: lerna exec --scope zson -- yarn build:umd
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+
+      - name: Check Dist
+        run: lerna exec --scope zson -- node ./tests/dekko/dist.test.js
+
+      - name: Bundlesize
+        run: lerna exec --scope zson -- yarn bundlesize
+        env:
+          BUNDLESIZE_GITHUB_TOKEN: ${{ secrets.BUNDLESIZE_GITHUB_TOKEN }}
+    needs: [compile-cli, compile-icons]
+
+  test-react-16:
+    name: Testing zson in react@16
+    runs-on: ubuntu-latest
+    env:
+      REACT: 16
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-react16-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Test
+        run: lerna exec --scope zson -- yarn test
+    needs: [setup-react-16, compile-cli, compile-icons]
+
+  test-react-16-umd:
+    name: Testing zson/umd in react@16
+    runs-on: ubuntu-latest
+    env:
+      REACT: 16
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-lerna-react16-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Restore @zson-design/cli
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-cli/lib
+          key: ${{ runner.os }}-cli-${{ github.sha }}
+
+      - name: Restore @zson-design/icons
+        uses: actions/cache@v2
+        with:
+          path: packages/zson-icons/lib
+          key: ${{ runner.os }}-icons-${{ github.sha }}
+
+      - name: Dist
+        run: lerna exec --scope zson -- yarn build:umd
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+
+      - name: Check Dist
+        run: lerna exec --scope zson -- node ./tests/dekko/dist.test.js
+
+      - name: Bundlesize
+        run: lerna exec --scope zson -- yarn bundlesize
+        env:
+          BUNDLESIZE_GITHUB_TOKEN: ${{ secrets.BUNDLESIZE_GITHUB_TOKEN }}
+    needs: [setup-react-16, compile-cli, compile-icons]
