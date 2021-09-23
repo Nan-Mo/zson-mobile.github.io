@@ -1,4 +1,4 @@
-# Contributing to Zarm
+# Contributing to Zson-mobile
 
 ## Set up
 

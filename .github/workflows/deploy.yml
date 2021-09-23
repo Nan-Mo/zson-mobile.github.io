@@ -3,14 +3,14 @@ on:
   release:
     types: [published]
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: install
       run: yarn

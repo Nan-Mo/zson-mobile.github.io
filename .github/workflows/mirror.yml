@@ -3,7 +3,7 @@ on:
   delete:
   push:
     branches:
-      - master
+      - main
       - feature
       - gh-pages
 
@@ -17,6 +17,6 @@ jobs:
         uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
-            git@gitee.com:zarm/zarm.git
+            git@gitee.com:zson-mobile/zson-mobile.git
           ssh_private_key:
             ${{ secrets.GITEE_SSH_KEY }}
