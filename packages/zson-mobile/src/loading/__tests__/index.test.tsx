@@ -22,7 +22,7 @@ describe('Loading', () => {
   afterEach(() => {
     jest.useRealTimers();
     jest.restoreAllMocks();
-    const LoadingContainer = document.body.querySelector('.za-loading-container');
+    const LoadingContainer = document.body.querySelector('.zs-loading-container');
     if (LoadingContainer) {
       document.body.removeChild(LoadingContainer as Node);
     }
@@ -56,16 +56,16 @@ describe('Loading', () => {
       content: <div>loading...</div>,
     });
     jest.runAllTimers();
-    const LoadingContainer = document.getElementsByClassName('za-loading-container');
+    const LoadingContainer = document.getElementsByClassName('zs-loading-container');
     expect(LoadingContainer.length).toEqual(1);
   });
 
-  it('should create zarm loading DOM element inside document body and render Loading component inside zarm loading DOM element', () => {
+  it('should create zson loading DOM element inside document body and render Loading component inside zson loading DOM element', () => {
     Loading.show();
     expect(unmountNodeSpy).toBeCalledTimes(1);
     expect(createElementSpy).toBeCalledWith('div');
-    const zarmLoading = document.body.querySelector('.za-loading-container');
-    expect(zarmLoading).toBeTruthy();
+    const zsonLoading = document.body.querySelector('.zs-loading-container');
+    expect(zsonLoading).toBeTruthy();
     const LoadingReactElement = renderSpy.mock.calls[0][0] as unknown as ReactElement;
     expect(LoadingReactElement.props).toEqual({
       prefixCls: 'zs-loading',
@@ -73,25 +73,25 @@ describe('Loading', () => {
       visible: true,
       mountContainer: false,
     });
-    expect(renderSpy).toBeCalledWith(LoadingReactElement, zarmLoading);
+    expect(renderSpy).toBeCalledWith(LoadingReactElement, zsonLoading);
   });
 
-  it('should create zarm loading DOM element inside mount container and render Loading component inside zarm loading DOM element', () => {
+  it('should create zson loading DOM element inside mount container and render Loading component inside zson loading DOM element', () => {
     const mountContainer = document.createElement('div');
-    Loading.show({ mountContainer, className: 'test-za-loading' });
+    Loading.show({ mountContainer, className: 'test-zs-loading' });
     expect(unmountNodeSpy).toBeCalledTimes(1);
     expect(createElementSpy).toBeCalledWith('div');
-    const zarmLoading = mountContainer.querySelector('.test-za-loading');
-    expect(zarmLoading).toBeTruthy();
+    const zsonLoading = mountContainer.querySelector('.test-zs-loading');
+    expect(zsonLoading).toBeTruthy();
     const LoadingReactElement = renderSpy.mock.calls[0][0] as unknown as ReactElement;
     expect(LoadingReactElement.props).toEqual({
       prefixCls: 'zs-loading',
       mask: true,
-      className: 'test-za-loading',
+      className: 'test-zs-loading',
       visible: true,
       mountContainer: false,
     });
-    expect(renderSpy).toBeCalledWith(LoadingReactElement, zarmLoading);
+    expect(renderSpy).toBeCalledWith(LoadingReactElement, zsonLoading);
   });
 
   it('should create hideHelper static method on Loading component class', () => {
@@ -110,27 +110,27 @@ describe('Loading', () => {
     expect(loadingReactElement.props.visible).toBeFalsy();
   });
 
-  it('should do nothing if zarm loading has been removed when hide it', () => {
+  it('should do nothing if zson loading has been removed when hide it', () => {
     Loading.show();
     const hideHelperSpy = jest.spyOn(Loading, 'hideHelper');
-    Loading.zarmLoading = null;
+    Loading.zsonLoading = null;
     Loading.hide();
     expect(hideHelperSpy).not.toBeCalled();
   });
 
-  it('should unmount zarm loading from the DOM tree', () => {
+  it('should unmount zson loading from the DOM tree', () => {
     expect.assertions(5);
     Loading.show();
-    let zarmLoading = document.body.querySelector('.za-loading-container');
-    expect(zarmLoading).toBeTruthy();
-    if (zarmLoading) {
-      const loadingReactElement = zarmLoading.firstChild;
+    let zsonLoading = document.body.querySelector('.zs-loading-container');
+    expect(zsonLoading).toBeTruthy();
+    if (zsonLoading) {
+      const loadingReactElement = zsonLoading.firstChild;
       expect(loadingReactElement).toBeTruthy();
       Loading.unmountNode();
-      expect(zarmLoading.firstChild).toBeFalsy();
-      zarmLoading = document.body.querySelector('.za-loading-container');
-      expect(zarmLoading).toBeFalsy();
-      expect(Loading.zarmLoading).toBeNull();
+      expect(zsonLoading.firstChild).toBeFalsy();
+      zsonLoading = document.body.querySelector('.zs-loading-container');
+      expect(zsonLoading).toBeFalsy();
+      expect(Loading.zsonLoading).toBeNull();
     }
   });
 
@@ -146,22 +146,22 @@ describe('Loading', () => {
     expect(clearTimeoutSpy).toBeCalledWith(expect.any(Number));
   });
 
-  it('should call after close handler and remove zarm loading element from the DOM tree', () => {
+  it('should call after close handler and remove zson loading element from the DOM tree', () => {
     const mAfterClose = jest.fn();
     Loading.show();
     const wrapper = shallow(<Loading afterClose={mAfterClose} />);
-    let zarmLoading = document.body.querySelector('.za-loading-container');
-    expect(zarmLoading).toBeTruthy();
+    let zsonLoading = document.body.querySelector('.zs-loading-container');
+    expect(zsonLoading).toBeTruthy();
     wrapper.invoke('afterClose')();
-    zarmLoading = document.body.querySelector('.za-loading-container');
-    expect(zarmLoading).toBeFalsy();
-    expect(Loading.zarmLoading).toBeNull();
+    zsonLoading = document.body.querySelector('.zs-loading-container');
+    expect(zsonLoading).toBeFalsy();
+    expect(Loading.zsonLoading).toBeNull();
     expect(mAfterClose).toBeCalledTimes(1);
   });
 
-  it('should do nothing after close if someone force remove the zarm loading dom', () => {
+  it('should do nothing after close if someone force remove the zson loading dom', () => {
     Loading.show();
-    Loading.zarmLoading = null;
+    Loading.zsonLoading = null;
     const removeChildSpy = jest.spyOn(document.body, 'removeChild');
     const wrapper = shallow(<Loading />);
     wrapper.invoke('afterClose')();
@@ -182,7 +182,7 @@ describe('Loading', () => {
     expect(wrapper.state('visible')).toBeFalsy();
   });
 
-  it('should render again if zarm loading alreay exists', () => {
+  it('should render again if zson loading alreay exists', () => {
     jest.spyOn(Loading, 'unmountNode').mockImplementation(() => 'assume this method broken');
     renderSpy.mockImplementation();
     Loading.show();

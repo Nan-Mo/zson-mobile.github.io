@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Calendar from '../index';
 import { date7 } from '../../../tests/testData/date';
 
-const prefixCls = 'za-calendar';
+const prefixCls = 'zs-calendar';
 
 describe('Calendar', () => {
   it('should trigger onChange when single click', async () => {

@@ -19,7 +19,7 @@ describe('DatePicker', () => {
   //       onMaskClick={onMaskClickFn}
   //     />
   //   );
-  //   expect(wrapper.find('.za-popup__wrapper')).to.have.lengthOf(1);
+  //   expect(wrapper.find('.zs-popup__wrapper')).to.have.lengthOf(1);
   //   // expect(onMaskClickFn).toBeCalled();
   // });
 
@@ -28,7 +28,7 @@ describe('DatePicker', () => {
 
     const wrapper = mount(<DatePicker mode="date" value="2009-3-4" visible onOk={onOkFn} />);
     jest.useFakeTimers();
-    wrapper.find('.za-date-picker__submit').simulate('click');
+    wrapper.find('.zs-date-picker__submit').simulate('click');
     jest.runAllTimers();
     expect(onOkFn).toBeCalled();
   });
@@ -40,7 +40,7 @@ describe('DatePicker', () => {
       <DatePicker mode="date" value="2009-3-4" visible onCancel={onCancelFn} />,
     );
 
-    wrapper.find('.za-date-picker__cancel').simulate('click');
+    wrapper.find('.zs-date-picker__cancel').simulate('click');
     expect(onCancelFn).toBeCalled();
   });
 
@@ -56,7 +56,7 @@ describe('DatePicker', () => {
   //     />
   //   );
 
-  //   wrapper.find('.za-mask').simulate('click');
+  //   wrapper.find('.zs-mask').simulate('click');
   //   expect(onMaskClick).toBeCalled();
   // });
 });

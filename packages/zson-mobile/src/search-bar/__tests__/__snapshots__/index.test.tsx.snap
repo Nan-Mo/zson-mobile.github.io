@@ -2,17 +2,17 @@
 
 exports[`SearchBar snapshot renders correctly 1`] = `
 <div
-  class="za-search-bar za-search-bar--round"
+  class="zs-search-bar zs-search-bar--round"
 >
   <form
     action="#"
-    class="za-search-bar__form"
+    class="zs-search-bar__form"
   >
     <div
-      class="za-search-bar__content"
+      class="zs-search-bar__content"
     >
       <i
-        class="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+        class="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
         theme="default"
       >
         <svg
@@ -30,10 +30,10 @@ exports[`SearchBar snapshot renders correctly 1`] = `
         </svg>
       </i>
       <div
-        class="za-search-bar__mock"
+        class="zs-search-bar__mock"
       >
         <div
-          class="za-input za-search-bar__input za-input--clearable"
+          class="zs-input zs-search-bar__input zs-input--clearable"
         >
           <input
             autocomplete="off"
@@ -42,7 +42,7 @@ exports[`SearchBar snapshot renders correctly 1`] = `
             value=""
           />
           <i
-            class="za-icon za-input__clear za-icon--default za-icon--md"
+            class="zs-icon zs-input__clear zs-icon--default zs-icon--md"
             theme="default"
           >
             <svg
@@ -63,7 +63,7 @@ exports[`SearchBar snapshot renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="za-search-bar__cancel"
+      class="zs-search-bar__cancel"
     >
       取消
     </div>
@@ -98,35 +98,35 @@ exports[`SearchBar snapshot renders defaultValue correctly 1`] = `
       }
       localeCode="zh-CN"
       placeholder="搜索"
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="round"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--round"
+        className="zs-search-bar zs-search-bar--round"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -154,10 +154,10 @@ exports[`SearchBar snapshot renders defaultValue correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -168,13 +168,13 @@ exports[`SearchBar snapshot renders defaultValue correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value=""
               >
                 <div
-                  className="za-input za-search-bar__input za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -190,20 +190,20 @@ exports[`SearchBar snapshot renders defaultValue correctly 1`] = `
                     value=""
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -236,7 +236,7 @@ exports[`SearchBar snapshot renders defaultValue correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消
@@ -308,35 +308,35 @@ exports[`SearchBar snapshot renders onCancel called correctly 1`] = `
         }
       }
       placeholder="搜索"
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="round"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--round"
+        className="zs-search-bar zs-search-bar--round"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -364,10 +364,10 @@ exports[`SearchBar snapshot renders onCancel called correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -378,13 +378,13 @@ exports[`SearchBar snapshot renders onCancel called correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value=""
               >
                 <div
-                  className="za-input za-search-bar__input za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -400,20 +400,20 @@ exports[`SearchBar snapshot renders onCancel called correctly 1`] = `
                     value=""
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -446,7 +446,7 @@ exports[`SearchBar snapshot renders onCancel called correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消
@@ -524,35 +524,35 @@ exports[`SearchBar snapshot renders onChange called correctly 1`] = `
         }
       }
       placeholder="搜索"
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="round"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--round za-search-bar--focus"
+        className="zs-search-bar zs-search-bar--round zs-search-bar--focus"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -580,10 +580,10 @@ exports[`SearchBar snapshot renders onChange called correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -594,13 +594,13 @@ exports[`SearchBar snapshot renders onChange called correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value="测试值"
               >
                 <div
-                  className="za-input za-search-bar__input za-input--focus za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--focus zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -616,20 +616,20 @@ exports[`SearchBar snapshot renders onChange called correctly 1`] = `
                     value="测试值"
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -662,7 +662,7 @@ exports[`SearchBar snapshot renders onChange called correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消
@@ -735,35 +735,35 @@ exports[`SearchBar snapshot renders onClear called correctly 1`] = `
           ],
         }
       }
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="radius"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--radius"
+        className="zs-search-bar zs-search-bar--radius"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -791,10 +791,10 @@ exports[`SearchBar snapshot renders onClear called correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -805,13 +805,13 @@ exports[`SearchBar snapshot renders onClear called correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value=""
               >
                 <div
-                  className="za-input za-search-bar__input za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -827,20 +827,20 @@ exports[`SearchBar snapshot renders onClear called correctly 1`] = `
                     value=""
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -873,7 +873,7 @@ exports[`SearchBar snapshot renders onClear called correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消
@@ -945,35 +945,35 @@ exports[`SearchBar snapshot renders onFocus called correctly 1`] = `
         }
       }
       placeholder="搜索"
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="round"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--round za-search-bar--focus"
+        className="zs-search-bar zs-search-bar--round zs-search-bar--focus"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -1001,10 +1001,10 @@ exports[`SearchBar snapshot renders onFocus called correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -1015,13 +1015,13 @@ exports[`SearchBar snapshot renders onFocus called correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value=""
               >
                 <div
-                  className="za-input za-search-bar__input za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -1037,20 +1037,20 @@ exports[`SearchBar snapshot renders onFocus called correctly 1`] = `
                     value=""
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -1083,7 +1083,7 @@ exports[`SearchBar snapshot renders onFocus called correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消
@@ -1161,35 +1161,35 @@ exports[`SearchBar snapshot renders onSubmit called correctly 1`] = `
         }
       }
       placeholder="搜索"
-      prefixCls="za-search-bar"
+      prefixCls="zs-search-bar"
       shape="round"
       showCancel={false}
     >
       <div
-        className="za-search-bar za-search-bar--round za-search-bar--focus"
+        className="zs-search-bar zs-search-bar--round zs-search-bar--focus"
       >
         <form
           action="#"
-          className="za-search-bar__form"
+          className="zs-search-bar__form"
           onSubmit={[Function]}
         >
           <div
-            className="za-search-bar__content"
+            className="zs-search-bar__content"
           >
             <ForwardRef(SvgSearch)
-              className="za-search-bar__icon"
+              className="zs-search-bar__icon"
               size="sm"
             >
               <Icon
-                className="za-search-bar__icon"
+                className="zs-search-bar__icon"
                 component={[Function]}
-                prefixCls="za-icon"
+                prefixCls="zs-icon"
                 size="sm"
                 theme="default"
                 viewBox="0 0 32 32"
               >
                 <i
-                  className="za-icon za-search-bar__icon za-icon--default za-icon--sm"
+                  className="zs-icon zs-search-bar__icon zs-icon--default zs-icon--sm"
                   size="sm"
                   theme="default"
                 >
@@ -1217,10 +1217,10 @@ exports[`SearchBar snapshot renders onSubmit called correctly 1`] = `
               </Icon>
             </ForwardRef(SvgSearch)>
             <div
-              className="za-search-bar__mock"
+              className="zs-search-bar__mock"
             >
               <InputBase
-                className="za-search-bar__input"
+                className="zs-search-bar__input"
                 clearable={true}
                 disabled={false}
                 onBlur={[Function]}
@@ -1231,13 +1231,13 @@ exports[`SearchBar snapshot renders onSubmit called correctly 1`] = `
                 onCompositionUpdate={[Function]}
                 onFocus={[Function]}
                 placeholder="搜索"
-                prefixCls="za-input"
+                prefixCls="zs-input"
                 readOnly={false}
                 type="search"
                 value="My new value"
               >
                 <div
-                  className="za-input za-search-bar__input za-input--focus za-input--clearable"
+                  className="zs-input zs-search-bar__input zs-input--focus zs-input--clearable"
                 >
                   <input
                     autoComplete="off"
@@ -1253,20 +1253,20 @@ exports[`SearchBar snapshot renders onSubmit called correctly 1`] = `
                     value="My new value"
                   />
                   <ForwardRef(SvgCloseCircleFill)
-                    className="za-input__clear"
+                    className="zs-input__clear"
                     onClick={[Function]}
                   >
                     <Icon
-                      className="za-input__clear"
+                      className="zs-input__clear"
                       component={[Function]}
                       onClick={[Function]}
-                      prefixCls="za-icon"
+                      prefixCls="zs-icon"
                       size="md"
                       theme="default"
                       viewBox="0 0 32 32"
                     >
                       <i
-                        className="za-icon za-input__clear za-icon--default za-icon--md"
+                        className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
                         onClick={[Function]}
                         size="md"
                         theme="default"
@@ -1299,7 +1299,7 @@ exports[`SearchBar snapshot renders onSubmit called correctly 1`] = `
             </div>
           </div>
           <div
-            className="za-search-bar__cancel"
+            className="zs-search-bar__cancel"
             onClick={[Function]}
           >
             取消

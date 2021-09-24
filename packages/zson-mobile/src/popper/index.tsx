@@ -182,11 +182,11 @@ class Popper extends React.Component<PopperProps, PopperStates> {
 
       if (animationType === 'menuSlide' && placement) {
         if (placement.includes('top')) {
-          return `za-${animationType}-down-${animationState}`;
+          return `zs-${animationType}-down-${animationState}`;
         }
-        return `za-${animationType}-up-${animationState}`;
+        return `zs-${animationType}-up-${animationState}`;
       }
-      return `za-${animationType}-${animationState}`;
+      return `zs-${animationType}-${animationState}`;
     }
   }
 

@@ -19,7 +19,6 @@ export interface IDeployConfig {
 export function getProjectConfig(config: Configuration): Configuration {
   const { entries, setBabelOptions, banner, setRules, setPlugins, ...webpackConfig } =
     getCustomConfig();
-
   config.entry = {};
   config.plugins = config.plugins || [];
   setBabelOptions && setBabelOptions((config.module.rules[0] as RuleSetRule).use[0].options);
@@ -47,7 +46,6 @@ export function getProjectConfig(config: Configuration): Configuration {
 export default ({ outDir, pushGh, analyzer }: IDeployConfig) => {
   const config = getProjectConfig(getWebpackConfig('deploy'));
   config.output.path = getProjectPath(outDir);
-
   if (pushGh) {
     config.plugins.push(
       new SentryCliPlugin({

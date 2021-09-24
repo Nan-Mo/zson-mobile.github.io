@@ -15,7 +15,7 @@ describe('KeyboardPicker', () => {
     const mOnKeyClick = jest.fn();
     const wrapper = mount(<KeyboardPicker visible onKeyClick={mOnKeyClick} />);
     expect(wrapper.state('visible')).toBeTruthy();
-    wrapper.find('.za-keyboard__item').at(0).simulate('click');
+    wrapper.find('.zs-keyboard__item').at(0).simulate('click');
     expect(mOnKeyClick).toBeCalledWith('1');
     expect(wrapper.state('visible')).toBeTruthy();
   });
@@ -24,7 +24,7 @@ describe('KeyboardPicker', () => {
     const mOnKeyClick = jest.fn();
     const wrapper = mount(<KeyboardPicker visible onKeyClick={mOnKeyClick} />);
     expect(wrapper.state('visible')).toBeTruthy();
-    wrapper.find('.za-keyboard__item--ok').simulate('click');
+    wrapper.find('.zs-keyboard__item--ok').simulate('click');
     expect(mOnKeyClick).toBeCalledWith('ok');
     expect(wrapper.state('visible')).toBeTruthy();
   });

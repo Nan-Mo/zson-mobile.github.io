@@ -2,12 +2,12 @@
 
 exports[`Mask renders correctly 1`] = `
 <div
-  class="za-mask za-mask--normal"
+  class="zs-mask zs-mask--normal"
 />
 `;
 
 exports[`Mask type is transparent 1`] = `
 <div
-  class="za-mask za-mask--transparent"
+  class="zs-mask zs-mask--transparent"
 />
 `;

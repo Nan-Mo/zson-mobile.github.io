@@ -46,7 +46,7 @@ exports[`templates component should create demo template 1`] = `
 
 ## 基本用法
 \`\`\`jsx
-import { MyTestComponent } from 'zson';
+import { MyTestComponent } from 'zson-mobile';
 
 ReactDOM.render(
   <>

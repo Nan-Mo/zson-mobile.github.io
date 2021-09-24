@@ -82,12 +82,12 @@ describe('NoticeBar', () => {
       mockRefReturnValueOnce(NoticeBar, 'wrapper', 'getBoundingClientRect', { width: 50 });
       mockRefReturnValueOnce(NoticeBar, 'content', 'getBoundingClientRect', { width: 100 });
       const wrapper = mount(<NoticeBar />);
-      expect(mExistKeyframe).toBeCalledWith('za-notice-bar-scrolling');
-      expect(mAddKeyframe).toBeCalledWith('za-notice-bar-scrolling', keyframeContent);
+      expect(mExistKeyframe).toBeCalledWith('zs-notice-bar-scrolling');
+      expect(mAddKeyframe).toBeCalledWith('zs-notice-bar-scrolling', keyframeContent);
       expect(wrapper.state('animationDuration')).toEqual(6000);
-      expect(wrapper.find('.za-notice-bar__body').prop('style')).toEqual({
-        WebkitAnimation: 'za-notice-bar-scrolling 6000ms linear infinite',
-        animation: `za-notice-bar-scrolling 6000ms linear infinite`,
+      expect(wrapper.find('.zs-notice-bar__body').prop('style')).toEqual({
+        WebkitAnimation: 'zs-notice-bar-scrolling 6000ms linear infinite',
+        animation: `zs-notice-bar-scrolling 6000ms linear infinite`,
       });
     });
 
@@ -100,13 +100,13 @@ describe('NoticeBar', () => {
       mockRefReturnValueOnce(NoticeBar, 'wrapper', 'getBoundingClientRect', { width: 50 });
       mockRefReturnValueOnce(NoticeBar, 'content', 'getBoundingClientRect', { width: 100 });
       const wrapper = mount(<NoticeBar />);
-      expect(mExistKeyframe).toBeCalledWith('za-notice-bar-scrolling');
-      expect(mRemoveKeyframe).toBeCalledWith('za-notice-bar-scrolling');
-      expect(mAddKeyframe).toBeCalledWith('za-notice-bar-scrolling', keyframeContent);
+      expect(mExistKeyframe).toBeCalledWith('zs-notice-bar-scrolling');
+      expect(mRemoveKeyframe).toBeCalledWith('zs-notice-bar-scrolling');
+      expect(mAddKeyframe).toBeCalledWith('zs-notice-bar-scrolling', keyframeContent);
       expect(wrapper.state('animationDuration')).toEqual(6000);
-      expect(wrapper.find('.za-notice-bar__body').prop('style')).toEqual({
-        WebkitAnimation: 'za-notice-bar-scrolling 6000ms linear infinite',
-        animation: `za-notice-bar-scrolling 6000ms linear infinite`,
+      expect(wrapper.find('.zs-notice-bar__body').prop('style')).toEqual({
+        WebkitAnimation: 'zs-notice-bar-scrolling 6000ms linear infinite',
+        animation: `zs-notice-bar-scrolling 6000ms linear infinite`,
       });
     });
 
@@ -118,7 +118,7 @@ describe('NoticeBar', () => {
       expect(mRemoveKeyframe).not.toBeCalled();
       expect(mAddKeyframe).not.toBeCalled();
       expect(wrapper.state('animationDuration')).toEqual(0);
-      expect(wrapper.find('.za-notice-bar__body').prop('style')).toBeUndefined();
+      expect(wrapper.find('.zs-notice-bar__body').prop('style')).toBeUndefined();
     });
 
     it('should update scrolling when component did mount', () => {

@@ -11,7 +11,7 @@ const activeIcon = (
       width: '24px',
       height: '24px',
       background:
-        'url(//cdn-health.zhongan.com/zarm/home-active.svg) top left / 24px 24px no-repeat',
+        'url(//cdn-health.zhongan.com/zsrm/home-active.svg) top left / 24px 24px no-repeat',
     }}
   />
 );
@@ -21,7 +21,7 @@ const icon = (
     style={{
       width: '24px',
       height: '24px',
-      background: 'url(//cdn-health.zhongan.com/zarm/home.svg) top left / 24px 24px no-repeat',
+      background: 'url(//cdn-health.zhongan.com/zsrm/home.svg) top left / 24px 24px no-repeat',
     }}
   />
 );
@@ -29,7 +29,7 @@ const icon = (
 describe('TabBarItem', () => {
   it('should render with a badge', () => {
     const wrapper = shallow(<TabBarItem itemKey="1" badge={{ theme: 'primary' }} />);
-    expect(wrapper.prop('className')).toBe('za-tab-bar__item');
+    expect(wrapper.prop('className')).toBe('zs-tab-bar__item');
     expect(wrapper.prop('style')).toBeUndefined();
     expect(wrapper.find(Badge)).toBeTruthy();
     expect(wrapper.find(Badge).prop('theme')).toEqual('primary');
@@ -39,12 +39,12 @@ describe('TabBarItem', () => {
     const wrapper = shallow(
       <TabBarItem itemKey="1" title={<h1>test</h1>} icon={<span>test icon</span>} />,
     );
-    expect(wrapper.find('.za-tab-bar__icon')).toBeTruthy();
-    expect(wrapper.find('.za-tab-bar__icon').children()).toHaveLength(1);
-    expect(wrapper.find('.za-tab-bar__icon').children().at(0).text()).toBe('test icon');
-    expect(wrapper.find('.za-tab-bar__icon').children().at(0).type()).toBe('span');
-    expect(wrapper.find('.za-tab-bar__title')).toBeTruthy();
-    expect(wrapper.find('.za-tab-bar__title').contains(<h1>test</h1>)).toBeTruthy();
+    expect(wrapper.find('.zs-tab-bar__icon')).toBeTruthy();
+    expect(wrapper.find('.zs-tab-bar__icon').children()).toHaveLength(1);
+    expect(wrapper.find('.zs-tab-bar__icon').children().at(0).text()).toBe('test icon');
+    expect(wrapper.find('.zs-tab-bar__icon').children().at(0).type()).toBe('span');
+    expect(wrapper.find('.zs-tab-bar__title')).toBeTruthy();
+    expect(wrapper.find('.zs-tab-bar__title').contains(<h1>test</h1>)).toBeTruthy();
   });
 
   it('should handle change event', () => {
@@ -58,15 +58,15 @@ describe('TabBarItem', () => {
     const wrapper = shallow(
       <TabBarItem itemKey="1" selected title={<h1>test</h1>} icon={<span>test icon</span>} />,
     );
-    expect(wrapper.prop('className')).toEqual('za-tab-bar__item za-tab-bar--active');
-    expect(wrapper.find('.za-tab-bar__icon').contains(<span>test icon</span>)).toBeTruthy();
+    expect(wrapper.prop('className')).toEqual('zs-tab-bar__item zs-tab-bar--active');
+    expect(wrapper.find('.zs-tab-bar__icon').contains(<span>test icon</span>)).toBeTruthy();
   });
 
   it('should render with active icon if it is selected', () => {
     const wrapper = shallow(
       <TabBarItem itemKey="1" selected title={<h1>test</h1>} icon={<span>active icon</span>} />,
     );
-    expect(wrapper.find('.za-tab-bar__icon').contains(<span>active icon</span>)).toBeTruthy();
+    expect(wrapper.find('.zs-tab-bar__icon').contains(<span>active icon</span>)).toBeTruthy();
   });
 
   it('should render inline style', () => {
@@ -114,7 +114,7 @@ describe('TabBar', () => {
       </TabBar>,
     );
 
-    wrapper.find('.za-tab-bar__item').first().simulate('click');
+    wrapper.find('.zs-tab-bar__item').first().simulate('click');
     expect(onChange).toBeCalledWith('home');
   });
 
@@ -144,7 +144,7 @@ describe('TabBar', () => {
     );
     wrapper.find(TabBar.Item).first().simulate('click');
     expect(onChange).toBeCalledWith('badge');
-    expect(wrapper.find('.za-tab-bar__icon').contains(icon)).toBeTruthy();
+    expect(wrapper.find('.zs-tab-bar__icon').contains(icon)).toBeTruthy();
   });
 
   it('should selected tab bar item if activeKey is equal with itemKey', () => {
@@ -174,8 +174,8 @@ describe('TabBar', () => {
       </TabBar>,
     );
     expect(wrapper.hasClass('test')).toBeTruthy();
-    expect(wrapper.hasClass('za-tab-bar')).toBeTruthy();
-    expect(wrapper.hasClass('za-tab-bar--hidden')).toBeTruthy();
+    expect(wrapper.hasClass('zs-tab-bar')).toBeTruthy();
+    expect(wrapper.hasClass('zs-tab-bar--hidden')).toBeTruthy();
   });
 
   it('should render children with extra props', () => {

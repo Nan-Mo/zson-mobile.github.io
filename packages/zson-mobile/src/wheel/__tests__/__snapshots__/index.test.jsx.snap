@@ -16,24 +16,24 @@ exports[`Wheel Wheel disabled 1`] = `
   }
   disabled={true}
   itemRender={[Function]}
-  prefixCls="za-wheel"
+  prefixCls="zs-wheel"
   stopScroll={false}
   valueMember="value"
 >
   <div
-    className="za-wheel"
+    className="zs-wheel"
   >
     <div
-      className="za-wheel__content"
+      className="zs-wheel__content"
     >
       <div
-        className="za-wheel__item za-wheel__item--selected za-wheel__item--disabled"
+        className="zs-wheel__item zs-wheel__item--selected zs-wheel__item--disabled"
         key="0"
       >
         选项一
       </div>
       <div
-        className="za-wheel__item za-wheel__item--disabled"
+        className="zs-wheel__item zs-wheel__item--disabled"
         key="1"
       >
         选项二
@@ -59,24 +59,24 @@ exports[`Wheel Wheel render defaultValue 1`] = `
   }
   defaultValue="1"
   itemRender={[Function]}
-  prefixCls="za-wheel"
+  prefixCls="zs-wheel"
   stopScroll={false}
   valueMember="value"
 >
   <div
-    className="za-wheel"
+    className="zs-wheel"
   >
     <div
-      className="za-wheel__content"
+      className="zs-wheel__content"
     >
       <div
-        className="za-wheel__item za-wheel__item--selected"
+        className="zs-wheel__item zs-wheel__item--selected"
         key="0"
       >
         选项一
       </div>
       <div
-        className="za-wheel__item"
+        className="zs-wheel__item"
         key="1"
       >
         选项二
@@ -101,24 +101,24 @@ exports[`Wheel Wheel render visible 1`] = `
     ]
   }
   itemRender={[Function]}
-  prefixCls="za-wheel"
+  prefixCls="zs-wheel"
   stopScroll={false}
   valueMember="value"
 >
   <div
-    className="za-wheel"
+    className="zs-wheel"
   >
     <div
-      className="za-wheel__content"
+      className="zs-wheel__content"
     >
       <div
-        className="za-wheel__item za-wheel__item--selected"
+        className="zs-wheel__item zs-wheel__item--selected"
         key="0"
       >
         选项一
       </div>
       <div
-        className="za-wheel__item"
+        className="zs-wheel__item"
         key="1"
       >
         选项二
@@ -144,25 +144,25 @@ exports[`Wheel Wheel set props disabled 1`] = `
   }
   defaultValue="1"
   itemRender={[Function]}
-  prefixCls="za-wheel"
+  prefixCls="zs-wheel"
   stopScroll={false}
   value="1"
   valueMember="value"
 >
   <div
-    className="za-wheel"
+    className="zs-wheel"
   >
     <div
-      className="za-wheel__content"
+      className="zs-wheel__content"
     >
       <div
-        className="za-wheel__item za-wheel__item--selected"
+        className="zs-wheel__item zs-wheel__item--selected"
         key="0"
       >
         选项一
       </div>
       <div
-        className="za-wheel__item"
+        className="zs-wheel__item"
         key="1"
       >
         选项二
@@ -188,25 +188,25 @@ exports[`Wheel Wheel set props value 1`] = `
   }
   defaultValue="1"
   itemRender={[Function]}
-  prefixCls="za-wheel"
+  prefixCls="zs-wheel"
   stopScroll={false}
   value="1"
   valueMember="value"
 >
   <div
-    className="za-wheel"
+    className="zs-wheel"
   >
     <div
-      className="za-wheel__content"
+      className="zs-wheel__content"
     >
       <div
-        className="za-wheel__item za-wheel__item--selected"
+        className="zs-wheel__item zs-wheel__item--selected"
         key="0"
       >
         选项一
       </div>
       <div
-        className="za-wheel__item"
+        className="zs-wheel__item"
         key="1"
       >
         选项二

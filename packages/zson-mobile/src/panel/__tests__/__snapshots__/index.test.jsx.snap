@@ -2,24 +2,24 @@
 
 exports[`Panel renders correctly 1`] = `
 <div
-  class="za-panel"
+  class="zs-panel"
 >
   <div
-    class="za-panel__header"
+    class="zs-panel__header"
   >
     <div
-      class="za-panel__header__title"
+      class="zs-panel__header__title"
     >
       title
     </div>
     <div
-      class="za-panel__header__more"
+      class="zs-panel__header__more"
     >
       more
     </div>
   </div>
   <div
-    class="za-panel__body"
+    class="zs-panel__body"
   >
     body
   </div>

@@ -3,7 +3,7 @@
 exports[`Button block 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius za-button--block"
+  class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--block"
   type="button"
 >
   <span>
@@ -15,7 +15,7 @@ exports[`Button block 1`] = `
 exports[`Button disabled 1`] = `
 <button
   aria-disabled="true"
-  class="za-button za-button--default za-button--md za-button--radius za-button--disabled"
+  class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--disabled"
   type="button"
 >
   <span>
@@ -27,7 +27,7 @@ exports[`Button disabled 1`] = `
 exports[`Button ghost 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius za-button--ghost"
+  class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--ghost"
   type="button"
 >
   <span>
@@ -39,7 +39,7 @@ exports[`Button ghost 1`] = `
 exports[`Button href and target 1`] = `
 <a
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius za-button--link"
+  class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--link"
   href="https://zarm.design"
   target="_blank"
 >
@@ -52,7 +52,7 @@ exports[`Button href and target 1`] = `
 exports[`Button htmlType 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius"
+  class="zs-button zs-button--default zs-button--md zs-button--radius"
   type="submit"
 >
   <span>
@@ -64,11 +64,11 @@ exports[`Button htmlType 1`] = `
 exports[`Button icon 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius"
+  class="zs-button zs-button--default zs-button--md zs-button--radius"
   type="button"
 >
   <div
-    class="za-button__content"
+    class="zs-button__content"
   >
     <img
       alt=""
@@ -84,14 +84,14 @@ exports[`Button icon 1`] = `
 exports[`Button loading 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius za-button--loading"
+  class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--loading"
   type="button"
 >
   <div
-    class="za-button__content"
+    class="zs-button__content"
   >
     <span
-      class="za-activity-indicator za-activity-indicator--circular"
+      class="zs-activity-indicator zs-activity-indicator--circular"
     >
       <svg
         viewBox="31 31 62 62"
@@ -115,7 +115,7 @@ exports[`Button loading 1`] = `
 exports[`Button renders correctly 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius"
+  class="zs-button zs-button--default zs-button--md zs-button--radius"
   type="button"
 >
   <span>
@@ -127,7 +127,7 @@ exports[`Button renders correctly 1`] = `
 exports[`Button shape is radius 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--md za-button--radius"
+  class="zs-button zs-button--default zs-button--md zs-button--radius"
   type="button"
 >
   <span>
@@ -139,7 +139,7 @@ exports[`Button shape is radius 1`] = `
 exports[`Button size 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--default za-button--lg za-button--radius"
+  class="zs-button zs-button--default zs-button--lg zs-button--radius"
   type="button"
 >
   <span>
@@ -151,7 +151,7 @@ exports[`Button size 1`] = `
 exports[`Button theme 1`] = `
 <button
   aria-disabled="false"
-  class="za-button za-button--primary za-button--md za-button--radius"
+  class="zs-button zs-button--primary zs-button--md zs-button--radius"
   type="button"
 >
   <span>

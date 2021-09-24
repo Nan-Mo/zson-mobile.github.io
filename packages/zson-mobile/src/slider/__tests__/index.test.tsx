@@ -112,7 +112,7 @@ describe('Slider', () => {
   it('mouse event', () => {
     const onChange = jest.fn();
 
-    const wrapper = mount(<Slider onChange={onChange} />).find('.za-slider__handle');
+    const wrapper = mount(<Slider onChange={onChange} />).find('.zs-slider__handle');
     wrapper.simulate('mouseDown', {
       clientX: 0,
       clientY: 0,
@@ -133,7 +133,7 @@ describe('Slider', () => {
     const onChange = jest.fn();
 
     const wrapper = mount(<Slider onChange={onChange} step={5.5} vertical />).find(
-      '.za-slider__handle',
+      '.zs-slider__handle',
     );
     wrapper.simulate('mouseDown', {
       clientX: 0,
@@ -221,7 +221,7 @@ describe('Slider', () => {
     const wrapper = mount(<Slider disabled={false} />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const mEvent = {} as any;
-    wrapper.find('.za-slider__handle').invoke('onTouchStart')!(mEvent);
+    wrapper.find('.zs-slider__handle').invoke('onTouchStart')!(mEvent);
     expect(wrapper.state('tooltip')).toBeTruthy();
   });
 
@@ -229,21 +229,21 @@ describe('Slider', () => {
     const wrapper = mount(<Slider disabled />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const mEvent = {} as any;
-    wrapper.find('.za-slider__handle').invoke('onTouchStart')!(mEvent);
+    wrapper.find('.zs-slider__handle').invoke('onTouchStart')!(mEvent);
     expect(wrapper.state('tooltip')).toBeFalsy();
   });
 
   it('should not render mark info if marks is an empty object and props.showMark is true', () => {
     const errorLogSpy = jest.spyOn(console, 'error').mockImplementationOnce(() => 'Suppress');
     const wrapper = mount(<Slider showMark marks={{}} />);
-    expect(wrapper.find('.za-slider__marks').exists()).toBeFalsy();
+    expect(wrapper.find('.zs-slider__marks').exists()).toBeFalsy();
     expect(errorLogSpy).toBeCalledWith('请输入有效的 marks');
   });
 
   it('should not render mark info if marks is NOT an object and props.showMark is true', () => {
     const errorLogSpy = jest.spyOn(console, 'error').mockImplementationOnce(() => 'Suppress');
     const wrapper = mount(<Slider showMark marks={null as any} />);
-    expect(wrapper.find('.za-slider__marks').exists()).toBeFalsy();
+    expect(wrapper.find('.zs-slider__marks').exists()).toBeFalsy();
     expect(errorLogSpy).toBeCalledWith('请输入有效的 marks');
   });
 
@@ -255,23 +255,23 @@ describe('Slider', () => {
       100: '100°C',
     };
     const wrapper = mount(<Slider showMark marks={MARKS} value={55} />);
-    expect(wrapper.find('.za-slider__mark')).toHaveLength(4);
-    expect(wrapper.find('.za-slider__mark').map((mark) => mark.text())).toEqual(
+    expect(wrapper.find('.zs-slider__mark')).toHaveLength(4);
+    expect(wrapper.find('.zs-slider__mark').map((mark) => mark.text())).toEqual(
       expect.arrayContaining(['100°C', '0°C', '26°C', '65°C']),
     );
     expect(
-      wrapper.find('.za-slider__mark').map((mark) => {
+      wrapper.find('.zs-slider__mark').map((mark) => {
         const style = mark.prop('style');
         return style ? style.left : '';
       }),
     ).toEqual(expect.arrayContaining(['0%', '26%', '65%', '100%']));
     expect(
       wrapper
-        .find('.za-slider__line__dot')
+        .find('.zs-slider__line__dot')
         .map((dot) => dot.prop('className'))
         .filter((className) => {
           if (className) {
-            return className.includes('za-slider__line__dot--active');
+            return className.includes('zs-slider__line__dot--active');
           }
           return false;
         }),
@@ -285,7 +285,7 @@ describe('Slider', () => {
     const wrapper = mount(<Slider value={20} vertical={false} onChange={mOnChange} />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const touchStartEvent = { touches: [{ pageX: 100, pageY: 0 }] } as unknown as TouchEvent;
-    const sliderHandleWrapper = wrapper.find('.za-slider__handle');
+    const sliderHandleWrapper = wrapper.find('.zs-slider__handle');
     sliderHandleWrapper.invoke('onTouchStart')!(touchStartEvent);
     expect(wrapper.state('tooltip')).toBeTruthy();
     const touchMoveEvent = {
@@ -310,7 +310,7 @@ describe('Slider', () => {
     const wrapper = mount(<Slider value={20} vertical={false} onChange={mOnChange} />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const touchStartEvent = { touches: [{ pageX: 100, pageY: 0 }] } as unknown as TouchEvent;
-    const sliderHandleWrapper = wrapper.find('.za-slider__handle');
+    const sliderHandleWrapper = wrapper.find('.zs-slider__handle');
     sliderHandleWrapper.invoke('onTouchStart')!(touchStartEvent);
     expect(wrapper.state('tooltip')).toBeTruthy();
     const touchMoveEvent = {
@@ -332,7 +332,7 @@ describe('Slider', () => {
     const wrapper = mount(<Slider value={20} vertical={false} onChange={mOnChange} />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const touchStartEvent = { touches: [{ pageX: 100, pageY: 0 }] } as unknown as TouchEvent;
-    const sliderHandleWrapper = wrapper.find('.za-slider__handle');
+    const sliderHandleWrapper = wrapper.find('.zs-slider__handle');
     sliderHandleWrapper.invoke('onTouchStart')!(touchStartEvent);
     expect(wrapper.state('tooltip')).toBeTruthy();
     const touchMoveEvent = {
@@ -351,7 +351,7 @@ describe('Slider', () => {
     const wrapper = mount(<Slider value={20} vertical={false} onChange={mOnChange} disabled />);
     expect(wrapper.state('tooltip')).toBeFalsy();
     const touchStartEvent = { touches: [{ pageX: 100, pageY: 0 }] } as unknown as TouchEvent;
-    const sliderHandleWrapper = wrapper.find('.za-slider__handle');
+    const sliderHandleWrapper = wrapper.find('.zs-slider__handle');
     sliderHandleWrapper.invoke('onTouchStart')!(touchStartEvent);
     expect(wrapper.state('tooltip')).toBeFalsy();
   });
@@ -365,7 +365,7 @@ describe('Slider', () => {
       preventDefault: jest.fn(),
       touches: [{ pageX: 0, pageY: 0 }],
     } as unknown as TouchEvent;
-    const sliderHandleWrapper = wrapper.find('.za-slider__handle');
+    const sliderHandleWrapper = wrapper.find('.zs-slider__handle');
     sliderHandleWrapper.invoke('onTouchMove')!(touchMoveEvent);
     expect(wrapper.state('tooltip')).toBeFalsy();
     expect(touchMoveEvent.stopPropagation).not.toBeCalled();

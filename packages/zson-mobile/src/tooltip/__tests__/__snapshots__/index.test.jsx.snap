@@ -5,7 +5,7 @@ exports[`Tooltip renders correctly 1`] = `
   direction="top"
   hasArrow={true}
   onVisibleChange={[Function]}
-  prefixCls="za-tooltip"
+  prefixCls="zs-tooltip"
   title="hello"
 >
   <span>

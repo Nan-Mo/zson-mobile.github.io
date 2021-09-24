@@ -2,17 +2,17 @@
 
 exports[`Stepper defaultValue 1`] = `
 <span
-  className="za-stepper za-stepper--radius"
+  className="zs-stepper zs-stepper--radius"
 >
   <Button
     block={false}
-    className="za-stepper__sub"
+    className="zs-stepper__sub"
     disabled={false}
     ghost={false}
     htmlType="button"
     loading={false}
     onClick={[Function]}
-    prefixCls="za-button"
+    prefixCls="zs-button"
     shadow={false}
     shape="radius"
     size="xs"
@@ -21,7 +21,7 @@ exports[`Stepper defaultValue 1`] = `
     <ForwardRef(SvgMinus) />
   </Button>
   <Input
-    className="za-stepper__input "
+    className="zs-stepper__input "
     clearable={false}
     disabled={false}
     onBlur={[Function]}
@@ -31,13 +31,13 @@ exports[`Stepper defaultValue 1`] = `
   />
   <Button
     block={false}
-    className="za-stepper__plus"
+    className="zs-stepper__plus"
     disabled={false}
     ghost={false}
     htmlType="button"
     loading={false}
     onClick={[Function]}
-    prefixCls="za-button"
+    prefixCls="zs-button"
     shadow={false}
     shape="radius"
     size="xs"
@@ -50,16 +50,16 @@ exports[`Stepper defaultValue 1`] = `
 
 exports[`Stepper renders correctly 1`] = `
 <span
-  class="za-stepper za-stepper--radius"
+  class="zs-stepper zs-stepper--radius"
 >
   <button
     aria-disabled="false"
-    class="za-button za-stepper__sub za-button--default za-button--xs za-button--radius"
+    class="zs-button zs-stepper__sub zs-button--default zs-button--xs zs-button--radius"
     type="button"
   >
     <span>
       <i
-        class="za-icon za-icon--default za-icon--md"
+        class="zs-icon zs-icon--default zs-icon--md"
         theme="default"
       >
         <svg
@@ -79,7 +79,7 @@ exports[`Stepper renders correctly 1`] = `
     </span>
   </button>
   <div
-    class="za-input za-stepper__input "
+    class="zs-input zs-stepper__input "
   >
     <input
       autocomplete="off"
@@ -89,12 +89,12 @@ exports[`Stepper renders correctly 1`] = `
   </div>
   <button
     aria-disabled="false"
-    class="za-button za-stepper__plus za-button--default za-button--xs za-button--radius"
+    class="zs-button zs-stepper__plus zs-button--default zs-button--xs zs-button--radius"
     type="button"
   >
     <span>
       <i
-        class="za-icon za-icon--default za-icon--md"
+        class="zs-icon zs-icon--default zs-icon--md"
         theme="default"
       >
         <svg

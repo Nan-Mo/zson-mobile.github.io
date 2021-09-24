@@ -138,7 +138,7 @@ describe('Radio.Group', () => {
         <TestRadio value={2} checked={false} />
       </RadioGroup>,
     );
-    expect(wrapper.find('.za-radio-group__inner').children()).toHaveLength(2);
+    expect(wrapper.find('.zs-radio-group__inner').children()).toHaveLength(2);
     expect(wrapper.prop('id')).toEqual('test-radio-group');
   });
 
@@ -176,7 +176,7 @@ describe('Radio.Group', () => {
       </RadioGroup>,
     );
     expect(wrapper.state('value')).toBeNull();
-    const input = wrapper.find('.za-radio-group__inner').children().at(0).find('input');
+    const input = wrapper.find('.zs-radio-group__inner').children().at(0).find('input');
     expect(input.props()).toEqual(
       expect.objectContaining({
         value: 1,
@@ -202,7 +202,7 @@ describe('Radio.Group', () => {
       </RadioGroup>,
     );
     expect(wrapper.state('value')).toBeNull();
-    const input = wrapper.find('.za-radio-group__inner').children().at(0).find('input');
+    const input = wrapper.find('.zs-radio-group__inner').children().at(0).find('input');
     expect(input.props()).toEqual({
       value: 1,
       checked: false,
@@ -272,7 +272,7 @@ describe('Radio.Group', () => {
         <Radio value="2">选项三</Radio>
       </Radio.Group>,
     );
-    expect(wrapper.find('.za-radio-group').hasClass('za-radio-group--radius')).toBe(true);
+    expect(wrapper.find('.zs-radio-group').hasClass('zs-radio-group--radius')).toBe(true);
   });
 
   // 椭圆角
@@ -284,7 +284,7 @@ describe('Radio.Group', () => {
         <Radio value="2">选项三</Radio>
       </Radio.Group>,
     );
-    expect(wrapper.find('.za-radio-group').hasClass('za-radio-group--round')).toBe(true);
+    expect(wrapper.find('.zs-radio-group').hasClass('zs-radio-group--round')).toBe(true);
   });
 
   // 块级样式
@@ -296,7 +296,7 @@ describe('Radio.Group', () => {
         <Radio value="2">选项三</Radio>
       </Radio.Group>,
     );
-    expect(wrapper.find('.za-radio-group').hasClass('za-radio-group--block')).toBe(true);
+    expect(wrapper.find('.zs-radio-group').hasClass('zs-radio-group--block')).toBe(true);
   });
 
   // 列表样式
@@ -310,7 +310,7 @@ describe('Radio.Group', () => {
         </Radio>
       </Radio.Group>,
     );
-    expect(wrapper.find('.za-radio-group').hasClass('za-radio-group--cell')).toBe(true);
+    expect(wrapper.find('.zs-radio-group').hasClass('zs-radio-group--cell')).toBe(true);
   });
 
   it('radio group onChange event', () => {

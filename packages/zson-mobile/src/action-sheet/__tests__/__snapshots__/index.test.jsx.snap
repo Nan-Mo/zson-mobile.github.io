@@ -73,7 +73,7 @@ exports[`ActionSheet renders correctly 1`] = `
       localeCode="zh-CN"
       onCancel={[MockFunction]}
       onMaskClick={[MockFunction]}
-      prefixCls="za-action-sheet"
+      prefixCls="zs-action-sheet"
       spacing={false}
       visible={true}
     >
@@ -91,7 +91,7 @@ exports[`ActionSheet renders correctly 1`] = `
           <Popup
             destroy={true}
             onMaskClick={[MockFunction]}
-            prefixCls="za-popup"
+            prefixCls="zs-popup"
             visible={true}
           >
             <Portal
@@ -103,7 +103,7 @@ exports[`ActionSheet renders correctly 1`] = `
               mask={true}
               maskType="normal"
               onMaskClick={[MockFunction]}
-              prefixCls="za-popup"
+              prefixCls="zs-popup"
               visible={true}
             >
               <Trigger
@@ -114,50 +114,50 @@ exports[`ActionSheet renders correctly 1`] = `
                 <Portal
                   containerInfo={
                     <div
-                      class="za-popup-container"
+                      class="zs-popup-container"
                     >
                       <div
-                        class="za-mask za-fade-enter za-mask--normal"
+                        class="zs-mask zs-fade-enter zs-mask--normal"
                         style="animation-duration: 200ms;"
                       />
                       <div
-                        class="za-popup__wrapper"
+                        class="zs-popup__wrapper"
                         data-width="0"
                         role="dialog"
                       >
                         <div
-                          class="za-popup za-popup--bottom za-popup--show"
+                          class="zs-popup zs-popup--bottom zs-popup--show"
                           data-width="0"
                           role="document"
                           style="transition-duration: 200ms; transition-property: transform;"
                         >
                           <div
-                            class="za-action-sheet"
+                            class="zs-action-sheet"
                           >
                             <div
-                              class="za-action-sheet__actions"
+                              class="zs-action-sheet__actions"
                             >
                               <div
-                                class="za-action-sheet__item"
+                                class="zs-action-sheet__item"
                               >
                                 操作一
                               </div>
                               <div
-                                class="za-action-sheet__item"
+                                class="zs-action-sheet__item"
                               >
                                 操作二
                               </div>
                               <div
-                                class="za-action-sheet__item za-action-sheet__item--danger"
+                                class="zs-action-sheet__item zs-action-sheet__item--danger"
                               >
                                 操作三
                               </div>
                             </div>
                             <div
-                              class="za-action-sheet__cancel"
+                              class="zs-action-sheet__cancel"
                             >
                               <div
-                                class="za-action-sheet__item"
+                                class="zs-action-sheet__item"
                               >
                                 取消
                               </div>
@@ -169,8 +169,8 @@ exports[`ActionSheet renders correctly 1`] = `
                   }
                 >
                   <Mask
-                    className="za-fade-enter"
-                    prefixCls="za-mask"
+                    className="zs-fade-enter"
+                    prefixCls="zs-mask"
                     style={
                       Object {
                         "WebkitAnimationDuration": "200ms",
@@ -181,7 +181,7 @@ exports[`ActionSheet renders correctly 1`] = `
                     visible={true}
                   >
                     <div
-                      className="za-mask za-fade-enter za-mask--normal"
+                      className="zs-mask zs-fade-enter zs-mask--normal"
                       style={
                         Object {
                           "WebkitAnimationDuration": "200ms",
@@ -191,14 +191,14 @@ exports[`ActionSheet renders correctly 1`] = `
                     />
                   </Mask>
                   <div
-                    className="za-popup__wrapper"
+                    className="zs-popup__wrapper"
                     data-width={0}
                     onClick={[Function]}
                     role="dialog"
                     style={Object {}}
                   >
                     <div
-                      className="za-popup za-popup--bottom"
+                      className="zs-popup zs-popup--bottom"
                       data-width={0}
                       role="document"
                       style={
@@ -211,27 +211,27 @@ exports[`ActionSheet renders correctly 1`] = `
                       }
                     >
                       <div
-                        className="za-action-sheet"
+                        className="zs-action-sheet"
                       >
                         <div
-                          className="za-action-sheet__actions"
+                          className="zs-action-sheet__actions"
                         >
                           <div
-                            className="za-action-sheet__item"
+                            className="zs-action-sheet__item"
                             key="0"
                             onClick={[MockFunction]}
                           >
                             操作一
                           </div>
                           <div
-                            className="za-action-sheet__item"
+                            className="zs-action-sheet__item"
                             key="1"
                             onClick={[MockFunction]}
                           >
                             操作二
                           </div>
                           <div
-                            className="za-action-sheet__item za-action-sheet__item--danger"
+                            className="zs-action-sheet__item zs-action-sheet__item--danger"
                             key="2"
                             onClick={[MockFunction]}
                           >
@@ -239,10 +239,10 @@ exports[`ActionSheet renders correctly 1`] = `
                           </div>
                         </div>
                         <div
-                          className="za-action-sheet__cancel"
+                          className="zs-action-sheet__cancel"
                         >
                           <div
-                            className="za-action-sheet__item"
+                            className="zs-action-sheet__item"
                             onClick={[MockFunction]}
                           >
                             取消

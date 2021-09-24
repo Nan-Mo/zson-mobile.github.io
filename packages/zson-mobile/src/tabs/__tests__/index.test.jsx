@@ -92,9 +92,9 @@ describe('Tab', () => {
         </Tabs.Panel>
       </Tabs>,
     );
-    wrapper.find('.za-tabs__tab').at(1).simulate('click');
+    wrapper.find('.zs-tabs__tab').at(1).simulate('click');
     expect(onChange).toBeCalledWith(1);
-    wrapper.find('.za-tabs__tab').last().simulate('click');
+    wrapper.find('.zs-tabs__tab').last().simulate('click');
     expect(onChange).toBeCalledWith(2);
   });
 
@@ -119,7 +119,7 @@ describe('Tab', () => {
         </Tabs.Panel>
       </Tabs>,
     );
-    wrapper.find('.za-tabs__tab').last().simulate('click');
+    wrapper.find('.zs-tabs__tab').last().simulate('click');
     expect(onChange).toBeCalledWith(4);
   });
 });

@@ -7,7 +7,7 @@ describe('Alert', () => {
   it('should render correctly', () => {
     const wrapper = shallow(<Alert animationType="door" />);
     expect(wrapper.find(Modal)).toHaveLength(1);
-    expect(wrapper.prop('className')).toEqual('za-alert za-alert--radius');
+    expect(wrapper.prop('className')).toEqual('zs-alert zs-alert--radius');
   });
 
   it('should render default locale cancel text for the button inside footer', () => {
@@ -15,7 +15,7 @@ describe('Alert', () => {
     const button = wrapper.find(Modal).prop('footer') as React.ReactElement;
     expect(button.props).toEqual({
       type: 'button',
-      className: 'za-alert__button',
+      className: 'zs-alert__button',
       onClick: undefined,
       children: '关闭',
     });
@@ -27,7 +27,7 @@ describe('Alert', () => {
     const button = wrapper.find(Modal).prop('footer') as React.ReactElement;
     expect(button.props).toEqual({
       type: 'button',
-      className: 'za-alert__button',
+      className: 'zs-alert__button',
       onClick: onCancel,
       children: 'close',
     });

@@ -51,7 +51,7 @@ describe('Keyboard', () => {
     it('should handle touch and mouse click event', () => {
       const onKeyClick = jest.fn();
       const wrapper = mount(<Keyboard onKeyClick={onKeyClick} />);
-      const keys = wrapper.find('.za-keyboard__keys');
+      const keys = wrapper.find('.zs-keyboard__keys');
       expect(keys.childAt(0).text()).toBe('1');
       keys.childAt(0).simulate('click');
       expect(onKeyClick).toBeCalledWith('1');
@@ -59,7 +59,7 @@ describe('Keyboard', () => {
       keys.childAt(11).simulate('click');
       expect(onKeyClick).toBeCalledWith('close');
 
-      const handles = wrapper.find('.za-keyboard__handle');
+      const handles = wrapper.find('.zs-keyboard__handle');
       handles.childAt(0).simulate('touchStart');
       expect(onKeyClick).toBeCalledWith('delete');
       handles.childAt(1).simulate('click');
@@ -74,11 +74,11 @@ describe('Keyboard', () => {
       const lazy = mockLongPressTimer();
       const mOnKeyClick = jest.fn();
       const wrapper = mount(<Keyboard onKeyClick={mOnKeyClick} />);
-      wrapper.find('.za-keyboard__handle').childAt(0).simulate('touchstart');
+      wrapper.find('.zs-keyboard__handle').childAt(0).simulate('touchstart');
       expect(lazy.longPressTimer).toBeDefined();
       expect(setTimeoutSpy).toBeCalledWith(expect.any(Function), 800);
       const mEvent = { preventDefault: jest.fn() };
-      wrapper.find('.za-keyboard__handle').childAt(0).simulate('touchcancel', mEvent);
+      wrapper.find('.zs-keyboard__handle').childAt(0).simulate('touchcancel', mEvent);
       expect(mEvent.preventDefault).toBeCalledTimes(1);
       expect(clearIntervalSpy).toBeCalledWith(lazy.longPressTimer);
       jest.advanceTimersByTime(800);
@@ -95,7 +95,7 @@ describe('Keyboard', () => {
       const lazy = mockLongPressTimer();
       const mOnKeyClick = jest.fn();
       const wrapper = mount(<Keyboard onKeyClick={mOnKeyClick} />);
-      wrapper.find('.za-keyboard__handle').childAt(0).simulate('touchstart');
+      wrapper.find('.zs-keyboard__handle').childAt(0).simulate('touchstart');
       const longPressTimerOfSetTimeout = lazy.longPressTimer;
       expect(longPressTimerOfSetTimeout).toBeDefined();
       jest.advanceTimersByTime(800);
@@ -113,7 +113,7 @@ describe('Keyboard', () => {
     it('should handle ok', () => {
       const mOnKeyClick = jest.fn();
       const wrapper = mount(<Keyboard onKeyClick={mOnKeyClick} />);
-      wrapper.find('.za-keyboard__item--ok').simulate('click');
+      wrapper.find('.zs-keyboard__item--ok').simulate('click');
       expect(mOnKeyClick).toBeCalledWith('ok');
     });
   });

@@ -32,7 +32,7 @@ describe('Select', () => {
       />,
     );
 
-    wrapper.find('.za-select').simulate('click');
+    wrapper.find('.zs-select').simulate('click');
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
@@ -214,9 +214,9 @@ describe('Select', () => {
       />,
     );
 
-    wrapper.find('.za-select').simulate('click');
+    wrapper.find('.zs-select').simulate('click');
     jest.useFakeTimers();
-    wrapper.find('.za-picker__submit').simulate('click');
+    wrapper.find('.zs-picker__submit').simulate('click');
     jest.runAllTimers();
     expect(onOkFn).toBeCalled();
     expect(onCancelFn).not.toBeCalled();
@@ -251,9 +251,9 @@ describe('Select', () => {
         onCancel={onCancelFn}
       />,
     );
-    wrapper.find('.za-select').simulate('click');
+    wrapper.find('.zs-select').simulate('click');
     jest.useFakeTimers();
-    wrapper.find('.za-picker__cancel').simulate('click');
+    wrapper.find('.zs-picker__cancel').simulate('click');
     expect(onCancelFn).toBeCalled();
     expect(onOkFn).not.toBeCalled();
   });
@@ -289,7 +289,7 @@ describe('Select', () => {
   //     />
   //   );
 
-  //   wrapper.find('.za-mask').simulate('click');
+  //   wrapper.find('.zs-mask').simulate('click');
   //   expect(onMaskClick).toBeCalled();
   // });
 });

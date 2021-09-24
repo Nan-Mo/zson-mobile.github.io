@@ -1,4 +1,4 @@
-@keyframes za-scaleDown-enter {
+@keyframes zs-scaleDown-enter {
   from {
     opacity: 0;
     transform-origin: 0 0;
@@ -12,11 +12,11 @@
   }
 }
 
-.za-scaleDown-enter {
-  animation: za-scaleDown-enter both;
+.zs-scaleDown-enter {
+  animation: zs-scaleDown-enter both;
 }
 
-@keyframes za-scaleDown-leave {
+@keyframes zs-scaleDown-leave {
   from {
     opacity: 1;
     transform-origin: 0 0;
@@ -30,6 +30,6 @@
   }
 }
 
-.za-scaleDown-leave {
-  animation: za-scaleDown-leave both;
+.zs-scaleDown-leave {
+  animation: zs-scaleDown-leave both;
 }

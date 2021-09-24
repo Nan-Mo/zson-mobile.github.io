@@ -60,10 +60,10 @@ describe('file picker event', () => {
     const wrapper = mount(<FilePicker {..._props} />);
 
     const mClickEvent = { preventDefault: jest.fn() };
-    wrapper.find('.za-file-picker__input').simulate('click', mClickEvent);
+    wrapper.find('.zs-file-picker__input').simulate('click', mClickEvent);
     expect(mClickEvent.preventDefault).not.toBeCalled();
 
-    wrapper.find('.za-file-picker__input').simulate('change', {
+    wrapper.find('.zs-file-picker__input').simulate('change', {
       target: { files: [file] },
     });
     expect(props.onChange).toBeCalledWith([mFileDetail]);
@@ -77,7 +77,7 @@ describe('file picker event', () => {
       callback(mFileDetail);
     });
     const wrapper = mount(<FilePicker {...props} />);
-    wrapper.find('.za-file-picker__input').simulate('change', {
+    wrapper.find('.zs-file-picker__input').simulate('change', {
       target: { files: [file] },
     });
 
@@ -89,7 +89,7 @@ describe('file picker event', () => {
     const wrapper = mount(<FilePicker {...props} />);
 
     wrapper.find('button').simulate('click');
-    wrapper.find('.za-file-picker__input').simulate('change', {
+    wrapper.find('.zs-file-picker__input').simulate('change', {
       target: { files: [file] },
     });
     expect(props.onChange).toBeCalled();
@@ -112,7 +112,7 @@ describe('file picker disabled', () => {
 
     const wrapper = mount(<FilePicker {..._props} />);
 
-    wrapper.find('.za-file-picker__input').simulate('click');
+    wrapper.find('.zs-file-picker__input').simulate('click');
     expect(props.onChange).not.toHaveBeenCalled();
   });
 
@@ -124,7 +124,7 @@ describe('file picker disabled', () => {
 
     const wrapper = mount(<FilePicker {..._props} />);
 
-    wrapper.find('.za-file-picker__input').simulate('click');
+    wrapper.find('.zs-file-picker__input').simulate('click');
     expect(props.onChange).not.toHaveBeenCalled();
   });
 });

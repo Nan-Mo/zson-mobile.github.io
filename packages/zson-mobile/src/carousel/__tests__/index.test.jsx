@@ -34,13 +34,13 @@ describe('Carousel', () => {
   });
 
   it('prefixCls render correctly', () => {
-    const prefixCls = 'za-test';
+    const prefixCls = 'zs-test';
     const wrapper = render(createCarousel({ prefixCls }, 1));
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('className render correctly', () => {
-    const className = 'za-wrapper-test';
+    const className = 'zs-wrapper-test';
     const wrapper = render(createCarousel({ className }, 0));
     expect(toJson(wrapper)).toMatchSnapshot();
   });
@@ -135,7 +135,7 @@ describe('Carousel', () => {
   it('touchStart', () => {
     const wrapper = mount(createCarousel());
     const wrapperTouchStart = (wrapperTouch) => {
-      wrapperTouch.find('.za-carousel__items').simulate('touchStart', {
+      wrapperTouch.find('.zs-carousel__items').simulate('touchStart', {
         touches: [
           {
             pageX: 0,
@@ -156,7 +156,7 @@ describe('Carousel', () => {
     const wrapperDirectionY = mount(createCarousel({ direction: 'bottom' }));
     const wrapperTouchMove = (wrapper) => {
       wrapper
-        .find('.za-carousel__items')
+        .find('.zs-carousel__items')
         .simulate('touchStart', {
           touches: [
             {
@@ -225,7 +225,7 @@ describe('Carousel', () => {
     const wrapperTouchEnd = ({ direction = 'left', offset = 100, activeIndex = 0 }) => {
       wrapper
         .setProps({ direction, activeIndex })
-        .find('.za-carousel__items')
+        .find('.zs-carousel__items')
         .simulate('touchStart', {
           touches: [
             {
@@ -260,7 +260,7 @@ describe('Carousel', () => {
   it('unswipeable touchStart', () => {
     const wrapper = mount(createCarousel({ swipeable: false }));
     const wrapperTouchStart = (wrapperTouch) => {
-      wrapperTouch.find('.za-carousel__items').simulate('touchStart', {
+      wrapperTouch.find('.zs-carousel__items').simulate('touchStart', {
         touches: [
           {
             pageX: 0,
@@ -281,7 +281,7 @@ describe('Carousel', () => {
     const wrapperDirectionY = mount(createCarousel({ direction: 'bottom', swipeable: false }));
     const wrapperTouchMove = (wrapper) => {
       wrapper
-        .find('.za-carousel__items')
+        .find('.zs-carousel__items')
         .simulate('touchStart', {
           touches: [
             {
@@ -350,7 +350,7 @@ describe('Carousel', () => {
     const wrapperTouchEnd = ({ direction = 'left', offset = 100, activeIndex = 0 }) => {
       wrapper
         .setProps({ direction, activeIndex })
-        .find('.za-carousel__items')
+        .find('.zs-carousel__items')
         .simulate('touchStart', {
           touches: [
             {
@@ -398,8 +398,8 @@ describe('Carousel', () => {
   it('transitionend event', () => {
     const onChangeEnd = jest.fn();
     const wrapper = mount(createCarousel({ onChangeEnd }));
-    wrapper.find('.za-carousel__pagination .za-carousel__pagination__item').at(1).simulate('click');
-    wrapper.find('.za-carousel__items').at(0).simulate('transitionend');
+    wrapper.find('.zs-carousel__pagination .zs-carousel__pagination__item').at(1).simulate('click');
+    wrapper.find('.zs-carousel__items').at(0).simulate('transitionend');
     expect(onChangeEnd).toBeCalledWith(1);
   });
 });

@@ -38,7 +38,7 @@ describe('PickerView', () => {
   });
   it('should not render wheels if datasource is empty', () => {
     const wrapper = shallow(<PickerView />);
-    expect(wrapper.find('.za-picker-view__content').children()).toHaveLength(0);
+    expect(wrapper.find('.zs-picker-view__content').children()).toHaveLength(0);
   });
 
   it('should render wheels if datasource is not empty', () => {
@@ -53,7 +53,7 @@ describe('PickerView', () => {
         { label: 'b', value: 2 },
       ],
     ]);
-    expect(wrapper.find('.za-picker-view__content').children()).toHaveLength(1);
+    expect(wrapper.find('.zs-picker-view__content').children()).toHaveLength(1);
     expect(wrapper.find(Wheel).props()).toEqual(
       expect.objectContaining({
         dataSource: [
@@ -72,11 +72,11 @@ describe('PickerView', () => {
 
   it('should render with correct className', () => {
     const wrapper = shallow(<PickerView className="foo" />);
-    expect(wrapper.at(0).prop('className')).toEqual('za-picker-view foo');
-    expect(wrapper.find('.za-picker-view__content')).toHaveLength(1);
-    expect(wrapper.find('.za-picker-view__mask')).toHaveLength(2);
-    expect(wrapper.find('.za-picker-view__mask--top')).toHaveLength(1);
-    expect(wrapper.find('.za-picker-view__mask--bottom')).toHaveLength(1);
+    expect(wrapper.at(0).prop('className')).toEqual('zs-picker-view foo');
+    expect(wrapper.find('.zs-picker-view__content')).toHaveLength(1);
+    expect(wrapper.find('.zs-picker-view__mask')).toHaveLength(2);
+    expect(wrapper.find('.zs-picker-view__mask--top')).toHaveLength(1);
+    expect(wrapper.find('.zs-picker-view__mask--bottom')).toHaveLength(1);
   });
 
   it('should handle value change event and re-render wheels with new props', () => {

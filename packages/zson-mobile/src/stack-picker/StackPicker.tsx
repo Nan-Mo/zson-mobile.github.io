@@ -23,7 +23,7 @@ export interface StackPickerProps extends PropsType {
 
 export default memo(
   ({
-    prefixCls = 'za-stack-picker',
+    prefixCls = 'zs-stack-picker',
     className,
     dataSource,
     defaultValue,

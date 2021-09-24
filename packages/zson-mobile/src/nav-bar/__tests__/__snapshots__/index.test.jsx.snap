@@ -2,29 +2,29 @@
 
 exports[`NavBar renders correctly 1`] = `
 <div
-  class="za-nav-bar"
+  class="zs-nav-bar"
 >
   <div
-    class="za-nav-bar__side za-nav-bar__side--left"
+    class="zs-nav-bar__side zs-nav-bar__side--left"
   />
   <div
-    class="za-nav-bar__title"
+    class="zs-nav-bar__title"
   />
   <div
-    class="za-nav-bar__side za-nav-bar__side--right"
+    class="zs-nav-bar__side zs-nav-bar__side--right"
   />
 </div>
 `;
 
 exports[`NavBar renders correctly with left content 1`] = `
 <div
-  class="za-nav-bar"
+  class="zs-nav-bar"
 >
   <div
-    class="za-nav-bar__side za-nav-bar__side--left"
+    class="zs-nav-bar__side zs-nav-bar__side--left"
   >
     <i
-      class="za-icon za-icon--arrow-left za-icon--default za-icon--md"
+      class="zs-icon zs-icon--arrow-left zs-icon--default zs-icon--md"
       theme="default"
       type="arrow-left"
     >
@@ -41,26 +41,26 @@ exports[`NavBar renders correctly with left content 1`] = `
     </i>
   </div>
   <div
-    class="za-nav-bar__title"
+    class="zs-nav-bar__title"
   >
     测试标题
   </div>
   <div
-    class="za-nav-bar__side za-nav-bar__side--right"
+    class="zs-nav-bar__side zs-nav-bar__side--right"
   />
 </div>
 `;
 
 exports[`NavBar renders correctly with multiple icons 1`] = `
 <div
-  class="za-nav-bar"
+  class="zs-nav-bar"
 >
   <div
-    class="za-nav-bar__side za-nav-bar__side--left"
+    class="zs-nav-bar__side zs-nav-bar__side--left"
   >
     <div>
       <i
-        class="za-icon za-icon--arrow-left za-icon--default za-icon--md"
+        class="zs-icon zs-icon--arrow-left zs-icon--default zs-icon--md"
         theme="default"
         type="arrow-left"
       >
@@ -78,16 +78,16 @@ exports[`NavBar renders correctly with multiple icons 1`] = `
     </div>
   </div>
   <div
-    class="za-nav-bar__title"
+    class="zs-nav-bar__title"
   >
     测试标题
   </div>
   <div
-    class="za-nav-bar__side za-nav-bar__side--right"
+    class="zs-nav-bar__side zs-nav-bar__side--right"
   >
     <div>
       <i
-        class="za-icon za-icon--arrow-right za-icon--default za-icon--md"
+        class="zs-icon zs-icon--arrow-right zs-icon--default zs-icon--md"
         theme="default"
         type="arrow-right"
       >
@@ -142,13 +142,13 @@ exports[`NavBar renders correctly with multiple icons 1`] = `
 
 exports[`NavBar renders correctly with right content 1`] = `
 <div
-  class="za-nav-bar"
+  class="zs-nav-bar"
 >
   <div
-    class="za-nav-bar__side za-nav-bar__side--left"
+    class="zs-nav-bar__side zs-nav-bar__side--left"
   >
     <i
-      class="za-icon za-icon--arrow-left za-icon--default za-icon--md"
+      class="zs-icon zs-icon--arrow-left zs-icon--default zs-icon--md"
       theme="default"
       type="arrow-left"
     >
@@ -165,15 +165,15 @@ exports[`NavBar renders correctly with right content 1`] = `
     </i>
   </div>
   <div
-    class="za-nav-bar__title"
+    class="zs-nav-bar__title"
   >
     测试标题
   </div>
   <div
-    class="za-nav-bar__side za-nav-bar__side--right"
+    class="zs-nav-bar__side zs-nav-bar__side--right"
   >
     <i
-      class="za-icon za-icon--arrow-right za-icon--default za-icon--md"
+      class="zs-icon zs-icon--arrow-right zs-icon--default zs-icon--md"
       theme="default"
       type="arrow-right"
     >
@@ -194,18 +194,18 @@ exports[`NavBar renders correctly with right content 1`] = `
 
 exports[`NavBar renders correctly with title 1`] = `
 <div
-  class="za-nav-bar"
+  class="zs-nav-bar"
 >
   <div
-    class="za-nav-bar__side za-nav-bar__side--left"
+    class="zs-nav-bar__side zs-nav-bar__side--left"
   />
   <div
-    class="za-nav-bar__title"
+    class="zs-nav-bar__title"
   >
     测试标题
   </div>
   <div
-    class="za-nav-bar__side za-nav-bar__side--right"
+    class="zs-nav-bar__side zs-nav-bar__side--right"
   />
 </div>
 `;

@@ -36,7 +36,7 @@ describe('DateSelect', () => {
       />,
     );
 
-    wrapper.find('.za-date-select').simulate('click');
+    wrapper.find('.zs-date-select').simulate('click');
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
@@ -98,7 +98,7 @@ describe('DateSelect', () => {
   //       onOk={onOkFn}
   //     />,
   //   );
-  //   wrapper.find('.za-date-picker__submit').simulate('click');
+  //   wrapper.find('.zs-date-picker__submit').simulate('click');
   //   expect(onOkFn).toBeCalled();
   // });
 
@@ -113,7 +113,7 @@ describe('DateSelect', () => {
   //     />,
   //   );
 
-  //   wrapper.find('.za-date-picker__cancel').simulate('click');
+  //   wrapper.find('.zs-date-picker__cancel').simulate('click');
   //   expect(onCancelFn).toBeCalled();
   // });
 
@@ -129,7 +129,7 @@ describe('DateSelect', () => {
   //     />
   //   );
 
-  //   wrapper.find('.za-mask').simulate('click');
+  //   wrapper.find('.zs-mask').simulate('click');
   //   expect(onMaskClick).toBeCalled();
   // });
 });

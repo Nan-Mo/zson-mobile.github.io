@@ -2,22 +2,22 @@
 
 exports[`Progress renders correctly 1`] = `
 <div
-  class="za-progress za-progress--line za-progress--primary za-progress--md"
+  class="zs-progress zs-progress--line zs-progress--primary zs-progress--md"
 >
   <div
-    class="za-progress__outer"
+    class="zs-progress__outer"
   >
     <div
-      class="za-progress__track"
+      class="zs-progress__track"
       style="height:8;border-radius:8px"
     >
       <div
-        class="za-progress__thumb"
+        class="zs-progress__thumb"
         style="width:10%;height:8px;border-radius:8px"
       />
     </div>
     <div
-      class="za-progress__text"
+      class="zs-progress__text"
     >
       10%
     </div>
@@ -27,22 +27,22 @@ exports[`Progress renders correctly 1`] = `
 
 exports[`Progress renders has children correctly 1`] = `
 <div
-  class="za-progress za-progress--line za-progress--primary za-progress--md"
+  class="zs-progress zs-progress--line zs-progress--primary zs-progress--md"
 >
   <div
-    class="za-progress__outer"
+    class="zs-progress__outer"
   >
     <div
-      class="za-progress__track"
+      class="zs-progress__track"
       style="height:8;border-radius:8px"
     >
       <div
-        class="za-progress__thumb"
+        class="zs-progress__thumb"
         style="width:10%;height:8px;border-radius:8px"
       />
     </div>
     <div
-      class="za-progress__text"
+      class="zs-progress__text"
     >
       foo
     </div>
@@ -53,7 +53,7 @@ exports[`Progress renders has children correctly 1`] = `
 exports[`Progress renders percent correctly 1`] = `
 <Progress
   percent={50}
-  prefixCls="za-progress"
+  prefixCls="zs-progress"
   shape="circle"
   size="md"
   strokeShape="round"
@@ -61,14 +61,14 @@ exports[`Progress renders percent correctly 1`] = `
   theme="primary"
 >
   <div
-    className="za-progress za-progress--circle za-progress--primary za-progress--md"
+    className="zs-progress zs-progress--circle zs-progress--primary zs-progress--md"
     style={Object {}}
   >
     <svg
       viewBox="0 0 Infinity Infinity"
     >
       <path
-        className="za-progress__track"
+        className="zs-progress__track"
         d="
         MInfinity, Infinity
         m0 -16
@@ -78,7 +78,7 @@ exports[`Progress renders percent correctly 1`] = `
         strokeWidth={Infinity}
       />
       <path
-        className="za-progress__thumb"
+        className="zs-progress__thumb"
         d="
         MInfinity, Infinity
         m0 -16
@@ -91,7 +91,7 @@ exports[`Progress renders percent correctly 1`] = `
       />
     </svg>
     <div
-      className="za-progress__text"
+      className="zs-progress__text"
     >
       foo
     </div>
@@ -101,13 +101,13 @@ exports[`Progress renders percent correctly 1`] = `
 
 exports[`Progress renders shape is circle correctly 1`] = `
 <div
-  class="za-progress za-progress--circle za-progress--primary za-progress--md"
+  class="zs-progress zs-progress--circle zs-progress--primary zs-progress--md"
 >
   <svg
     viewBox="0 0 40 40"
   >
     <path
-      class="za-progress__track"
+      class="zs-progress__track"
       d="
         M20, 20
         m0 -16
@@ -117,7 +117,7 @@ exports[`Progress renders shape is circle correctly 1`] = `
       stroke-width="8"
     />
     <path
-      class="za-progress__thumb"
+      class="zs-progress__thumb"
       d="
         M20, 20
         m0 -16
@@ -130,7 +130,7 @@ exports[`Progress renders shape is circle correctly 1`] = `
     />
   </svg>
   <div
-    class="za-progress__text"
+    class="zs-progress__text"
   >
     foo
   </div>
@@ -139,13 +139,13 @@ exports[`Progress renders shape is circle correctly 1`] = `
 
 exports[`Progress renders shape is semi-circle correctly 1`] = `
 <div
-  class="za-progress za-progress--semi-circle za-progress--primary za-progress--md"
+  class="zs-progress zs-progress--semi-circle zs-progress--primary zs-progress--md"
 >
   <svg
     viewBox="0 0 40 20"
   >
     <path
-      class="za-progress__track"
+      class="zs-progress__track"
       d="
         M20, 20
         m-16 0
@@ -154,7 +154,7 @@ exports[`Progress renders shape is semi-circle correctly 1`] = `
       stroke-width="8"
     />
     <path
-      class="za-progress__thumb"
+      class="zs-progress__thumb"
       d="
         M20, 20
         m-16 0
@@ -166,7 +166,7 @@ exports[`Progress renders shape is semi-circle correctly 1`] = `
     />
   </svg>
   <div
-    class="za-progress__text"
+    class="zs-progress__text"
   >
     foo
   </div>
@@ -176,7 +176,7 @@ exports[`Progress renders shape is semi-circle correctly 1`] = `
 exports[`Progress renders size is lg correctly 1`] = `
 <Progress
   percent={10}
-  prefixCls="za-progress"
+  prefixCls="zs-progress"
   shape="line"
   size="lg"
   strokeShape="round"
@@ -184,14 +184,14 @@ exports[`Progress renders size is lg correctly 1`] = `
   theme="primary"
 >
   <div
-    className="za-progress za-progress--line za-progress--primary za-progress--lg"
+    className="zs-progress zs-progress--line zs-progress--primary zs-progress--lg"
     style={Object {}}
   >
     <div
-      className="za-progress__outer"
+      className="zs-progress__outer"
     >
       <div
-        className="za-progress__track"
+        className="zs-progress__track"
         style={
           Object {
             "borderRadius": "10px",
@@ -200,7 +200,7 @@ exports[`Progress renders size is lg correctly 1`] = `
         }
       >
         <div
-          className="za-progress__thumb"
+          className="zs-progress__thumb"
           style={
             Object {
               "borderRadius": "10px",
@@ -211,7 +211,7 @@ exports[`Progress renders size is lg correctly 1`] = `
         />
       </div>
       <div
-        className="za-progress__text"
+        className="zs-progress__text"
       >
         10%
       </div>
@@ -223,7 +223,7 @@ exports[`Progress renders size is lg correctly 1`] = `
 exports[`Progress renders size is md correctly 1`] = `
 <Progress
   percent={10}
-  prefixCls="za-progress"
+  prefixCls="zs-progress"
   shape="line"
   size="md"
   strokeShape="round"
@@ -231,14 +231,14 @@ exports[`Progress renders size is md correctly 1`] = `
   theme="primary"
 >
   <div
-    className="za-progress za-progress--line za-progress--primary za-progress--md"
+    className="zs-progress zs-progress--line zs-progress--primary zs-progress--md"
     style={Object {}}
   >
     <div
-      className="za-progress__outer"
+      className="zs-progress__outer"
     >
       <div
-        className="za-progress__track"
+        className="zs-progress__track"
         style={
           Object {
             "borderRadius": "8px",
@@ -247,7 +247,7 @@ exports[`Progress renders size is md correctly 1`] = `
         }
       >
         <div
-          className="za-progress__thumb"
+          className="zs-progress__thumb"
           style={
             Object {
               "borderRadius": "8px",
@@ -258,7 +258,7 @@ exports[`Progress renders size is md correctly 1`] = `
         />
       </div>
       <div
-        className="za-progress__text"
+        className="zs-progress__text"
       >
         10%
       </div>
@@ -270,7 +270,7 @@ exports[`Progress renders size is md correctly 1`] = `
 exports[`Progress renders size is sm correctly 1`] = `
 <Progress
   percent={10}
-  prefixCls="za-progress"
+  prefixCls="zs-progress"
   shape="line"
   size="sm"
   strokeShape="round"
@@ -278,14 +278,14 @@ exports[`Progress renders size is sm correctly 1`] = `
   theme="primary"
 >
   <div
-    className="za-progress za-progress--line za-progress--primary za-progress--sm"
+    className="zs-progress zs-progress--line zs-progress--primary zs-progress--sm"
     style={Object {}}
   >
     <div
-      className="za-progress__outer"
+      className="zs-progress__outer"
     >
       <div
-        className="za-progress__track"
+        className="zs-progress__track"
         style={
           Object {
             "borderRadius": "4px",
@@ -294,7 +294,7 @@ exports[`Progress renders size is sm correctly 1`] = `
         }
       >
         <div
-          className="za-progress__thumb"
+          className="zs-progress__thumb"
           style={
             Object {
               "borderRadius": "4px",
@@ -305,7 +305,7 @@ exports[`Progress renders size is sm correctly 1`] = `
         />
       </div>
       <div
-        className="za-progress__text"
+        className="zs-progress__text"
       >
         10%
       </div>

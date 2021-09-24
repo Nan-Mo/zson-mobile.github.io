@@ -106,13 +106,13 @@ describe('StackPicker', () => {
     wrapper.setProps({ visible: true });
     wrapper.update();
 
-    wrapper.find('.za-stack-picker__submit').simulate('click');
+    wrapper.find('.zs-stack-picker__submit').simulate('click');
     expect(onOk).toHaveBeenCalledWith(['340000', '340800', '340803']);
 
-    wrapper.find('.za-stack-picker__cancel').simulate('click');
+    wrapper.find('.zs-stack-picker__cancel').simulate('click');
     expect(onCancel).toBeCalled();
 
-    wrapper.find('.za-mask').simulate('click');
+    wrapper.find('.zs-mask').simulate('click');
     expect(onCancel).toBeCalled();
   });
 
@@ -134,25 +134,25 @@ describe('StackPicker', () => {
     // popupWrapper = mount(wrapper.instance().getComponent());
 
     wrapper
-      .find('.za-stack-picker__group')
+      .find('.zs-stack-picker__group')
       .at(0)
-      .find('.za-stack-picker__stack-column')
-      .at(0)
-      .simulate('click');
-
-    wrapper
-      .find('.za-stack-picker__group')
-      .at(0)
-      .find('.za-stack-picker__stack-column-wrapper')
+      .find('.zs-stack-picker__stack-column')
       .at(0)
       .simulate('click');
 
     wrapper
-      .find('.za-stack-picker__group')
+      .find('.zs-stack-picker__group')
       .at(0)
-      .find('.za-stack-picker__stack-column-wrapper')
+      .find('.zs-stack-picker__stack-column-wrapper')
       .at(0)
-      .find('.za-stack-picker__stack-column-item')
+      .simulate('click');
+
+    wrapper
+      .find('.zs-stack-picker__group')
+      .at(0)
+      .find('.zs-stack-picker__stack-column-wrapper')
+      .at(0)
+      .find('.zs-stack-picker__stack-column-item')
       .at(0)
       .simulate('click');
 
@@ -179,11 +179,11 @@ describe('StackPicker', () => {
     // popupWrapper = mount(wrapper.instance().getComponent());
 
     wrapper
-      .find('.za-stack-picker__group')
+      .find('.zs-stack-picker__group')
       .at(0)
-      .find('.za-stack-picker__stack-column-wrapper')
+      .find('.zs-stack-picker__stack-column-wrapper')
       .at(0)
-      .find('.za-stack-picker__stack-column-item')
+      .find('.zs-stack-picker__stack-column-item')
       .at(0)
       .simulate('click');
 
@@ -214,7 +214,7 @@ describe('StackPicker', () => {
 //   });
 //
 //   it('handle props disabled', () => {
-//     wrapper.find('.za-stack-picker__cancel').simulate('click');
+//     wrapper.find('.zs-stack-picker__cancel').simulate('click');
 //     // 目前不能取到 useState 的值
 //     expect(onCancel).toBeCalled();
 //   });
@@ -254,18 +254,18 @@ describe('StackPicker error type', () => {
 
     expect(consoleSpy).toHaveBeenCalledWith('displayRender need a function');
 
-    wrapper.find('.za-stack-picker__cancel').simulate('click');
+    wrapper.find('.zs-stack-picker__cancel').simulate('click');
     expect(consoleSpy).toHaveBeenCalledWith('onCancel need a function');
 
-    wrapper.find('.za-stack-picker__submit').simulate('click');
+    wrapper.find('.zs-stack-picker__submit').simulate('click');
     expect(consoleSpy).toHaveBeenCalledWith('onOk need a function');
 
     wrapper
-      .find('.za-stack-picker__group')
+      .find('.zs-stack-picker__group')
       .at(0)
-      .find('.za-stack-picker__stack-column-wrapper')
+      .find('.zs-stack-picker__stack-column-wrapper')
       .at(0)
-      .find('.za-stack-picker__stack-column-item')
+      .find('.zs-stack-picker__stack-column-item')
       .at(0)
       .simulate('click');
     expect(consoleSpy).toHaveBeenCalledWith('onChangeValidate need a function');

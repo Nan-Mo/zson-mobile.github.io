@@ -4,23 +4,23 @@ exports[`Message closable 1`] = `
 <Message
   closable={true}
   hasArrow={false}
-  prefixCls="za-message"
+  prefixCls="zs-message"
   theme="primary"
 >
   <div
-    className="za-message za-message--primary"
+    className="zs-message zs-message--primary"
     onClick={[Function]}
   >
     <div
-      className="za-message__header"
+      className="zs-message__header"
     />
     <div
-      className="za-message__body"
+      className="zs-message__body"
     >
       foo
     </div>
     <div
-      className="za-message__footer"
+      className="zs-message__footer"
     >
       <ForwardRef(SvgClose)
         onClick={[Function]}
@@ -28,13 +28,13 @@ exports[`Message closable 1`] = `
         <Icon
           component={[Function]}
           onClick={[Function]}
-          prefixCls="za-icon"
+          prefixCls="zs-icon"
           size="md"
           theme="default"
           viewBox="0 0 32 32"
         >
           <i
-            className="za-icon za-icon--default za-icon--md"
+            className="zs-icon zs-icon--default zs-icon--md"
             onClick={[Function]}
             size="md"
             theme="default"
@@ -69,19 +69,19 @@ exports[`Message closable 1`] = `
 
 exports[`Message hasArrow 1`] = `
 <div
-  className="za-message za-message--primary za-message--link"
+  className="zs-message zs-message--primary zs-message--link"
   onClick={[Function]}
 >
   <div
-    className="za-message__header"
+    className="zs-message__header"
   />
   <div
-    className="za-message__body"
+    className="zs-message__body"
   >
     foo
   </div>
   <div
-    className="za-message__footer"
+    className="zs-message__footer"
   >
     <ForwardRef(SvgArrowRight) />
   </div>
@@ -90,13 +90,13 @@ exports[`Message hasArrow 1`] = `
 
 exports[`Message icon 1`] = `
 <div
-  class="za-message za-message--primary"
+  class="zs-message zs-message--primary"
 >
   <div
-    class="za-message__header"
+    class="zs-message__header"
   >
     <div
-      class="za-message__icon"
+      class="zs-message__icon"
     >
       <img
         alt=""
@@ -105,7 +105,7 @@ exports[`Message icon 1`] = `
     </div>
   </div>
   <div
-    class="za-message__body"
+    class="zs-message__body"
   >
     foo
   </div>
@@ -114,13 +114,13 @@ exports[`Message icon 1`] = `
 
 exports[`Message renders correctly 1`] = `
 <div
-  class="za-message za-message--primary"
+  class="zs-message zs-message--primary"
 >
   <div
-    class="za-message__header"
+    class="zs-message__header"
   />
   <div
-    class="za-message__body"
+    class="zs-message__body"
   >
     foo
   </div>
@@ -129,13 +129,13 @@ exports[`Message renders correctly 1`] = `
 
 exports[`Message theme 1`] = `
 <div
-  class="za-message za-message--danger"
+  class="zs-message zs-message--danger"
 >
   <div
-    class="za-message__header"
+    class="zs-message__header"
   />
   <div
-    class="za-message__body"
+    class="zs-message__body"
   >
     foo
   </div>

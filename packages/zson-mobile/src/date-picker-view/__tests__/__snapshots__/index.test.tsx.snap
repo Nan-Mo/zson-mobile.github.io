@@ -25,7 +25,7 @@ exports[`DatePickerView DatePickerView time 1`] = `
       localeCode="zh-CN"
       minuteStep={1}
       mode="datetime"
-      prefixCls="za-date-picker-view"
+      prefixCls="zs-date-picker-view"
       stopScroll={false}
       valueMember="value"
     >
@@ -47,7 +47,7 @@ exports[`DatePickerView DatePickerView time 1`] = `
         minuteStep={1}
         mode="datetime"
         onChange={[Function]}
-        prefixCls="za-date-picker-view"
+        prefixCls="zs-date-picker-view"
         stopScroll={false}
         value={
           Array [
@@ -57,16 +57,16 @@ exports[`DatePickerView DatePickerView time 1`] = `
         valueMember="value"
       >
         <div
-          className="za-date-picker-view"
+          className="zs-date-picker-view"
         >
           <div
-            className="za-date-picker-view__content"
+            className="zs-date-picker-view__content"
           />
           <div
-            className="za-date-picker-view__mask za-date-picker-view__mask--top"
+            className="zs-date-picker-view__mask zs-date-picker-view__mask--top"
           />
           <div
-            className="za-date-picker-view__mask za-date-picker-view__mask--bottom"
+            className="zs-date-picker-view__mask zs-date-picker-view__mask--bottom"
           />
         </div>
       </PickerView>
@@ -103,7 +103,7 @@ exports[`DatePickerView DatePickerView time 2 1`] = `
       min="2007-01-03 11:00"
       minuteStep={1}
       mode="datetime"
-      prefixCls="za-date-picker-view"
+      prefixCls="zs-date-picker-view"
       stopScroll={false}
       valueMember="value"
     >
@@ -134,7 +134,7 @@ exports[`DatePickerView DatePickerView time 2 1`] = `
         minuteStep={1}
         mode="datetime"
         onChange={[Function]}
-        prefixCls="za-date-picker-view"
+        prefixCls="zs-date-picker-view"
         stopScroll={false}
         value={
           Array [
@@ -144,10 +144,10 @@ exports[`DatePickerView DatePickerView time 2 1`] = `
         valueMember="value"
       >
         <div
-          className="za-date-picker-view"
+          className="zs-date-picker-view"
         >
           <div
-            className="za-date-picker-view__content"
+            className="zs-date-picker-view__content"
           >
             <Wheel
               dataSource={
@@ -162,19 +162,19 @@ exports[`DatePickerView DatePickerView time 2 1`] = `
               itemRender={[Function]}
               key="0"
               onChange={[Function]}
-              prefixCls="za-wheel"
+              prefixCls="zs-wheel"
               stopScroll={false}
               value={2021}
               valueMember="value"
             >
               <div
-                className="za-wheel"
+                className="zs-wheel"
               >
                 <div
-                  className="za-wheel__content"
+                  className="zs-wheel__content"
                 >
                   <div
-                    className="za-wheel__item"
+                    className="zs-wheel__item"
                     key="0"
                   >
                     1988
@@ -184,10 +184,10 @@ exports[`DatePickerView DatePickerView time 2 1`] = `
             </Wheel>
           </div>
           <div
-            className="za-date-picker-view__mask za-date-picker-view__mask--top"
+            className="zs-date-picker-view__mask zs-date-picker-view__mask--top"
           />
           <div
-            className="za-date-picker-view__mask za-date-picker-view__mask--bottom"
+            className="zs-date-picker-view__mask zs-date-picker-view__mask--bottom"
           />
         </div>
       </PickerView>

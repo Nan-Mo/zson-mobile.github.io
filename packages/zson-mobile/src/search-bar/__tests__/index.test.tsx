@@ -45,7 +45,7 @@ describe('SearchBar', () => {
       const wrapper = mount(<SearchBar shape="round" placeholder="搜索" onCancel={onCancel} />);
       const input = wrapper.find('input[type="search"]');
       input.simulate('focus');
-      wrapper.find('.za-search-bar__cancel').simulate('click');
+      wrapper.find('.zs-search-bar__cancel').simulate('click');
       expect(onCancel).toHaveBeenCalled();
       expect(toJson(wrapper)).toMatchSnapshot();
     });
@@ -55,7 +55,7 @@ describe('SearchBar', () => {
       const wrapper = mount(<SearchBar shape="round" placeholder="搜索" onSubmit={onSubmit} />);
       const input = wrapper.find('input[type="search"]');
       input.simulate('change', { target: { value: 'My new value' } });
-      wrapper.find('.za-search-bar__form').simulate('submit');
+      wrapper.find('.zs-search-bar__form').simulate('submit');
       expect(onSubmit).toHaveBeenCalled();
       expect(toJson(wrapper)).toMatchSnapshot();
     });
@@ -65,7 +65,7 @@ describe('SearchBar', () => {
       const wrapper = mount(<SearchBar onClear={onClear} />);
       const input = wrapper.find('input[type="search"]');
       input.simulate('change', { target: { value: 'My new value' } });
-      wrapper.find('i.za-input__clear').simulate('click');
+      wrapper.find('i.zs-input__clear').simulate('click');
       expect(onClear).toHaveBeenCalled();
       expect(input.instance()['value']).toEqual('');
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -195,7 +195,7 @@ describe('SearchBar', () => {
     const inputWrapper = wrapper.find('input');
     inputWrapper.simulate('focus');
     expect(wrapper.state('focus')).toBeTruthy();
-    wrapper.find('.za-search-bar__cancel').simulate('click');
+    wrapper.find('.zs-search-bar__cancel').simulate('click');
     expect(wrapper.state('value')).toEqual('');
     expect(wrapper.state('isOnComposition')).toBeFalsy();
     expect(wrapper.state('focus')).toBeFalsy();
@@ -211,7 +211,7 @@ describe('SearchBar', () => {
     );
     const inputRef = wrapper.instance()['inputRef'];
     const focusSpy = jest.spyOn(inputRef, 'focus');
-    wrapper.find('.za-input').childAt(1).invoke('onClick')();
+    wrapper.find('.zs-input').childAt(1).invoke('onClick')();
     expect(wrapper.state('value')).toEqual('');
     expect(wrapper.state('isOnComposition')).toBeFalsy();
     expect(mOnClear).toBeCalledWith('');

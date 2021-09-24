@@ -59,12 +59,6 @@ module.exports = {
         module: () => import('zson/input/demo.md'),
         style: false,
       },
-      // {
-      //   key: 'custom-input',
-      //   name: '自定义输入框',
-      //   module: () => import('zson/custom-input/demo.md'),
-      //   style: false,
-      // },
       {
         key: 'radio',
         name: '单选框',
@@ -288,38 +282,7 @@ module.exports = {
         style: false,
       },
     ],
-    hooks: [
-      // {
-      //   key: 'useDrag',
-      //   name: '拖拽',
-      //   module: () => import('zson/useDrag/demo.md'),
-      //   style: false,
-      // },
-      // {
-      //   key: 'useClickAway',
-      //   name: '点击离开',
-      //   module: () => import('zson/useClickAway/demo.md'),
-      //   style: false,
-      // },
-      // {
-      //   key: 'useLongPress',
-      //   name: '长按',
-      //   module: () => import('zson/useLongPress/demo.md'),
-      //   style: false,
-      // },
-      // {
-      //   key: 'useSafeLayoutEffect',
-      //   name: '安全布局副作用',
-      //   module: () => import('zson/useSafeLayoutEffect/demo.md'),
-      //   style: false,
-      // },
-      // {
-      //   key: 'useOrientation',
-      //   name: '屏幕方向',
-      //   module: () => import('zson/useOrientation/demo.md'),
-      //   style: false,
-      // },
-    ],
+
     other: [
       // {
       //   key: 'mask',
@@ -333,12 +296,6 @@ module.exports = {
         module: () => import('zson/config-provider/demo.md'),
         style: true,
       },
-      // {
-      //   key: 'n-config-provider',
-      //   name: '全局配置（新）',
-      //   module: () => import('zson/n-config-provider/demo.md'),
-      //   style: false,
-      // },
       {
         key: 'drag',
         name: '拖拽',

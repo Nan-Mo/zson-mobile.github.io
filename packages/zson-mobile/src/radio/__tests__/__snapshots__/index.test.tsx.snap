@@ -2,23 +2,23 @@
 
 exports[`Radio defaultChecked 1`] = `
 <span
-  class="za-radio za-radio--checked"
+  class="zs-radio zs-radio--checked"
 >
   <span
-    class="za-radio__widget"
+    class="zs-radio__widget"
   >
     <span
-      class="za-radio__inner"
+      class="zs-radio__inner"
     />
   </span>
   <span
-    class="za-radio__text"
+    class="zs-radio__text"
   >
     选项一
   </span>
   <input
     checked=""
-    class="za-radio__input"
+    class="zs-radio__input"
     type="radio"
     value="0"
   />
@@ -27,22 +27,22 @@ exports[`Radio defaultChecked 1`] = `
 
 exports[`Radio renders correctly 1`] = `
 <span
-  class="za-radio"
+  class="zs-radio"
 >
   <span
-    class="za-radio__widget"
+    class="zs-radio__widget"
   >
     <span
-      class="za-radio__inner"
+      class="zs-radio__inner"
     />
   </span>
   <span
-    class="za-radio__text"
+    class="zs-radio__text"
   >
     选项一
   </span>
   <input
-    class="za-radio__input"
+    class="zs-radio__input"
     type="radio"
     value="0"
   />
@@ -51,12 +51,12 @@ exports[`Radio renders correctly 1`] = `
 
 exports[`Radio type is button 1`] = `
 <button
-  class="za-radio"
+  class="zs-radio"
   type="button"
 >
   选项一
   <input
-    class="za-radio__input"
+    class="zs-radio__input"
     type="radio"
     value="0"
   />
@@ -65,37 +65,37 @@ exports[`Radio type is button 1`] = `
 
 exports[`Radio type is cell 1`] = `
 <div
-  class="za-cell za-cell--link"
+  class="zs-cell zs-cell--link"
 >
   <div
-    class="za-cell__inner"
+    class="zs-cell__inner"
   >
     <div
-      class="za-cell__header"
+      class="zs-cell__header"
     />
     <div
-      class="za-cell__body"
+      class="zs-cell__body"
     >
       <div
-        class="za-cell__content"
+        class="zs-cell__content"
       >
         <span
-          class="za-radio"
+          class="zs-radio"
         >
           <span
-            class="za-radio__widget"
+            class="zs-radio__widget"
           >
             <span
-              class="za-radio__inner"
+              class="zs-radio__inner"
             />
           </span>
           <span
-            class="za-radio__text"
+            class="zs-radio__text"
           >
             选项一
           </span>
           <input
-            class="za-radio__input"
+            class="zs-radio__input"
             type="radio"
             value="0"
           />
@@ -103,7 +103,7 @@ exports[`Radio type is cell 1`] = `
       </div>
     </div>
     <div
-      class="za-cell__footer"
+      class="zs-cell__footer"
     />
   </div>
 </div>
@@ -111,71 +111,71 @@ exports[`Radio type is cell 1`] = `
 
 exports[`Radio.Group Radio checked 1`] = `
 <div
-  class="za-radio-group za-radio-group--xs za-radio-group--radius"
+  class="zs-radio-group zs-radio-group--xs zs-radio-group--radius"
 >
   <div
-    class="za-radio-group__inner"
+    class="zs-radio-group__inner"
   >
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项一
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="0"
       />
     </span>
     <span
-      class="za-radio za-radio--checked"
+      class="zs-radio zs-radio--checked"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项二
       </span>
       <input
         checked=""
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="1"
       />
     </span>
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项三
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="2"
       />
@@ -186,71 +186,71 @@ exports[`Radio.Group Radio checked 1`] = `
 
 exports[`Radio.Group defaultValue 1`] = `
 <div
-  class="za-radio-group za-radio-group--xs za-radio-group--radius"
+  class="zs-radio-group zs-radio-group--xs zs-radio-group--radius"
 >
   <div
-    class="za-radio-group__inner"
+    class="zs-radio-group__inner"
   >
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项一
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="0"
       />
     </span>
     <span
-      class="za-radio za-radio--checked"
+      class="zs-radio zs-radio--checked"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项二
       </span>
       <input
         checked=""
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="1"
       />
     </span>
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项三
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="2"
       />
@@ -261,71 +261,71 @@ exports[`Radio.Group defaultValue 1`] = `
 
 exports[`Radio.Group renders correctly 1`] = `
 <div
-  class="za-radio-group za-radio-group--xs za-radio-group--radius"
+  class="zs-radio-group zs-radio-group--xs zs-radio-group--radius"
 >
   <div
-    class="za-radio-group__inner"
+    class="zs-radio-group__inner"
   >
     <span
-      class="za-radio za-radio--checked"
+      class="zs-radio zs-radio--checked"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项一
       </span>
       <input
         checked=""
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="0"
       />
     </span>
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项二
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="1"
       />
     </span>
     <span
-      class="za-radio"
+      class="zs-radio"
     >
       <span
-        class="za-radio__widget"
+        class="zs-radio__widget"
       >
         <span
-          class="za-radio__inner"
+          class="zs-radio__inner"
         />
       </span>
       <span
-        class="za-radio__text"
+        class="zs-radio__text"
       >
         选项三
       </span>
       <input
-        class="za-radio__input"
+        class="zs-radio__input"
         type="radio"
         value="2"
       />

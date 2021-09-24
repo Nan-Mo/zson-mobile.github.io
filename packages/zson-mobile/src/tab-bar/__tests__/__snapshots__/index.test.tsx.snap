@@ -2,20 +2,20 @@
 
 exports[`TabBar snapshot should render correctly 1`] = `
 <div
-  class="za-tab-bar"
+  class="zs-tab-bar"
 >
   <div
-    class="za-tab-bar__item za-tab-bar--active"
+    class="zs-tab-bar__item zs-tab-bar--active"
   >
     <div
-      class="za-tab-bar__icon"
+      class="zs-tab-bar__icon"
     >
       <div
-        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zarm/home-active.svg) top left / 24px 24px no-repeat"
+        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zsrm/home-active.svg) top left / 24px 24px no-repeat"
       />
     </div>
     <div
-      class="za-tab-bar__title"
+      class="zs-tab-bar__title"
     >
       主页
     </div>
@@ -25,20 +25,20 @@ exports[`TabBar snapshot should render correctly 1`] = `
 
 exports[`TabBar snapshot with activeKey 1`] = `
 <div
-  class="za-tab-bar"
+  class="zs-tab-bar"
 >
   <div
-    class="za-tab-bar__item za-tab-bar--active"
+    class="zs-tab-bar__item zs-tab-bar--active"
   >
     <div
-      class="za-tab-bar__icon"
+      class="zs-tab-bar__icon"
     >
       <div
-        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zarm/home-active.svg) top left / 24px 24px no-repeat"
+        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zsrm/home-active.svg) top left / 24px 24px no-repeat"
       />
     </div>
     <div
-      class="za-tab-bar__title"
+      class="zs-tab-bar__title"
     >
       主页
     </div>
@@ -48,20 +48,20 @@ exports[`TabBar snapshot with activeKey 1`] = `
 
 exports[`TabBar snapshot with defaultActiveKey 1`] = `
 <div
-  class="za-tab-bar"
+  class="zs-tab-bar"
 >
   <div
-    class="za-tab-bar__item za-tab-bar--active"
+    class="zs-tab-bar__item zs-tab-bar--active"
   >
     <div
-      class="za-tab-bar__icon"
+      class="zs-tab-bar__icon"
     >
       <div
-        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zarm/home-active.svg) top left / 24px 24px no-repeat"
+        style="width:24px;height:24px;background:url(//cdn-health.zhongan.com/zsrm/home-active.svg) top left / 24px 24px no-repeat"
       />
     </div>
     <div
-      class="za-tab-bar__title"
+      class="zs-tab-bar__title"
     >
       主页
     </div>

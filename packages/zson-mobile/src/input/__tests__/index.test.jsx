@@ -68,7 +68,7 @@ describe('Input', () => {
 
     const input = wrapper.find('input[type="text"]');
     input.simulate('change', { target: { value: 'My new value' } });
-    wrapper.find('i.za-input__clear').simulate('click');
+    wrapper.find('i.zs-input__clear').simulate('click');
     expect(onClear).toHaveBeenCalled();
     expect(input.instance().value).toEqual('');
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -85,7 +85,7 @@ describe('Input', () => {
 
   //   const input = wrapper.find('input[type="text"]');
   //   input.simulate('change', { target: { value: '测试' } });
-  //   wrapper.find('i.za-input__clear').simulate('click');
+  //   wrapper.find('i.zs-input__clear').simulate('click');
   //   expect(input.instance().value).toEqual('');
   //   expect(onFocus).toHaveBeenCalled();
   //   expect(toJson(wrapper)).toMatchSnapshot();
@@ -212,7 +212,7 @@ describe('Input.Number', () => {
   it('renders onFocus called correctly', () => {
     const onFocus = jest.fn();
     const wrapper = mount(<Input type="number" onFocus={onFocus} />);
-    wrapper.find('.za-input__content').simulate('click');
+    wrapper.find('.zs-input__content').simulate('click');
     expect(onFocus).toBeCalled();
     // expect(toJson(wrapper)).toMatchSnapshot();
     wrapper.unmount();
@@ -228,7 +228,7 @@ describe('Input.Number', () => {
     const input = wrapper.find('input[type="hidden"]');
     input.simulate('change', { target: { value: 'My new value' } });
     setTimeout(() => {
-      wrapper.find('i.za-input__clear').simulate('click');
+      wrapper.find('i.zs-input__clear').simulate('click');
       expect(onClear).toHaveBeenCalled();
       expect(input.instance().value).toEqual('');
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -253,7 +253,7 @@ describe('Input.Number', () => {
     const onChange = jest.fn();
     const wrapper = mount(<Input type="number" focused onChange={onChange} />);
     wrapper.find('input').simulate('focus');
-    const keys = wrapper.find('.za-keyboard__keys');
+    const keys = wrapper.find('.zs-keyboard__keys');
     keys.childAt(0).simulate('click');
     expect(onChange).toBeCalledWith('1');
     wrapper.unmount();
@@ -263,7 +263,7 @@ describe('Input.Number', () => {
     const onBlur = jest.fn();
     const wrapper = mount(<Input type="number" focused onBlur={onBlur} />);
     wrapper.find('input').simulate('focus');
-    const keys = wrapper.find('.za-keyboard__keys');
+    const keys = wrapper.find('.zs-keyboard__keys');
     keys.childAt(11).simulate('click');
     expect(onBlur).toBeCalled();
     wrapper.unmount();

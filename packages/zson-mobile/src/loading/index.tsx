@@ -27,7 +27,7 @@ export default class Loading extends PureComponent<LoadingProps, {}> {
     // TODO: after calling .unmountNode(), Loading.zsonLoading is null. Is this check necessary?
     if (!Loading.zsonLoading) {
       Loading.zsonLoading = document.createElement('div');
-      Loading.zsonLoading.classList.add('za-loading-container');
+      Loading.zsonLoading.classList.add('zs-loading-container');
       if (content && content.className) {
         Loading.zsonLoading.classList.add(content.className);
       }

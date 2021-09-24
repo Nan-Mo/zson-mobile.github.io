@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Icon, BackToTop } from 'zarm';
+import { Icon, BackToTop } from 'zson-mobile';
 import Header from '@/web/components/Header';
 import './style.scss';
 

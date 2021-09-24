@@ -2,69 +2,69 @@
 
 exports[`Keyboard snapshot renders correctly 1`] = `
 <div
-  class="za-keyboard"
+  class="zs-keyboard"
 >
   <div
-    class="za-keyboard__keys"
+    class="zs-keyboard__keys"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       1
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       2
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       3
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       4
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       5
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       6
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       7
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       8
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       9
     </div>
     <div
-      class="za-keyboard__item za-keyboard__item--disabled"
+      class="zs-keyboard__item zs-keyboard__item--disabled"
     />
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       0
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -84,13 +84,13 @@ exports[`Keyboard snapshot renders correctly 1`] = `
     </div>
   </div>
   <div
-    class="za-keyboard__handle"
+    class="zs-keyboard__handle"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -109,7 +109,7 @@ exports[`Keyboard snapshot renders correctly 1`] = `
       </i>
     </div>
     <div
-      class="za-keyboard__item za-keyboard__item--ok"
+      class="zs-keyboard__item zs-keyboard__item--ok"
     >
       确定
     </div>
@@ -119,71 +119,71 @@ exports[`Keyboard snapshot renders correctly 1`] = `
 
 exports[`Keyboard snapshot type is idcard 1`] = `
 <div
-  class="za-keyboard"
+  class="zs-keyboard"
 >
   <div
-    class="za-keyboard__keys"
+    class="zs-keyboard__keys"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       1
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       2
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       3
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       4
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       5
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       6
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       7
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       8
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       9
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       X
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       0
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -203,13 +203,13 @@ exports[`Keyboard snapshot type is idcard 1`] = `
     </div>
   </div>
   <div
-    class="za-keyboard__handle"
+    class="zs-keyboard__handle"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -228,7 +228,7 @@ exports[`Keyboard snapshot type is idcard 1`] = `
       </i>
     </div>
     <div
-      class="za-keyboard__item za-keyboard__item--ok"
+      class="zs-keyboard__item zs-keyboard__item--ok"
     >
       确定
     </div>
@@ -238,71 +238,71 @@ exports[`Keyboard snapshot type is idcard 1`] = `
 
 exports[`Keyboard snapshot type is price 1`] = `
 <div
-  class="za-keyboard"
+  class="zs-keyboard"
 >
   <div
-    class="za-keyboard__keys"
+    class="zs-keyboard__keys"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       1
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       2
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       3
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       4
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       5
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       6
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       7
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       8
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       9
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       .
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       0
     </div>
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -322,13 +322,13 @@ exports[`Keyboard snapshot type is price 1`] = `
     </div>
   </div>
   <div
-    class="za-keyboard__handle"
+    class="zs-keyboard__handle"
   >
     <div
-      class="za-keyboard__item"
+      class="zs-keyboard__item"
     >
       <i
-        class="za-icon za-icon--default za-icon--lg"
+        class="zs-icon zs-icon--default zs-icon--lg"
         theme="default"
       >
         <svg
@@ -347,7 +347,7 @@ exports[`Keyboard snapshot type is price 1`] = `
       </i>
     </div>
     <div
-      class="za-keyboard__item za-keyboard__item--ok"
+      class="zs-keyboard__item zs-keyboard__item--ok"
     >
       确定
     </div>

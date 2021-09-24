@@ -22,11 +22,11 @@ describe('Stepper', () => {
     const wrapper = shallow(<Stepper max={2} min={0} onChange={onChange} />);
 
     wrapper.setProps({ value: 0 });
-    wrapper.find('.za-stepper__sub').simulate('click');
+    wrapper.find('.zs-stepper__sub').simulate('click');
     expect(wrapper.find(Input).at(0).props().value).toBe(0);
 
     wrapper.setProps({ value: 2 });
-    wrapper.find('.za-stepper__plus').simulate('click');
+    wrapper.find('.zs-stepper__plus').simulate('click');
     expect(wrapper.find(Input).at(0).props().value).toBe(2);
   });
 
@@ -51,11 +51,11 @@ describe('Stepper', () => {
     expect(onInputChange).toBeCalled();
 
     wrapper.setProps({ value: 10 });
-    wrapper.find('.za-stepper__sub').simulate('click');
+    wrapper.find('.zs-stepper__sub').simulate('click');
     expect(onChange).toBeCalledWith(9);
 
     wrapper.setProps({ value: 9 });
-    wrapper.find('.za-stepper__plus').simulate('click');
+    wrapper.find('.zs-stepper__plus').simulate('click');
     expect(onChange).toBeCalledWith(10);
   });
 
@@ -98,11 +98,11 @@ describe('Stepper', () => {
 
     wrapper.setProps({ value: 1 });
     wrapper.setProps({ step: 0.1 });
-    wrapper.find('.za-stepper__sub').simulate('click');
+    wrapper.find('.zs-stepper__sub').simulate('click');
     expect(wrapper.find(Input).at(0).props().value).toBe('0.9');
 
     wrapper.setProps({ step: 0.2 });
-    wrapper.find('.za-stepper__plus').simulate('click');
+    wrapper.find('.zs-stepper__plus').simulate('click');
     expect(wrapper.find(Input).at(0).props().value).toBe('1.1');
   });
 });

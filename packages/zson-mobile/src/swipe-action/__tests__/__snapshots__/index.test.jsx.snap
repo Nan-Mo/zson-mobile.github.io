@@ -2,14 +2,14 @@
 
 exports[`SwipeAction left only 1`] = `
 <div
-  class="za-swipe-action"
+  class="zs-swipe-action"
 >
   <div
-    class="za-swipe-action__actions za-swipe-action__actions--left"
+    class="zs-swipe-action__actions zs-swipe-action__actions--left"
   >
     <button
       aria-disabled="false"
-      class="za-button za-button--primary za-button--md za-button--radius"
+      class="zs-button zs-button--primary zs-button--md zs-button--radius"
       type="button"
     >
       <span>
@@ -18,7 +18,7 @@ exports[`SwipeAction left only 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="za-button za-button--danger za-button--md za-button--radius"
+      class="zs-button zs-button--danger zs-button--md zs-button--radius"
       type="button"
     >
       <span>
@@ -27,7 +27,7 @@ exports[`SwipeAction left only 1`] = `
     </button>
   </div>
   <div
-    class="za-swipe-action__content"
+    class="zs-swipe-action__content"
     style="-webkit-transition-duration:undefinedms;transition-duration:undefinedms;-webkit-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)"
   >
     <div>
@@ -50,7 +50,7 @@ exports[`SwipeAction renders correctly 1`] = `
         htmlType="button"
         loading={false}
         onClick={[MockFunction]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -65,7 +65,7 @@ exports[`SwipeAction renders correctly 1`] = `
         htmlType="button"
         loading={false}
         onClick={[MockFunction]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -78,7 +78,7 @@ exports[`SwipeAction renders correctly 1`] = `
   moveDistanceRatio={0.5}
   moveTimeSpan={300}
   offset={10}
-  prefixCls="za-swipe-action"
+  prefixCls="zs-swipe-action"
   right={
     Array [
       <Button
@@ -88,7 +88,7 @@ exports[`SwipeAction renders correctly 1`] = `
         htmlType="button"
         loading={false}
         onClick={[MockFunction]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -103,7 +103,7 @@ exports[`SwipeAction renders correctly 1`] = `
         htmlType="button"
         loading={false}
         onClick={[MockFunction]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -115,10 +115,10 @@ exports[`SwipeAction renders correctly 1`] = `
   }
 >
   <div
-    className="za-swipe-action"
+    className="zs-swipe-action"
   >
     <div
-      className="za-swipe-action__actions za-swipe-action__actions--left"
+      className="zs-swipe-action__actions zs-swipe-action__actions--left"
     >
       <Button
         block={false}
@@ -128,7 +128,7 @@ exports[`SwipeAction renders correctly 1`] = `
         key="0"
         loading={false}
         onClick={[Function]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -136,7 +136,7 @@ exports[`SwipeAction renders correctly 1`] = `
       >
         <button
           aria-disabled={false}
-          className="za-button za-button--primary za-button--md za-button--radius"
+          className="zs-button zs-button--primary zs-button--md zs-button--radius"
           onClick={[Function]}
           type="button"
         >
@@ -153,7 +153,7 @@ exports[`SwipeAction renders correctly 1`] = `
         key="1"
         loading={false}
         onClick={[Function]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -161,7 +161,7 @@ exports[`SwipeAction renders correctly 1`] = `
       >
         <button
           aria-disabled={false}
-          className="za-button za-button--danger za-button--md za-button--radius"
+          className="zs-button zs-button--danger zs-button--md zs-button--radius"
           onClick={[Function]}
           type="button"
         >
@@ -172,7 +172,7 @@ exports[`SwipeAction renders correctly 1`] = `
       </Button>
     </div>
     <div
-      className="za-swipe-action__actions za-swipe-action__actions--right"
+      className="zs-swipe-action__actions zs-swipe-action__actions--right"
     >
       <Button
         block={false}
@@ -182,7 +182,7 @@ exports[`SwipeAction renders correctly 1`] = `
         key="0"
         loading={false}
         onClick={[Function]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -190,7 +190,7 @@ exports[`SwipeAction renders correctly 1`] = `
       >
         <button
           aria-disabled={false}
-          className="za-button za-button--primary za-button--md za-button--radius"
+          className="zs-button zs-button--primary zs-button--md zs-button--radius"
           onClick={[Function]}
           type="button"
         >
@@ -207,7 +207,7 @@ exports[`SwipeAction renders correctly 1`] = `
         key="1"
         loading={false}
         onClick={[Function]}
-        prefixCls="za-button"
+        prefixCls="zs-button"
         shadow={false}
         shape="radius"
         size="md"
@@ -215,7 +215,7 @@ exports[`SwipeAction renders correctly 1`] = `
       >
         <button
           aria-disabled={false}
-          className="za-button za-button--danger za-button--md za-button--radius"
+          className="zs-button zs-button--danger zs-button--md zs-button--radius"
           onClick={[Function]}
           type="button"
         >
@@ -231,7 +231,7 @@ exports[`SwipeAction renders correctly 1`] = `
       onDragStart={[Function]}
     >
       <div
-        className="za-swipe-action__content"
+        className="zs-swipe-action__content"
         onMouseDown={[Function]}
         onMouseMove={[Function]}
         onMouseUp={[Function]}
@@ -258,14 +258,14 @@ exports[`SwipeAction renders correctly 1`] = `
 
 exports[`SwipeAction right only 1`] = `
 <div
-  class="za-swipe-action"
+  class="zs-swipe-action"
 >
   <div
-    class="za-swipe-action__actions za-swipe-action__actions--right"
+    class="zs-swipe-action__actions zs-swipe-action__actions--right"
   >
     <button
       aria-disabled="false"
-      class="za-button za-button--primary za-button--md za-button--radius"
+      class="zs-button zs-button--primary zs-button--md zs-button--radius"
       type="button"
     >
       <span>
@@ -274,7 +274,7 @@ exports[`SwipeAction right only 1`] = `
     </button>
     <button
       aria-disabled="false"
-      class="za-button za-button--danger za-button--md za-button--radius"
+      class="zs-button zs-button--danger zs-button--md zs-button--radius"
       type="button"
     >
       <span>
@@ -283,7 +283,7 @@ exports[`SwipeAction right only 1`] = `
     </button>
   </div>
   <div
-    class="za-swipe-action__content"
+    class="zs-swipe-action__content"
     style="-webkit-transition-duration:undefinedms;transition-duration:undefinedms;-webkit-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0)"
   >
     <div>

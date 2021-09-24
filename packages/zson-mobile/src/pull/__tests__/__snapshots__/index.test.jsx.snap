@@ -2,17 +2,17 @@
 
 exports[`Pull renders correctly 1`] = `
 <div
-  class="za-pull"
+  class="zs-pull"
 >
   <div
-    class="za-pull__content"
+    class="zs-pull__content"
     style="-webkit-transition:all 0ms;transition:all 0ms;-webkit-transform:translate3d(0, 0px, 0);transform:translate3d(0, 0px, 0)"
   >
     <div
-      class="za-pull__refresh"
+      class="zs-pull__refresh"
     />
     <div
-      class="za-pull__body"
+      class="zs-pull__body"
     >
       <div>
         1
@@ -25,7 +25,7 @@ exports[`Pull renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="za-pull__load"
+      class="zs-pull__load"
     />
   </div>
 </div>

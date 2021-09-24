@@ -2,7 +2,7 @@
 
 exports[`BackToTop snapshot renders correctly 1`] = `
 <BackToTop
-  prefixCls="za-back-to-top"
+  prefixCls="zs-back-to-top"
   scrollContainer={[Window]}
   speed={100}
   visibleDistance={400}
@@ -10,10 +10,10 @@ exports[`BackToTop snapshot renders correctly 1`] = `
   <Portal
     containerInfo={
       <div
-        class="za-back-to-top-container"
+        class="zs-back-to-top-container"
       >
         <div
-          class="za-back-to-top"
+          class="zs-back-to-top"
           style="display: none; position: fixed; bottom: 50px; right: 50px;"
         >
           Up
@@ -22,7 +22,7 @@ exports[`BackToTop snapshot renders correctly 1`] = `
     }
   >
     <div
-      className="za-back-to-top"
+      className="zs-back-to-top"
       onClick={[Function]}
       style={
         Object {
@@ -38,7 +38,7 @@ exports[`BackToTop snapshot renders correctly 1`] = `
     <Scroller
       container={[Window]}
       onScroll={[Function]}
-      prefixCls="za-scroller"
+      prefixCls="zs-scroller"
     />
   </Portal>
 </BackToTop>
@@ -756,7 +756,7 @@ Array [
     </li>
   </ul>,
   <BackToTop
-    prefixCls="za-back-to-top"
+    prefixCls="zs-back-to-top"
     scrollContainer={[Function]}
     speed={100}
     visibleDistance={400}
@@ -764,10 +764,10 @@ Array [
     <Portal
       containerInfo={
         <div
-          class="za-back-to-top-container"
+          class="zs-back-to-top-container"
         >
           <div
-            class="za-back-to-top"
+            class="zs-back-to-top"
             style="display: none; position: fixed; bottom: 50px; right: 50px;"
           >
             Up
@@ -776,7 +776,7 @@ Array [
       }
     >
       <div
-        className="za-back-to-top"
+        className="zs-back-to-top"
         onClick={[Function]}
         style={
           Object {
@@ -792,7 +792,7 @@ Array [
       <Scroller
         container={[Function]}
         onScroll={[Function]}
-        prefixCls="za-scroller"
+        prefixCls="zs-scroller"
       />
     </Portal>
   </BackToTop>,

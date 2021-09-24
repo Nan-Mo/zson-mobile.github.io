@@ -9,7 +9,7 @@ import { getMountContainer } from '../utils/dom';
 function modalType(props, type) {
   const { className = '', mountContainer } = props;
   const container = document.createElement('div');
-  container.className += `za-${type}-container ${className}`;
+  container.className += `zs-${type}-container ${className}`;
   const mountNode = getMountContainer(mountContainer);
   mountNode.appendChild(container);
 

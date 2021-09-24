@@ -54,12 +54,12 @@ $--keyframes-separator: '_';
  *
  *    @include b(button) { ... }
  *    =>
- *    .za-button { ... }
+ *    .zs-button { ... }
  *
  *
  *    @include b(checkbox-group) { ... }
  *    =>
- *    .za-checkbox-group { ... }
+ *    .zs-checkbox-group { ... }
  */
 @mixin b($block) {
   $block: selector-append($--namespace, $--block-separator + $block);
@@ -78,14 +78,14 @@ $--keyframes-separator: '_';
  *      @include e(icon) { ... }
  *    }
  *    =>
- *    .za-button__icon { ... }
+ *    .zs-button__icon { ... }
  *
  *
  *    @include b(dialog) {
  *      @include e(header, footer) { ... }
  *    }
  *    =>
- *    .za-dialog__header, .za-dialog__footer { ... }
+ *    .zs-dialog__header, .zs-dialog__footer { ... }
  */
 @mixin e($elements...) {
   $elements: get-elements($elements);
@@ -106,7 +106,7 @@ $--keyframes-separator: '_';
  *      @include m(danger) { ... }
  *    }
  *    =>
- *    .za-button--danger { ... }
+ *    .zs-button--danger { ... }
  *
  *
  *    @include b(button) {
@@ -115,7 +115,7 @@ $--keyframes-separator: '_';
  *      }
  *    }
  *    =>
- *    .za-button--danger .za-button__content { ... }
+ *    .zs-button--danger .zs-button__content { ... }
  *
  *
  *    @include b(button) {
@@ -124,7 +124,7 @@ $--keyframes-separator: '_';
  *      }
  *    }
  *    =>
- *    ..za-button__content--danger { ... }
+ *    ..zs-button__content--danger { ... }
  */
 @mixin m($modifier) {
   $parent: if(contains-modifier(&), & + get-block(&), &);

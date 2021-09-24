@@ -3,7 +3,7 @@
 exports[`KeyboardPicker snapshot renders correctly 1`] = `
 <KeyboardPicker
   destroy={true}
-  prefixCls="za-keyboard-picker"
+  prefixCls="zs-keyboard-picker"
   type="number"
   visible={false}
 >
@@ -21,7 +21,7 @@ exports[`KeyboardPicker snapshot renders correctly 1`] = `
       <Popup
         destroy={true}
         mask={false}
-        prefixCls="za-popup"
+        prefixCls="zs-popup"
         visible={false}
       />
     </WarnIfDeprecatedComp>

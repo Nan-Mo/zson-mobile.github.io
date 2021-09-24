@@ -1,4 +1,4 @@
-@keyframes za-slideUp-enter {
+@keyframes zs-slideUp-enter {
   from {
     transform: translate3d(0, 100px, 0);
   }
@@ -8,11 +8,11 @@
   }
 }
 
-.za-slideUp-enter {
-  animation: za-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+.zs-slideUp-enter {
+  animation: zs-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
 }
 
-@keyframes za-slideUp-leave {
+@keyframes zs-slideUp-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -22,11 +22,11 @@
   }
 }
 
-.za-slideUp-leave {
-  animation: za-slideUp-leave both;
+.zs-slideUp-leave {
+  animation: zs-slideUp-leave both;
 }
 
-@keyframes za-slideDown-enter {
+@keyframes zs-slideDown-enter {
   from {
     transform: translate3d(0, -100px, 0);
   }
@@ -36,11 +36,11 @@
   }
 }
 
-.za-slideDown-enter {
-  animation: za-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+.zs-slideDown-enter {
+  animation: zs-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
 }
 
-@keyframes za-slideDown-leave {
+@keyframes zs-slideDown-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -50,11 +50,11 @@
   }
 }
 
-.za-slideDown-leave {
-  animation: za-slideDown-leave both;
+.zs-slideDown-leave {
+  animation: zs-slideDown-leave both;
 }
 
-@keyframes za-slideLeft-enter {
+@keyframes zs-slideLeft-enter {
   from {
     transform: translate3d(150px, 0, 0);
   }
@@ -64,11 +64,11 @@
   }
 }
 
-.za-slideLeft-enter {
-  animation: za-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
+.zs-slideLeft-enter {
+  animation: zs-slideLeft-enter both cubic-bezier(0.4, 0, 0, 1.5);
 }
 
-@keyframes za-slideLeft-leave {
+@keyframes zs-slideLeft-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -78,11 +78,11 @@
   }
 }
 
-.za-slideLeft-leave {
-  animation: za-slideLeft-leave both;
+.zs-slideLeft-leave {
+  animation: zs-slideLeft-leave both;
 }
 
-@keyframes za-slideRight-enter {
+@keyframes zs-slideRight-enter {
   from {
     transform: translate3d(-150px, 0, 0);
   }
@@ -92,11 +92,11 @@
   }
 }
 
-.za-slideRight-enter {
-  animation: za-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+.zs-slideRight-enter {
+  animation: zs-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
 }
 
-@keyframes za-slideRight-leave {
+@keyframes zs-slideRight-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -106,6 +106,6 @@
   }
 }
 
-.za-slideRight-leave {
-  animation: za-slideRight-leave both;
+.zs-slideRight-leave {
+  animation: zs-slideRight-leave both;
 }

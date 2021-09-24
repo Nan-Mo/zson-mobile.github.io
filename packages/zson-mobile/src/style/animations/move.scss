@@ -1,4 +1,4 @@
-@keyframes za-moveUp-enter {
+@keyframes zs-moveUp-enter {
   from {
     transform: translate3d(0, 100%, 0);
   }
@@ -8,11 +8,11 @@
   }
 }
 
-.za-moveUp-enter {
-  animation: za-moveUp-enter both ease-in;
+.zs-moveUp-enter {
+  animation: zs-moveUp-enter both ease-in;
 }
 
-@keyframes za-moveUp-leave {
+@keyframes zs-moveUp-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -22,11 +22,11 @@
   }
 }
 
-.za-moveUp-leave {
-  animation: za-moveUp-leave both ease-out;
+.zs-moveUp-leave {
+  animation: zs-moveUp-leave both ease-out;
 }
 
-@keyframes za-moveDown-enter {
+@keyframes zs-moveDown-enter {
   from {
     transform: translate3d(0, -100%, 0);
   }
@@ -36,11 +36,11 @@
   }
 }
 
-.za-moveDown-enter {
-  animation: za-moveDown-enter both ease-in;
+.zs-moveDown-enter {
+  animation: zs-moveDown-enter both ease-in;
 }
 
-@keyframes za-moveDown-leave {
+@keyframes zs-moveDown-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -50,11 +50,11 @@
   }
 }
 
-.za-moveDown-leave {
-  animation: za-moveDown-leave both ease-out;
+.zs-moveDown-leave {
+  animation: zs-moveDown-leave both ease-out;
 }
 
-@keyframes za-moveLeft-enter {
+@keyframes zs-moveLeft-enter {
   from {
     transform: translate3d(100%, 0, 0);
   }
@@ -64,11 +64,11 @@
   }
 }
 
-.za-moveLeft-enter {
-  animation: za-moveLeft-enter both ease-in;
+.zs-moveLeft-enter {
+  animation: zs-moveLeft-enter both ease-in;
 }
 
-@keyframes za-moveLeft-leave {
+@keyframes zs-moveLeft-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -78,11 +78,11 @@
   }
 }
 
-.za-moveLeft-leave {
-  animation: za-moveLeft-leave both ease-out;
+.zs-moveLeft-leave {
+  animation: zs-moveLeft-leave both ease-out;
 }
 
-@keyframes za-moveRight-enter {
+@keyframes zs-moveRight-enter {
   from {
     transform: translate3d(-100%, 0, 0);
   }
@@ -92,11 +92,11 @@
   }
 }
 
-.za-moveRight-enter {
-  animation: za-moveRight-enter both ease-in;
+.zs-moveRight-enter {
+  animation: zs-moveRight-enter both ease-in;
 }
 
-@keyframes za-moveRight-leave {
+@keyframes zs-moveRight-leave {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -106,6 +106,6 @@
   }
 }
 
-.za-moveRight-leave {
-  animation: za-moveRight-leave both ease-out;
+.zs-moveRight-leave {
+  animation: zs-moveRight-leave both ease-out;
 }

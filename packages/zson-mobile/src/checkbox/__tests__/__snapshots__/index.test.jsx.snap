@@ -2,23 +2,23 @@
 
 exports[`Checkbox defaultChecked 1`] = `
 <span
-  class="za-checkbox za-checkbox--checked"
+  class="zs-checkbox zs-checkbox--checked"
 >
   <span
-    class="za-checkbox__widget"
+    class="zs-checkbox__widget"
   >
     <span
-      class="za-checkbox__inner"
+      class="zs-checkbox__inner"
     />
   </span>
   <span
-    class="za-checkbox__text"
+    class="zs-checkbox__text"
   >
     foo
   </span>
   <input
     checked=""
-    class="za-checkbox__input"
+    class="zs-checkbox__input"
     type="checkbox"
   />
 </span>
@@ -26,22 +26,22 @@ exports[`Checkbox defaultChecked 1`] = `
 
 exports[`Checkbox disabled 1`] = `
 <span
-  class="za-checkbox za-checkbox--disabled"
+  class="zs-checkbox zs-checkbox--disabled"
 >
   <span
-    class="za-checkbox__widget"
+    class="zs-checkbox__widget"
   >
     <span
-      class="za-checkbox__inner"
+      class="zs-checkbox__inner"
     />
   </span>
   <span
-    class="za-checkbox__text"
+    class="zs-checkbox__text"
   >
     foo
   </span>
   <input
-    class="za-checkbox__input"
+    class="zs-checkbox__input"
     disabled=""
     type="checkbox"
   />
@@ -50,23 +50,23 @@ exports[`Checkbox disabled 1`] = `
 
 exports[`Checkbox renders correctly 1`] = `
 <span
-  class="za-checkbox za-checkbox--checked"
+  class="zs-checkbox zs-checkbox--checked"
 >
   <span
-    class="za-checkbox__widget"
+    class="zs-checkbox__widget"
   >
     <span
-      class="za-checkbox__inner"
+      class="zs-checkbox__inner"
     />
   </span>
   <span
-    class="za-checkbox__text"
+    class="zs-checkbox__text"
   >
     foo
   </span>
   <input
     checked=""
-    class="za-checkbox__input"
+    class="zs-checkbox__input"
     type="checkbox"
   />
 </span>
@@ -74,71 +74,71 @@ exports[`Checkbox renders correctly 1`] = `
 
 exports[`Checkbox.Group render defaultValue correctly 1`] = `
 <div
-  class="za-checkbox-group za-checkbox-group--xs za-checkbox-group--radius"
+  class="zs-checkbox-group zs-checkbox-group--xs zs-checkbox-group--radius"
 >
   <div
-    class="za-checkbox-group__inner"
+    class="zs-checkbox-group__inner"
   >
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项一
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="0"
       />
     </span>
     <span
-      class="za-checkbox za-checkbox--checked"
+      class="zs-checkbox zs-checkbox--checked"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项二
       </span>
       <input
         checked=""
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="1"
       />
     </span>
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项三
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="2"
       />
@@ -149,71 +149,71 @@ exports[`Checkbox.Group render defaultValue correctly 1`] = `
 
 exports[`Checkbox.Group render value correctly 1`] = `
 <div
-  class="za-checkbox-group za-checkbox-group--xs za-checkbox-group--radius"
+  class="zs-checkbox-group zs-checkbox-group--xs zs-checkbox-group--radius"
 >
   <div
-    class="za-checkbox-group__inner"
+    class="zs-checkbox-group__inner"
   >
     <span
-      class="za-checkbox za-checkbox--checked"
+      class="zs-checkbox zs-checkbox--checked"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项一
       </span>
       <input
         checked=""
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="0"
       />
     </span>
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项二
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="1"
       />
     </span>
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项三
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="2"
       />
@@ -224,71 +224,71 @@ exports[`Checkbox.Group render value correctly 1`] = `
 
 exports[`Checkbox.Group renders correctly 1`] = `
 <div
-  class="za-checkbox-group za-checkbox-group--xs za-checkbox-group--radius"
+  class="zs-checkbox-group zs-checkbox-group--xs zs-checkbox-group--radius"
 >
   <div
-    class="za-checkbox-group__inner"
+    class="zs-checkbox-group__inner"
   >
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项一
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="0"
       />
     </span>
     <span
-      class="za-checkbox za-checkbox--checked"
+      class="zs-checkbox zs-checkbox--checked"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项二
       </span>
       <input
         checked=""
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="1"
       />
     </span>
     <span
-      class="za-checkbox"
+      class="zs-checkbox"
     >
       <span
-        class="za-checkbox__widget"
+        class="zs-checkbox__widget"
       >
         <span
-          class="za-checkbox__inner"
+          class="zs-checkbox__inner"
         />
       </span>
       <span
-        class="za-checkbox__text"
+        class="zs-checkbox__text"
       >
         选项三
       </span>
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="2"
       />
@@ -299,40 +299,40 @@ exports[`Checkbox.Group renders correctly 1`] = `
 
 exports[`Checkbox.Group type is button 1`] = `
 <div
-  class="za-checkbox-group za-checkbox-group--button za-checkbox-group--xs za-checkbox-group--radius"
+  class="zs-checkbox-group zs-checkbox-group--button zs-checkbox-group--xs zs-checkbox-group--radius"
 >
   <div
-    class="za-checkbox-group__inner"
+    class="zs-checkbox-group__inner"
   >
     <button
-      class="za-checkbox"
+      class="zs-checkbox"
       type="button"
     >
       选项一
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="0"
       />
     </button>
     <button
-      class="za-checkbox"
+      class="zs-checkbox"
       type="button"
     >
       选项二
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="1"
       />
     </button>
     <button
-      class="za-checkbox"
+      class="zs-checkbox"
       type="button"
     >
       选项三
       <input
-        class="za-checkbox__input"
+        class="zs-checkbox__input"
         type="checkbox"
         value="2"
       />
@@ -343,43 +343,43 @@ exports[`Checkbox.Group type is button 1`] = `
 
 exports[`Checkbox.Group type is cell 1`] = `
 <div
-  class="za-checkbox-group za-checkbox-group--cell za-checkbox-group--xs za-checkbox-group--radius"
+  class="zs-checkbox-group zs-checkbox-group--cell zs-checkbox-group--xs zs-checkbox-group--radius"
 >
   <div
-    class="za-checkbox-group__inner"
+    class="zs-checkbox-group__inner"
   >
     <div
-      class="za-cell za-cell--link"
+      class="zs-cell zs-cell--link"
     >
       <div
-        class="za-cell__inner"
+        class="zs-cell__inner"
       >
         <div
-          class="za-cell__header"
+          class="zs-cell__header"
         />
         <div
-          class="za-cell__body"
+          class="zs-cell__body"
         >
           <div
-            class="za-cell__content"
+            class="zs-cell__content"
           >
             <span
-              class="za-checkbox"
+              class="zs-checkbox"
             >
               <span
-                class="za-checkbox__widget"
+                class="zs-checkbox__widget"
               >
                 <span
-                  class="za-checkbox__inner"
+                  class="zs-checkbox__inner"
                 />
               </span>
               <span
-                class="za-checkbox__text"
+                class="zs-checkbox__text"
               >
                 选项一
               </span>
               <input
-                class="za-checkbox__input"
+                class="zs-checkbox__input"
                 type="checkbox"
                 value="0"
               />
@@ -387,42 +387,42 @@ exports[`Checkbox.Group type is cell 1`] = `
           </div>
         </div>
         <div
-          class="za-cell__footer"
+          class="zs-cell__footer"
         />
       </div>
     </div>
     <div
-      class="za-cell za-cell--link"
+      class="zs-cell zs-cell--link"
     >
       <div
-        class="za-cell__inner"
+        class="zs-cell__inner"
       >
         <div
-          class="za-cell__header"
+          class="zs-cell__header"
         />
         <div
-          class="za-cell__body"
+          class="zs-cell__body"
         >
           <div
-            class="za-cell__content"
+            class="zs-cell__content"
           >
             <span
-              class="za-checkbox"
+              class="zs-checkbox"
             >
               <span
-                class="za-checkbox__widget"
+                class="zs-checkbox__widget"
               >
                 <span
-                  class="za-checkbox__inner"
+                  class="zs-checkbox__inner"
                 />
               </span>
               <span
-                class="za-checkbox__text"
+                class="zs-checkbox__text"
               >
                 选项二
               </span>
               <input
-                class="za-checkbox__input"
+                class="zs-checkbox__input"
                 type="checkbox"
                 value="1"
               />
@@ -430,42 +430,42 @@ exports[`Checkbox.Group type is cell 1`] = `
           </div>
         </div>
         <div
-          class="za-cell__footer"
+          class="zs-cell__footer"
         />
       </div>
     </div>
     <div
-      class="za-cell za-cell--link"
+      class="zs-cell zs-cell--link"
     >
       <div
-        class="za-cell__inner"
+        class="zs-cell__inner"
       >
         <div
-          class="za-cell__header"
+          class="zs-cell__header"
         />
         <div
-          class="za-cell__body"
+          class="zs-cell__body"
         >
           <div
-            class="za-cell__content"
+            class="zs-cell__content"
           >
             <span
-              class="za-checkbox"
+              class="zs-checkbox"
             >
               <span
-                class="za-checkbox__widget"
+                class="zs-checkbox__widget"
               >
                 <span
-                  class="za-checkbox__inner"
+                  class="zs-checkbox__inner"
                 />
               </span>
               <span
-                class="za-checkbox__text"
+                class="zs-checkbox__text"
               >
                 选项三
               </span>
               <input
-                class="za-checkbox__input"
+                class="zs-checkbox__input"
                 type="checkbox"
                 value="2"
               />
@@ -473,7 +473,7 @@ exports[`Checkbox.Group type is cell 1`] = `
           </div>
         </div>
         <div
-          class="za-cell__footer"
+          class="zs-cell__footer"
         />
       </div>
     </div>

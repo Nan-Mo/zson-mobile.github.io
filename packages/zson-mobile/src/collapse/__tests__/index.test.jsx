@@ -213,7 +213,7 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    expect(wrapper.find('.za-collapse-item--active').length).toBe(1);
+    expect(wrapper.find('.zs-collapse-item--active').length).toBe(1);
   });
 
   it('click collapse item correctly', () => {
@@ -231,7 +231,7 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
     expect(onChange).toBeCalled();
   });
 
@@ -251,7 +251,7 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
     expect(props.onChange).not.toBeCalled();
   });
 
@@ -271,9 +271,9 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
     setTimeout(() => {
-      expect(wrapper.find('.za-collapse-item--active').length).toBe(1);
+      expect(wrapper.find('.zs-collapse-item--active').length).toBe(1);
       done();
     }, 0);
   });
@@ -294,9 +294,9 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
     setTimeout(() => {
-      expect(wrapper.find('.za-collapse-item--active').length).toBe(1);
+      expect(wrapper.find('.zs-collapse-item--active').length).toBe(1);
       done();
     }, 0);
   });
@@ -318,9 +318,9 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
     setTimeout(() => {
-      expect(wrapper.find('.za-collapse-item--active').length).toBe(0);
+      expect(wrapper.find('.zs-collapse-item--active').length).toBe(0);
       done();
     }, 0);
   });
@@ -343,8 +343,8 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
-    expect(wrapper.find('.za-collapse-item--active').length).toBe(1);
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
+    expect(wrapper.find('.zs-collapse-item--active').length).toBe(1);
   });
 
   it('collapse items toggle correctly with multiple mode', () => {
@@ -365,8 +365,8 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').at(0).simulate('click');
-    expect(wrapper.find('.za-collapse-item--active').length).toBe(1);
+    wrapper.find('.zs-collapse-item__title').at(0).simulate('click');
+    expect(wrapper.find('.zs-collapse-item--active').length).toBe(1);
   });
 
   it('click should not trigger callback without key', () => {
@@ -379,7 +379,7 @@ describe('Collapse', () => {
         </Collapse.Item>
       </Collapse>,
     );
-    wrapper.find('.za-collapse-item__title').simulate('click');
+    wrapper.find('.zs-collapse-item__title').simulate('click');
     expect(props.onChange).not.toBeCalled();
   });
 });

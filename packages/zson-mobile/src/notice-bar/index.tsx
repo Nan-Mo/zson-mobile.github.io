@@ -4,7 +4,7 @@ import type PropsType from './PropsType';
 import Message from '../message';
 import { addKeyframe, removeKeyframe, existKeyframe } from '../utils/keyframes';
 
-const NOTICEBAR_KEYFRAME_NAME = 'za-notice-bar-scrolling';
+const NOTICEBAR_KEYFRAME_NAME = 'zs-notice-bar-scrolling';
 
 export interface NoticeBarProps extends PropsType {
   prefixCls?: string;

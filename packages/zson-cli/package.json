@@ -84,6 +84,7 @@
     "webpackbar": "^5.0.0-3"
   },
   "tags": [
+    "zson",
     "zson-mobile",
     "zson-cli"
   ],

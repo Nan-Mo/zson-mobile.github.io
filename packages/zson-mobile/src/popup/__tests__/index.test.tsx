@@ -132,7 +132,7 @@ describe('Portal', () => {
       expect(eventsOffSpy).toBeCalledWith(popupRef, e, expect.any(Function));
     });
     expect(clearTimeoutSpy).toBeCalledTimes(1);
-    expect(mountContainer.querySelector('.za-popup-container')).toBeFalsy();
+    expect(mountContainer.querySelector('.zs-popup-container')).toBeFalsy();
   });
 
   it('should not handle animation if prevProps visible equal with current props visible', () => {
@@ -148,9 +148,9 @@ describe('Portal', () => {
     const appendChildSpy = jest.spyOn(document.body, 'appendChild');
     mount(<Portal mountContainer={document.body} />);
     expect(createElementSpy).toBeCalledWith('div');
-    const container = document.body.querySelector('.za-popup-container');
+    const container = document.body.querySelector('.zs-popup-container');
     expect(container).toBeTruthy();
-    expect(container!.className).toEqual('za-popup-container');
+    expect(container!.className).toEqual('zs-popup-container');
     expect(appendChildSpy).toBeCalledTimes(1);
   });
 
@@ -178,7 +178,7 @@ describe('Portal', () => {
     );
     const popup = wrapper.find('[role="dialog"]');
     expect(popup.exists()).toBeTruthy();
-    expect(popup.prop('className')).toEqual('za-popup za-popup--bottom');
+    expect(popup.prop('className')).toEqual('zs-popup zs-popup--bottom');
     expect(popup.find('#test').text()).toEqual('test');
   });
 
@@ -187,7 +187,7 @@ describe('Portal', () => {
     expect(wrapper.find(Mask).exists()).toBeTruthy();
     expect(wrapper.find(Mask).props()).toEqual(
       expect.objectContaining({
-        className: 'za-fade-enter',
+        className: 'zs-fade-enter',
         style: {
           WebkitAnimationDuration: `200ms`,
           animationDuration: `200ms`,
@@ -203,7 +203,7 @@ describe('Portal', () => {
     expect(wrapper.find(Mask).exists()).toBeTruthy();
     expect(wrapper.find(Mask).props()).toEqual(
       expect.objectContaining({
-        className: 'za-fade-leave',
+        className: 'zs-fade-leave',
         style: {
           WebkitAnimationDuration: `200ms`,
           animationDuration: `200ms`,
@@ -217,7 +217,7 @@ describe('Portal', () => {
   it('should render portal inside the popup container html div element (react version >= 16)', () => {
     const createPortalSpy = jest.spyOn(ReactDOM, 'createPortal');
     const wrapper = mount(<Portal mask={false} mountContainer={document.body} />);
-    const popupContainer = document.body.querySelector('.za-popup-container');
+    const popupContainer = document.body.querySelector('.zs-popup-container');
     expect(popupContainer!.querySelector('[role="dialog"]')).toBeTruthy();
     expect(createPortalSpy).toBeCalled();
     const portal = wrapper.find(Trigger).childAt(0);
@@ -256,7 +256,7 @@ describe('Portal', () => {
   it('should handle mask click', () => {
     const mOnMaskClick = jest.fn();
     const wrapper = mount(<Portal onMaskClick={mOnMaskClick} />);
-    const maskWrapper = wrapper.find('.za-popup__wrapper');
+    const maskWrapper = wrapper.find('.zs-popup__wrapper');
     const mEvent = { stopPropagation: jest.fn() };
     maskWrapper.simulate('click', mEvent);
     expect(mEvent.stopPropagation).toBeCalledTimes(1);
@@ -279,7 +279,7 @@ describe('Portal', () => {
     });
     const mOnMaskClick = jest.fn();
     const wrapper = mount(<Portal onMaskClick={mOnMaskClick} />);
-    const maskWrapper = wrapper.find('.za-popup__wrapper');
+    const maskWrapper = wrapper.find('.zs-popup__wrapper');
     const mEvent = { stopPropagation: jest.fn(), target: popupRef };
     maskWrapper.simulate('click', mEvent);
     expect(mEvent.stopPropagation).toBeCalledTimes(1);
@@ -312,7 +312,7 @@ describe('Portal', () => {
     const mEvent = { stopPropagation: jest.fn(), target: popupRef } as unknown as TransitionEvent;
     handlerRef(mEvent);
     expect(wrapper.instance()['_container'].className).toEqual(
-      'za-popup-container za-popup--hidden',
+      'zs-popup-container zs-popup--hidden',
     );
     expect(mEvent.stopPropagation).toBeCalledTimes(1);
     expect(mHandlePortalUnmount).toBeCalledTimes(1);

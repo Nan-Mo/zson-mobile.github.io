@@ -13,7 +13,7 @@ describe('Picker', () => {
   it('Picker render visible', () => {
     const wrapper = mount(
       <Picker
-        prefixCls="za-picker"
+        prefixCls="zs-picker"
         dataSource={[
           { value: '1', label: '选项一' },
           { value: '2', label: '选项二' },
@@ -83,7 +83,7 @@ describe('Picker', () => {
       />,
     );
 
-    wrapper.find('.za-picker__submit').simulate('click');
+    wrapper.find('.zs-picker__submit').simulate('click');
     jest.runAllTimers();
     expect(onOkFn).toBeCalled();
   });
@@ -117,7 +117,7 @@ describe('Picker', () => {
       />,
     );
 
-    wrapper.find('.za-picker__cancel').simulate('click');
+    wrapper.find('.zs-picker__cancel').simulate('click');
     expect(onCancelFn).toBeCalled();
   });
 
@@ -152,7 +152,7 @@ describe('Picker', () => {
   //     />, { attachTo: window.domNode }
   //   );
 
-  //   wrapper.find('.za-mask').simulate('click');
+  //   wrapper.find('.zs-mask').simulate('click');
   //   expect(onMaskClick).toBeCalled();
   // });
 
@@ -264,8 +264,8 @@ describe('Picker', () => {
   //       />
   //   );
 
-  //   wrapper.find('.za-picker-stack-column').at(0).simulate('click');
-  //   wrapper.find('.za-picker-stack-item').at(0).simulate('click');
+  //   wrapper.find('.zs-picker-stack-column').at(0).simulate('click');
+  //   wrapper.find('.zs-picker-stack-item').at(0).simulate('click');
   //   expect(onChangeFn).toBeCalled();
   // });
 
@@ -275,8 +275,8 @@ describe('Picker', () => {
   //       dataSource={District}
   //       />
   //   );
-  //   wrapper.find('.za-picker-input').simulate('click');
-  //   wrapper.find('.za-picker-cancel').simulate('click');
-  //   wrapper.find('.za-mask').simulate('click');
+  //   wrapper.find('.zs-picker-input').simulate('click');
+  //   wrapper.find('.zs-picker-cancel').simulate('click');
+  //   wrapper.find('.zs-mask').simulate('click');
   // });
 });

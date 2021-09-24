@@ -14,7 +14,7 @@ exports[`Picker Picker render visible 1`] = `
       },
     ]
   }
-  prefixCls="za-picker"
+  prefixCls="zs-picker"
   visible={true}
 >
   <ConfigReceiver
@@ -31,7 +31,7 @@ exports[`Picker Picker render visible 1`] = `
       ]
     }
     forwardedRef={null}
-    prefixCls="za-picker"
+    prefixCls="zs-picker"
     visible={true}
   >
     <Picker
@@ -59,7 +59,7 @@ exports[`Picker Picker render visible 1`] = `
       }
       localeCode="zh-CN"
       maskClosable={true}
-      prefixCls="za-picker"
+      prefixCls="zs-picker"
       valueMember="value"
       visible={true}
     >
@@ -77,7 +77,7 @@ exports[`Picker Picker render visible 1`] = `
           <Popup
             destroy={false}
             onMaskClick={[Function]}
-            prefixCls="za-popup"
+            prefixCls="zs-popup"
             visible={true}
           >
             <Portal
@@ -89,7 +89,7 @@ exports[`Picker Picker render visible 1`] = `
               mask={true}
               maskType="normal"
               onMaskClick={[Function]}
-              prefixCls="za-popup"
+              prefixCls="zs-popup"
               visible={true}
             >
               <Trigger
@@ -100,66 +100,66 @@ exports[`Picker Picker render visible 1`] = `
                 <Portal
                   containerInfo={
                     <div
-                      class="za-popup-container"
+                      class="zs-popup-container"
                     >
                       <div
-                        class="za-mask za-fade-enter za-mask--normal"
+                        class="zs-mask zs-fade-enter zs-mask--normal"
                         style="animation-duration: 200ms;"
                       />
                       <div
-                        class="za-popup__wrapper"
+                        class="zs-popup__wrapper"
                         data-width="0"
                         role="dialog"
                       >
                         <div
-                          class="za-popup za-popup--bottom za-popup--show"
+                          class="zs-popup zs-popup--bottom zs-popup--show"
                           data-width="0"
                           role="document"
                           style="transition-duration: 200ms; transition-property: transform;"
                         >
                           <div
-                            class="za-picker"
+                            class="zs-picker"
                           >
                             <div
-                              class="za-picker__header"
+                              class="zs-picker__header"
                             >
                               <div
-                                class="za-picker__cancel"
+                                class="zs-picker__cancel"
                               >
                                 取消
                               </div>
                               <div
-                                class="za-picker__title"
+                                class="zs-picker__title"
                               >
                                 请选择
                               </div>
                               <div
-                                class="za-picker__submit"
+                                class="zs-picker__submit"
                               >
                                 确定
                               </div>
                             </div>
                             <div
-                              class="za-picker-view"
+                              class="zs-picker-view"
                             >
                               <div
-                                class="za-picker-view__content"
+                                class="zs-picker-view__content"
                               >
                                 <div
-                                  class="za-wheel"
+                                  class="zs-wheel"
                                 >
                                   <div
-                                    class="za-wheel__content"
+                                    class="zs-wheel__content"
                                     style="transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-property: transform; transition-duration: 800ms; transform: translateX(0px) translateY(NaNpx);"
                                   >
                                     <div
-                                      class="za-wheel__item za-wheel__item--selected"
+                                      class="zs-wheel__item zs-wheel__item--selected"
                                       style="transform: rotateX(NaNdeg); transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-duration: 800ms; pointer-events: none;"
                                     >
                                       选项一
                                     </div>
                                     <div
-                                      class="za-wheel__item"
+                                      class="zs-wheel__item"
                                       style="transform: rotateX(NaNdeg); transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-duration: 800ms; pointer-events: none;"
                                     >
                                       选项二
@@ -168,10 +168,10 @@ exports[`Picker Picker render visible 1`] = `
                                 </div>
                               </div>
                               <div
-                                class="za-picker-view__mask za-picker-view__mask--top"
+                                class="zs-picker-view__mask zs-picker-view__mask--top"
                               />
                               <div
-                                class="za-picker-view__mask za-picker-view__mask--bottom"
+                                class="zs-picker-view__mask zs-picker-view__mask--bottom"
                               />
                             </div>
                           </div>
@@ -181,8 +181,8 @@ exports[`Picker Picker render visible 1`] = `
                   }
                 >
                   <Mask
-                    className="za-fade-enter"
-                    prefixCls="za-mask"
+                    className="zs-fade-enter"
+                    prefixCls="zs-mask"
                     style={
                       Object {
                         "WebkitAnimationDuration": "200ms",
@@ -193,7 +193,7 @@ exports[`Picker Picker render visible 1`] = `
                     visible={true}
                   >
                     <div
-                      className="za-mask za-fade-enter za-mask--normal"
+                      className="zs-mask zs-fade-enter zs-mask--normal"
                       style={
                         Object {
                           "WebkitAnimationDuration": "200ms",
@@ -203,14 +203,14 @@ exports[`Picker Picker render visible 1`] = `
                     />
                   </Mask>
                   <div
-                    className="za-popup__wrapper"
+                    className="zs-popup__wrapper"
                     data-width={0}
                     onClick={[Function]}
                     role="dialog"
                     style={Object {}}
                   >
                     <div
-                      className="za-popup za-popup--bottom"
+                      className="zs-popup zs-popup--bottom"
                       data-width={0}
                       role="document"
                       style={
@@ -223,25 +223,25 @@ exports[`Picker Picker render visible 1`] = `
                       }
                     >
                       <div
-                        className="za-picker"
+                        className="zs-picker"
                         onClick={[Function]}
                       >
                         <div
-                          className="za-picker__header"
+                          className="zs-picker__header"
                         >
                           <div
-                            className="za-picker__cancel"
+                            className="zs-picker__cancel"
                             onClick={[Function]}
                           >
                             取消
                           </div>
                           <div
-                            className="za-picker__title"
+                            className="zs-picker__title"
                           >
                             请选择
                           </div>
                           <div
-                            className="za-picker__submit"
+                            className="zs-picker__submit"
                             onClick={[Function]}
                           >
                             确定
@@ -265,7 +265,7 @@ exports[`Picker Picker render visible 1`] = `
                           itemRender={[Function]}
                           localeCode="zh-CN"
                           onChange={[Function]}
-                          prefixCls="za-picker-view"
+                          prefixCls="zs-picker-view"
                           stopScroll={false}
                           value={
                             Array [
@@ -275,10 +275,10 @@ exports[`Picker Picker render visible 1`] = `
                           valueMember="value"
                         >
                           <div
-                            className="za-picker-view"
+                            className="zs-picker-view"
                           >
                             <div
-                              className="za-picker-view__content"
+                              className="zs-picker-view__content"
                             >
                               <Wheel
                                 dataSource={
@@ -297,25 +297,25 @@ exports[`Picker Picker render visible 1`] = `
                                 itemRender={[Function]}
                                 key="0"
                                 onChange={[Function]}
-                                prefixCls="za-wheel"
+                                prefixCls="zs-wheel"
                                 stopScroll={false}
                                 value="1"
                                 valueMember="value"
                               >
                                 <div
-                                  className="za-wheel"
+                                  className="zs-wheel"
                                 >
                                   <div
-                                    className="za-wheel__content"
+                                    className="zs-wheel__content"
                                   >
                                     <div
-                                      className="za-wheel__item za-wheel__item--selected"
+                                      className="zs-wheel__item zs-wheel__item--selected"
                                       key="0"
                                     >
                                       选项一
                                     </div>
                                     <div
-                                      className="za-wheel__item"
+                                      className="zs-wheel__item"
                                       key="1"
                                     >
                                       选项二
@@ -325,10 +325,10 @@ exports[`Picker Picker render visible 1`] = `
                               </Wheel>
                             </div>
                             <div
-                              className="za-picker-view__mask za-picker-view__mask--top"
+                              className="zs-picker-view__mask zs-picker-view__mask--top"
                             />
                             <div
-                              className="za-picker-view__mask za-picker-view__mask--bottom"
+                              className="zs-picker-view__mask zs-picker-view__mask--bottom"
                             />
                           </div>
                         </PickerView>
@@ -465,7 +465,7 @@ exports[`Picker render custom label 1`] = `
       }
       localeCode="zh-CN"
       maskClosable={true}
-      prefixCls="za-picker"
+      prefixCls="zs-picker"
       valueMember="code"
     >
       <ForwardRef(ForwardedRefComp)
@@ -480,7 +480,7 @@ exports[`Picker render custom label 1`] = `
           <Popup
             destroy={false}
             onMaskClick={[Function]}
-            prefixCls="za-popup"
+            prefixCls="zs-popup"
             visible={false}
           />
         </WarnIfDeprecatedComp>

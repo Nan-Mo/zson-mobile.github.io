@@ -2,11 +2,11 @@
 
 exports[`Switch snapshot defaultChecked 1`] = `
 <span
-  class="za-switch"
+  class="zs-switch"
 >
   <input
     checked=""
-    class="za-switch__input"
+    class="zs-switch__input"
     type="checkbox"
     value="on"
   />
@@ -15,10 +15,10 @@ exports[`Switch snapshot defaultChecked 1`] = `
 
 exports[`Switch snapshot renders correctly 1`] = `
 <span
-  class="za-switch"
+  class="zs-switch"
 >
   <input
-    class="za-switch__input"
+    class="zs-switch__input"
     type="checkbox"
     value="off"
   />

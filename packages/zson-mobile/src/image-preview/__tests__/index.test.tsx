@@ -133,7 +133,7 @@ describe('ImagePreview', () => {
     });
     jest.useFakeTimers();
     const wrapper = mount(<ImagePreview images={originImages} visible />);
-    wrapper.find('.za-image-preview__origin__button').simulate('click');
+    wrapper.find('.zs-image-preview__origin__button').simulate('click');
     expect((wrapper.state('images') as Images)[0]).toEqual({
       url: 'https://cdn-health.zhongan.com/zarm/imagePreview/compress_1.png',
       originUrl: 'https://static.zhongan.com/website/health/zarm/images/banners/1.png',
@@ -157,7 +157,7 @@ describe('ImagePreview', () => {
 
   it('should render show origin url button if origin url is not existed', () => {
     const wrapper = mount(<ImagePreview images={images} visible />);
-    const buttonWrapper = wrapper.find('.za-image-preview__origin__button');
+    const buttonWrapper = wrapper.find('.zs-image-preview__origin__button');
     expect(buttonWrapper.exists()).toBeFalsy();
   });
 
@@ -165,7 +165,7 @@ describe('ImagePreview', () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
     expect(wrapper.instance()['moving']).toBeUndefined();
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart').simulate('touchmove').simulate('click');
     expect(wrapper.instance()['moving']).toBeTruthy();
     expect(mOnClose).not.toBeCalled();
@@ -175,7 +175,7 @@ describe('ImagePreview', () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
     expect(wrapper.instance()['moving']).toBeUndefined();
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('mousedown').simulate('mousemove').simulate('click');
     expect(wrapper.instance()['moving']).toBeTruthy();
     expect(mOnClose).not.toBeCalled();
@@ -184,7 +184,7 @@ describe('ImagePreview', () => {
   it("should call onClose handler if user's touch is NOT moving", () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('click');
     expect(mOnClose).toBeCalled();
   });
@@ -192,7 +192,7 @@ describe('ImagePreview', () => {
   it('should not call onClose handler when touch end and the duration between touchstart and touchend greater than 300ms', async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart').simulate('touchmove');
     await sleep(500);
     contentWrapper.simulate('touchend');
@@ -202,7 +202,7 @@ describe('ImagePreview', () => {
   it('should call onClose handler when touch end and the duration between touchstart and touchend less than 300ms', async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart');
     await sleep(200);
     jest.useFakeTimers();
@@ -215,7 +215,7 @@ describe('ImagePreview', () => {
   it("should clear setTimeout schedule if user's touch is moving and previous scheduler exists", async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart');
     await sleep(200);
     jest.useFakeTimers();
@@ -230,7 +230,7 @@ describe('ImagePreview', () => {
   it('should not call onClose handler when touch end and the duration between touchstart and touchcancel greater than 300ms', async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart').simulate('touchmove');
     await sleep(500);
     contentWrapper.simulate('touchcancel');
@@ -240,7 +240,7 @@ describe('ImagePreview', () => {
   it('should call onClose handler when touch end and the duration between touchstart and touchcancel less than 300ms', async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} onClose={mOnClose} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart');
     await sleep(200);
     jest.useFakeTimers();
@@ -253,7 +253,7 @@ describe('ImagePreview', () => {
   it("should clear setTimeout schedule if user's touch is moving and previous scheduler exists", async () => {
     const mOnClose = jest.fn();
     const wrapper = mount(<ImagePreview visible images={images} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('touchstart');
     await sleep(200);
     jest.useFakeTimers();
@@ -267,7 +267,7 @@ describe('ImagePreview', () => {
 
   it('should set moving to false and touchStartTime to 0 when mouse up', () => {
     const wrapper = mount(<ImagePreview visible images={images} />);
-    const contentWrapper = wrapper.find('.za-image-preview__content');
+    const contentWrapper = wrapper.find('.zs-image-preview__content');
     contentWrapper.simulate('mousedown').simulate('mousemove');
     expect(wrapper.instance()['moving']).toBeTruthy();
     expect(wrapper.instance()['touchStartTime']).toBeGreaterThan(0);
@@ -280,19 +280,19 @@ describe('ImagePreview', () => {
 
   it('should render pagination', () => {
     const wrapper = mount(<ImagePreview visible images={images} />);
-    const paginationWrapper = wrapper.find('.za-image-preview__index');
+    const paginationWrapper = wrapper.find('.zs-image-preview__index');
     expect(paginationWrapper.exists()).toBeTruthy();
     expect(paginationWrapper.text()).toEqual('1 / 3');
   });
 
   it('should not render pagination', () => {
     const wrapper = mount(<ImagePreview visible images={images} showPagination={false} />);
-    expect(wrapper.find('.za-image-preview__index').exists()).toBeFalsy();
+    expect(wrapper.find('.zs-image-preview__index').exists()).toBeFalsy();
   });
 
   it('should render images', () => {
     const wrapper = mount(<ImagePreview visible images={images} />);
-    const itemWrapper = wrapper.find('.za-image-preview__item');
+    const itemWrapper = wrapper.find('.zs-image-preview__item');
     expect(itemWrapper).toHaveLength(3);
     const srcArr = itemWrapper.map((w) => w.find('img')).map((v) => v.prop('src'));
     expect(srcArr).toEqual(images);

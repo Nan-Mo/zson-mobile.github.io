@@ -3,78 +3,78 @@
 exports[`Carousel base render correctly 1`] = `
 <div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     >
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         0
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         1
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         2
       </div>
     </div>
     <div
-      class="za-carousel__pagination"
+      class="zs-carousel__pagination"
     >
       <div
-        class="za-carousel__pagination__item za-carousel__pagination__item--active"
+        class="zs-carousel__pagination__item zs-carousel__pagination__item--active"
       />
       <div
-        class="za-carousel__pagination__item"
+        class="zs-carousel__pagination__item"
       />
       <div
-        class="za-carousel__pagination__item"
+        class="zs-carousel__pagination__item"
       />
     </div>
   </div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     />
     <div
-      class="za-carousel__pagination"
+      class="zs-carousel__pagination"
     />
   </div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     />
     <div
-      class="za-carousel__pagination"
+      class="zs-carousel__pagination"
     />
   </div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     >
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         0
       </div>
     </div>
     <div
-      class="za-carousel__pagination"
+      class="zs-carousel__pagination"
     >
       <div
-        class="za-carousel__pagination__item za-carousel__pagination__item--active"
+        class="zs-carousel__pagination__item zs-carousel__pagination__item--active"
       />
     </div>
   </div>
@@ -83,43 +83,43 @@ exports[`Carousel base render correctly 1`] = `
 
 exports[`Carousel className render correctly 1`] = `
 <div
-  class="za-carousel za-wrapper-test za-carousel--horizontal"
+  class="zs-carousel zs-wrapper-test zs-carousel--horizontal"
 >
   <div
-    class="za-carousel__items"
+    class="zs-carousel__items"
   />
   <div
-    class="za-carousel__pagination"
+    class="zs-carousel__pagination"
   />
 </div>
 `;
 
 exports[`Carousel componentWillReceiveProps 1`] = `
 <div
-  class="za-carousel za-carousel--horizontal"
+  class="zs-carousel zs-carousel--horizontal"
 >
   <div
-    class="za-carousel__items"
+    class="zs-carousel__items"
   >
     <div
-      class="za-carousel__item"
+      class="zs-carousel__item"
     >
       1
     </div>
     <div
-      class="za-carousel__item"
+      class="zs-carousel__item"
     >
       2
     </div>
   </div>
   <div
-    class="za-carousel__pagination"
+    class="zs-carousel__pagination"
   >
     <div
-      class="za-carousel__pagination__item"
+      class="zs-carousel__pagination__item"
     />
     <div
-      class="za-carousel__pagination__item za-carousel__pagination__item--active"
+      class="zs-carousel__pagination__item zs-carousel__pagination__item--active"
     />
   </div>
 </div>
@@ -127,39 +127,39 @@ exports[`Carousel componentWillReceiveProps 1`] = `
 
 exports[`Carousel height render correctly 1`] = `
 <div
-  class="za-carousel za-carousel--vertical"
+  class="zs-carousel zs-carousel--vertical"
 >
   <div
-    class="za-carousel__items"
+    class="zs-carousel__items"
     style="height:150px"
   >
     <div
-      class="za-carousel__item"
+      class="zs-carousel__item"
     >
       0
     </div>
     <div
-      class="za-carousel__item"
+      class="zs-carousel__item"
     >
       1
     </div>
     <div
-      class="za-carousel__item"
+      class="zs-carousel__item"
     >
       2
     </div>
   </div>
   <div
-    class="za-carousel__pagination"
+    class="zs-carousel__pagination"
   >
     <div
-      class="za-carousel__pagination__item za-carousel__pagination__item--active"
+      class="zs-carousel__pagination__item zs-carousel__pagination__item--active"
     />
     <div
-      class="za-carousel__pagination__item"
+      class="zs-carousel__pagination__item"
     />
     <div
-      class="za-carousel__pagination__item"
+      class="zs-carousel__pagination__item"
     />
   </div>
 </div>
@@ -168,59 +168,59 @@ exports[`Carousel height render correctly 1`] = `
 exports[`Carousel pagination render correctly 1`] = `
 <div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     >
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         0
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         1
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         2
       </div>
     </div>
     <div
-      class="za-carousel__pagination"
+      class="zs-carousel__pagination"
     >
       <div
-        class="za-carousel__pagination__item za-carousel__pagination__item--active"
+        class="zs-carousel__pagination__item zs-carousel__pagination__item--active"
       />
       <div
-        class="za-carousel__pagination__item"
+        class="zs-carousel__pagination__item"
       />
       <div
-        class="za-carousel__pagination__item"
+        class="zs-carousel__pagination__item"
       />
     </div>
   </div>
   <div
-    class="za-carousel za-carousel--horizontal"
+    class="zs-carousel zs-carousel--horizontal"
   >
     <div
-      class="za-carousel__items"
+      class="zs-carousel__items"
     >
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         0
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         1
       </div>
       <div
-        class="za-carousel__item"
+        class="zs-carousel__item"
       >
         2
       </div>
@@ -231,22 +231,22 @@ exports[`Carousel pagination render correctly 1`] = `
 
 exports[`Carousel prefixCls render correctly 1`] = `
 <div
-  class="za-test za-test--horizontal"
+  class="zs-test zs-test--horizontal"
 >
   <div
-    class="za-test__items"
+    class="zs-test__items"
   >
     <div
-      class="za-test__item"
+      class="zs-test__item"
     >
       0
     </div>
   </div>
   <div
-    class="za-test__pagination"
+    class="zs-test__pagination"
   >
     <div
-      class="za-test__pagination__item za-test__pagination__item--active"
+      class="zs-test__pagination__item zs-test__pagination__item--active"
     />
   </div>
 </div>
@@ -254,14 +254,14 @@ exports[`Carousel prefixCls render correctly 1`] = `
 
 exports[`Carousel style render correctly 1`] = `
 <div
-  class="za-carousel za-carousel--horizontal"
+  class="zs-carousel zs-carousel--horizontal"
   style="background:red"
 >
   <div
-    class="za-carousel__items"
+    class="zs-carousel__items"
   />
   <div
-    class="za-carousel__pagination"
+    class="zs-carousel__pagination"
   />
 </div>
 `;
@@ -277,12 +277,12 @@ exports[`Carousel swipeable 1`] = `
   loop={false}
   moveDistanceRatio={0.5}
   moveTimeSpan={300}
-  prefixCls="za-carousel"
+  prefixCls="zs-carousel"
   showPagination={true}
   swipeable={false}
 >
   <div
-    className="za-carousel za-carousel--horizontal"
+    className="zs-carousel zs-carousel--horizontal"
   >
     <Drag
       onDragEnd={[Function]}
@@ -290,7 +290,7 @@ exports[`Carousel swipeable 1`] = `
       onDragStart={[Function]}
     >
       <div
-        className="za-carousel__items"
+        className="zs-carousel__items"
         onMouseDown={[Function]}
         onMouseMove={[Function]}
         onMouseUp={[Function]}
@@ -301,19 +301,19 @@ exports[`Carousel swipeable 1`] = `
         style={Object {}}
       >
         <div
-          className="za-carousel__item"
+          className="zs-carousel__item"
           key=".$0"
         >
           0
         </div>
         <div
-          className="za-carousel__item"
+          className="zs-carousel__item"
           key=".$1"
         >
           1
         </div>
         <div
-          className="za-carousel__item"
+          className="zs-carousel__item"
           key=".$2"
         >
           2
@@ -321,20 +321,20 @@ exports[`Carousel swipeable 1`] = `
       </div>
     </Drag>
     <div
-      className="za-carousel__pagination"
+      className="zs-carousel__pagination"
     >
       <div
-        className="za-carousel__pagination__item za-carousel__pagination__item--active"
+        className="zs-carousel__pagination__item zs-carousel__pagination__item--active"
         key="pagination-0/.$0"
         onClick={[Function]}
       />
       <div
-        className="za-carousel__pagination__item"
+        className="zs-carousel__pagination__item"
         key="pagination-1/.$1"
         onClick={[Function]}
       />
       <div
-        className="za-carousel__pagination__item"
+        className="zs-carousel__pagination__item"
         key="pagination-2/.$2"
         onClick={[Function]}
       />

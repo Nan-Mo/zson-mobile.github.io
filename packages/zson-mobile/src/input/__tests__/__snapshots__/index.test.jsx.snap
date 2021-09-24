@@ -2,7 +2,7 @@
 
 exports[`Input renders correctly 1`] = `
 <div
-  class="za-input"
+  class="zs-input"
 >
   <input
     autocomplete="off"
@@ -13,7 +13,7 @@ exports[`Input renders correctly 1`] = `
 
 exports[`Input renders correctly if type isn't valid 1`] = `
 <div
-  class="za-input"
+  class="zs-input"
 >
   <input
     autocomplete="off"
@@ -24,7 +24,7 @@ exports[`Input renders correctly if type isn't valid 1`] = `
 
 exports[`Input renders correctly if type=text and props includes rows 1`] = `
 <div
-  class="za-input za-input--textarea"
+  class="zs-input zs-input--textarea"
 >
   <textarea
     rows="1"
@@ -115,13 +115,13 @@ exports[`Input renders onClear called correctly 1`] = `
         ],
       }
     }
-    prefixCls="za-input"
+    prefixCls="zs-input"
     readOnly={false}
     type="text"
     value=""
   >
     <div
-      className="za-input za-input--clearable"
+      className="zs-input zs-input--clearable"
     >
       <input
         autoComplete="off"
@@ -136,20 +136,20 @@ exports[`Input renders onClear called correctly 1`] = `
         value=""
       />
       <ForwardRef(SvgCloseCircleFill)
-        className="za-input__clear"
+        className="zs-input__clear"
         onClick={[Function]}
       >
         <Icon
-          className="za-input__clear"
+          className="zs-input__clear"
           component={[Function]}
           onClick={[Function]}
-          prefixCls="za-icon"
+          prefixCls="zs-icon"
           size="md"
           theme="default"
           viewBox="0 0 32 32"
         >
           <i
-            className="za-icon za-input__clear za-icon--default za-icon--md"
+            className="zs-icon zs-input__clear zs-icon--default zs-icon--md"
             onClick={[Function]}
             size="md"
             theme="default"
@@ -184,14 +184,14 @@ exports[`Input renders onClear called correctly 1`] = `
 
 exports[`Input showLength 1`] = `
 <div
-  class="za-input za-input--textarea"
+  class="zs-input zs-input--textarea"
 >
   <textarea
     maxlength="100"
     rows="4"
   />
   <div
-    class="za-input__length"
+    class="zs-input__length"
   >
     0/100
   </div>
@@ -205,21 +205,21 @@ exports[`Input.Idcard renders correctly 1`] = `
   <InputNumber
     clearable={true}
     disabled={false}
-    prefixCls="za-input"
+    prefixCls="zs-input"
     type="idcard"
   >
     <div
-      className="za-input za-input--idcard"
+      className="zs-input zs-input--idcard"
       onClick={[Function]}
     >
       <div
-        className="za-input__content"
+        className="zs-input__content"
       >
         <div
-          className="za-input__placeholder"
+          className="zs-input__placeholder"
         />
         <div
-          className="za-input__virtual-input"
+          className="zs-input__virtual-input"
         />
         <input
           disabled={false}
@@ -229,7 +229,7 @@ exports[`Input.Idcard renders correctly 1`] = `
         <KeyboardPicker
           destroy={true}
           onKeyClick={[Function]}
-          prefixCls="za-keyboard-picker"
+          prefixCls="zs-keyboard-picker"
           type="idcard"
           visible={false}
         >
@@ -247,7 +247,7 @@ exports[`Input.Idcard renders correctly 1`] = `
               <Popup
                 destroy={true}
                 mask={false}
-                prefixCls="za-popup"
+                prefixCls="zs-popup"
                 visible={false}
               />
             </WarnIfDeprecatedComp>
@@ -266,21 +266,21 @@ exports[`Input.Number renders correctly 1`] = `
   <InputNumber
     clearable={true}
     disabled={false}
-    prefixCls="za-input"
+    prefixCls="zs-input"
     type="number"
   >
     <div
-      className="za-input za-input--number"
+      className="zs-input zs-input--number"
       onClick={[Function]}
     >
       <div
-        className="za-input__content"
+        className="zs-input__content"
       >
         <div
-          className="za-input__placeholder"
+          className="zs-input__placeholder"
         />
         <div
-          className="za-input__virtual-input"
+          className="zs-input__virtual-input"
         />
         <input
           disabled={false}
@@ -290,7 +290,7 @@ exports[`Input.Number renders correctly 1`] = `
         <KeyboardPicker
           destroy={true}
           onKeyClick={[Function]}
-          prefixCls="za-keyboard-picker"
+          prefixCls="zs-keyboard-picker"
           type="number"
           visible={false}
         >
@@ -308,7 +308,7 @@ exports[`Input.Number renders correctly 1`] = `
               <Popup
                 destroy={true}
                 mask={false}
-                prefixCls="za-popup"
+                prefixCls="zs-popup"
                 visible={false}
               />
             </WarnIfDeprecatedComp>
@@ -327,21 +327,21 @@ exports[`Input.Price renders correctly 1`] = `
   <InputNumber
     clearable={true}
     disabled={false}
-    prefixCls="za-input"
+    prefixCls="zs-input"
     type="price"
   >
     <div
-      className="za-input za-input--price"
+      className="zs-input zs-input--price"
       onClick={[Function]}
     >
       <div
-        className="za-input__content"
+        className="zs-input__content"
       >
         <div
-          className="za-input__placeholder"
+          className="zs-input__placeholder"
         />
         <div
-          className="za-input__virtual-input"
+          className="zs-input__virtual-input"
         />
         <input
           disabled={false}
@@ -351,7 +351,7 @@ exports[`Input.Price renders correctly 1`] = `
         <KeyboardPicker
           destroy={true}
           onKeyClick={[Function]}
-          prefixCls="za-keyboard-picker"
+          prefixCls="zs-keyboard-picker"
           type="price"
           visible={false}
         >
@@ -369,7 +369,7 @@ exports[`Input.Price renders correctly 1`] = `
               <Popup
                 destroy={true}
                 mask={false}
-                prefixCls="za-popup"
+                prefixCls="zs-popup"
                 visible={false}
               />
             </WarnIfDeprecatedComp>
@@ -394,13 +394,13 @@ exports[`Input.Textarea autoHeight 1`] = `
     disabled={false}
     focused={false}
     onChange={[MockFunction]}
-    prefixCls="za-input"
+    prefixCls="zs-input"
     rows={4}
     showLength={false}
     value="foo"
   >
     <div
-      className="za-input za-input--textarea"
+      className="zs-input zs-input--textarea"
     >
       <textarea
         disabled={false}
@@ -420,7 +420,7 @@ exports[`Input.Textarea autoHeight 1`] = `
 
 exports[`Input.Textarea renders correctly 1`] = `
 <div
-  class="za-input za-input--textarea"
+  class="zs-input zs-input--textarea"
 >
   <textarea
     rows="4"

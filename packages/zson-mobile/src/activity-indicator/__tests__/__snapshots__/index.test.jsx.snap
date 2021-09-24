@@ -2,23 +2,23 @@
 
 exports[`ActivityIndicator renders correctly 1`] = `
 <span
-  class="za-activity-indicator"
+  class="zs-activity-indicator"
 >
   <svg
-    viewBox="0 0 62 62"
+    viewBox="31 31 62 62"
   >
     <circle
-      class="za-activity-indicator__path"
-      cx="31"
-      cy="31"
+      class="zs-activity-indicator__path"
+      cx="62"
+      cy="62"
       fill="none"
       r="28.5"
       style="stroke-width:5"
     />
     <circle
-      class="za-activity-indicator__line"
-      cx="31"
-      cy="31"
+      class="zs-activity-indicator__line"
+      cx="62"
+      cy="62"
       fill="none"
       r="28.5"
       style="stroke-dasharray:35.81415625092364 179.0707812546182;stroke-width:5"
@@ -29,7 +29,7 @@ exports[`ActivityIndicator renders correctly 1`] = `
 
 exports[`ActivityIndicator renders spinner correctly 1`] = `
 <div
-  class="za-activity-indicator za-activity-indicator--spinner"
+  class="zs-activity-indicator zs-activity-indicator--spinner"
 >
   <div />
   <div />

@@ -2,10 +2,10 @@
 
 exports[`file picker render correctly 1`] = `
 <div
-  class="za-file-picker"
+  class="zs-file-picker"
 >
   <input
-    class="za-file-picker__input"
+    class="zs-file-picker__input"
     type="file"
   />
   <button

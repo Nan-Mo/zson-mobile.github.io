@@ -40,7 +40,7 @@ describe('Message', () => {
   it('closable', () => {
     const wrapper = mount(<Message closable>foo</Message>);
     expect(toJson(wrapper)).toMatchSnapshot();
-    wrapper.find('.za-message__footer .za-icon').at(0).simulate('click');
+    wrapper.find('.zs-message__footer .zs-icon').at(0).simulate('click');
     expect(wrapper.state('visible')).toEqual(false);
   });
 });

@@ -109,7 +109,7 @@ export default class Portal extends PureComponent<PortalProps, PortalState> {
     const { isPending } = this.state;
     const animationState = visible ? 'enter' : 'leave';
     const maskCls = classnames({
-      [`za-fade-${animationState}`]: isPending,
+      [`zs-fade-${animationState}`]: isPending,
     });
 
     const maskStyle: CSSProperties = {
@@ -153,12 +153,12 @@ export default class Portal extends PureComponent<PortalProps, PortalState> {
 
     const cls = {
       wrapper: classnames(`${prefixCls}__wrapper`, {
-        [`za-fade-${animationState}`]: direction === 'center' && isPending,
+        [`zs-fade-${animationState}`]: direction === 'center' && isPending,
       }),
       popup: classnames(prefixCls, {
         [`${prefixCls}--${direction}`]: !!direction,
         [`${prefixCls}--nomask`]: direction === 'center' && !mask,
-        [`za-${animationType}-${animationState}`]: direction === 'center' && isPending,
+        [`zs-${animationType}-${animationState}`]: direction === 'center' && isPending,
       }),
     };
 

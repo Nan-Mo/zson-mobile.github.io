@@ -24,7 +24,7 @@ describe('Modal', () => {
         模态框内容
       </Modal>,
     );
-    wrapper.find('.za-modal__header__close').at(0).simulate('click');
+    wrapper.find('.zs-modal__header__close').at(0).simulate('click');
     expect(onCancel).toBeCalled();
   });
 
@@ -39,6 +39,6 @@ describe('Modal', () => {
 
   it('click dialog', () => {
     const wrapper = mount(<Modal visible>foo</Modal>);
-    wrapper.find('.za-popup__wrapper').simulate('click');
+    wrapper.find('.zs-popup__wrapper').simulate('click');
   });
 });

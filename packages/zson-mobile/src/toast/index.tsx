@@ -23,7 +23,7 @@ export default class Toast extends Component<ToastProps, any> {
     Toast.unmountNode();
     if (!Toast.zsonToast) {
       Toast.zsonToast = document.createElement('div');
-      Toast.zsonToast.classList.add('za-toast-container');
+      Toast.zsonToast.classList.add('zs-toast-container');
       if (contentIsToastProps(content) && content.className) {
         Toast.zsonToast.classList.add(content.className);
       }

@@ -118,7 +118,7 @@ describe('SwipeAction', () => {
       >
         <Cell>右滑看看</Cell>
       </SwipeAction>,
-    ).find('.za-swipe-action__content');
+    ).find('.zs-swipe-action__content');
     wrapper.simulate('touchStart', {
       touches: [10, 0],
     });
@@ -151,7 +151,7 @@ describe('SwipeAction', () => {
       >
         <Cell>右滑看看</Cell>
       </SwipeAction>,
-    ).find('.za-swipe-action__content');
+    ).find('.zs-swipe-action__content');
     wrapper.simulate('touchStart', createStartTouchEventObject({ x: 0, y: 0, preventDefault }));
     wrapper.simulate('touchMove', createMoveTouchEventObject({ x: 10, y: 0, preventDefault }));
     wrapper.simulate('touchEnd', createMoveTouchEventObject({ x: 275, y: 0, preventDefault }));

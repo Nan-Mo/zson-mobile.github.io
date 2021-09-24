@@ -48,7 +48,7 @@ export default (props) => {
   }, []);
 
   if (typeof document === 'string') {
-    const title = `${component.name} ${pascalCase(component.key)} - Zarm Design`;
+    const title = `${component.name} ${pascalCase(component.key)} - Zson Design`;
     const pageCls = `${component.key}-page`;
     const demoHTML = marked(document.replace(/## API\s?([^]+)/g, ''), { renderer: getRenderer() });
     const api = document.match(/## API\s?([^]+)/g);

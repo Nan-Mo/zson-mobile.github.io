@@ -96,7 +96,7 @@ describe('Switch', () => {
     it('should do nothing if switch is disabled', () => {
       const onChange = jest.fn();
       const wrapper = shallow(<Switch disabled onChange={onChange} />);
-      expect(wrapper.hasClass('za-switch--disabled')).toBeTruthy();
+      expect(wrapper.hasClass('zs-switch--disabled')).toBeTruthy();
       expect(wrapper.find('input').prop('disabled')).toBeTruthy();
       wrapper.find('input').simulate('change');
       expect(onChange).not.toBeCalled();
