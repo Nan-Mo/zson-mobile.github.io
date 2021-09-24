@@ -1,6 +1,6 @@
 {
   "name": "zson-mobile",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "基于 React 的移动端UI库",
   "keywords": [
     "react",
@@ -16,9 +16,9 @@
     "mobile"
   ],
   "bugs": {
-    "url": "https://github.com/ZhongAnTech/zarm/issues"
+    "url": "https://github.com/zson-mobile/zson-mobile/issues"
   },
-  "repository": "git://github.com/ZhongAnTech/zarm",
+  "repository": "git://github.com/zson-mobile/zson-mobile",
   "license": "MIT",
   "sideEffects": [
     "dist/*",
@@ -67,7 +67,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.14.0",
-    "@zson-design/icons": "^0.0.1",
+    "@zson-design/icons": "^0.0.2",
     "better-scroll": "2.3.1",
     "classnames": "2.2.6",
     "color": "^3.1.3",
@@ -115,5 +115,6 @@
     "framework",
     "frontend",
     "ui"
-  ]
+  ],
+  "gitHead": "61fd9b03e9acba7a85c4320bb7d1a2833ad32b25"
 }

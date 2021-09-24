@@ -3,7 +3,7 @@
 exports[`Icon renders Icons of different size correctly 1`] = `
 Array [
   <i
-    class="za-icon za-icon--broadcast za-icon--primary za-icon--lg"
+    class="zs-icon zs-icon--broadcast zs-icon--primary zs-icon--lg"
     theme="primary"
     type="broadcast"
   >
@@ -19,7 +19,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--broadcast za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--broadcast zs-icon--primary zs-icon--md"
     theme="primary"
     type="broadcast"
   >
@@ -35,7 +35,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--broadcast za-icon--primary za-icon--sm"
+    class="zs-icon zs-icon--broadcast zs-icon--primary zs-icon--sm"
     theme="primary"
     type="broadcast"
   >
@@ -56,7 +56,7 @@ Array [
 exports[`Icon renders Icons of different theme correctly 1`] = `
 Array [
   <i
-    class="za-icon za-icon--right za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--right zs-icon--primary zs-icon--md"
     theme="primary"
     type="right"
   >
@@ -72,7 +72,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--add za-icon--success za-icon--md"
+    class="zs-icon zs-icon--add zs-icon--success zs-icon--md"
     theme="success"
     type="add"
   >
@@ -88,7 +88,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--info-round za-icon--warning za-icon--md"
+    class="zs-icon zs-icon--info-round zs-icon--warning zs-icon--md"
     theme="warning"
     type="info-round"
   >
@@ -104,7 +104,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--wrong-round-fill za-icon--danger za-icon--md"
+    class="zs-icon zs-icon--wrong-round-fill zs-icon--danger zs-icon--md"
     theme="danger"
     type="wrong-round-fill"
   >
@@ -125,7 +125,7 @@ Array [
 exports[`Icon renders Icons using iconfont 1`] = `
 Array [
   <i
-    class="za-icon za-icon--home za-icon--default za-icon--md"
+    class="zs-icon zs-icon--home zs-icon--default zs-icon--md"
     theme="default"
     type="home"
   >
@@ -141,7 +141,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--user za-icon--default za-icon--md"
+    class="zs-icon zs-icon--user zs-icon--default zs-icon--md"
     theme="default"
     type="user"
   >
@@ -161,7 +161,7 @@ Array [
 
 exports[`Icon renders Icons using svg component 1`] = `
 <i
-  class="za-icon za-icon--primary za-icon--lg"
+  class="zs-icon zs-icon--primary zs-icon--lg"
   theme="primary"
 >
   <svg
@@ -184,7 +184,7 @@ exports[`Icon renders Icons using svg component 1`] = `
 exports[`Icon renders all Icons 1`] = `
 Array [
   <i
-    class="za-icon za-icon--add za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--add zs-icon--primary zs-icon--md"
     theme="primary"
     type="add"
   >
@@ -200,7 +200,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--arrow-left za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--arrow-left zs-icon--primary zs-icon--md"
     theme="primary"
     type="arrow-left"
   >
@@ -216,7 +216,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--arrow-bottom za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--arrow-bottom zs-icon--primary zs-icon--md"
     theme="primary"
     type="arrow-bottom"
   >
@@ -232,7 +232,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--arrow-right za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--arrow-right zs-icon--primary zs-icon--md"
     theme="primary"
     type="arrow-right"
   >
@@ -248,7 +248,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--broadcast za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--broadcast zs-icon--primary zs-icon--md"
     theme="primary"
     type="broadcast"
   >
@@ -264,7 +264,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--date za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--date zs-icon--primary zs-icon--md"
     theme="primary"
     type="date"
   >
@@ -280,7 +280,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--deletekey za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--deletekey zs-icon--primary zs-icon--md"
     theme="primary"
     type="deletekey"
   >
@@ -296,7 +296,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--info-round za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--info-round zs-icon--primary zs-icon--md"
     theme="primary"
     type="info-round"
   >
@@ -312,7 +312,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--info-round-fill za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--info-round-fill zs-icon--primary zs-icon--md"
     theme="primary"
     type="info-round-fill"
   >
@@ -328,7 +328,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--keyboard za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--keyboard zs-icon--primary zs-icon--md"
     theme="primary"
     type="keyboard"
   >
@@ -344,7 +344,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--minus za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--minus zs-icon--primary zs-icon--md"
     theme="primary"
     type="minus"
   >
@@ -360,7 +360,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--question-round za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--question-round zs-icon--primary zs-icon--md"
     theme="primary"
     type="question-round"
   >
@@ -376,7 +376,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--required za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--required zs-icon--primary zs-icon--md"
     theme="primary"
     type="required"
   >
@@ -392,7 +392,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--right-round-fill za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--right-round-fill zs-icon--primary zs-icon--md"
     theme="primary"
     type="right-round-fill"
   >
@@ -408,7 +408,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--right-round za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--right-round zs-icon--primary zs-icon--md"
     theme="primary"
     type="right-round"
   >
@@ -424,7 +424,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--right za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--right zs-icon--primary zs-icon--md"
     theme="primary"
     type="right"
   >
@@ -440,7 +440,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--search za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--search zs-icon--primary zs-icon--md"
     theme="primary"
     type="search"
   >
@@ -456,7 +456,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--time-circle za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--time-circle zs-icon--primary zs-icon--md"
     theme="primary"
     type="time-circle"
   >
@@ -472,7 +472,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--warning-round-fill za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--warning-round-fill zs-icon--primary zs-icon--md"
     theme="primary"
     type="warning-round-fill"
   >
@@ -488,7 +488,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--wrong-round-fill za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--wrong-round-fill zs-icon--primary zs-icon--md"
     theme="primary"
     type="wrong-round-fill"
   >
@@ -504,7 +504,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--wrong-round za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--wrong-round zs-icon--primary zs-icon--md"
     theme="primary"
     type="wrong-round"
   >
@@ -520,7 +520,7 @@ Array [
     </svg>
   </i>,
   <i
-    class="za-icon za-icon--wrong za-icon--primary za-icon--md"
+    class="zs-icon zs-icon--wrong zs-icon--primary zs-icon--md"
     theme="primary"
     type="wrong"
   >

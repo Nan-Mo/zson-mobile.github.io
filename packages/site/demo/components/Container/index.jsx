@@ -8,9 +8,10 @@ import zhCN from 'zson/config-provider/locale/zh_CN';
 import './style.scss';
 
 const Icons = Icon.createFromIconfont('//at.alicdn.com/t/font_1340918_uwg522sx17.js');
+
 const Container = (props) => {
   const [locale, setLocale] = useState(window.localStorage.locale || 'zhCN');
-  const [primaryColor, setPrimaryColor] = useState(window.localStorage.primaryColor || '#2f54ec');
+  const [primaryColor, setPrimaryColor] = useState(window.localStorage.primaryColor || '#00bc70');
   const [theme, setTheme] = useState(window.localStorage.theme || 'light');
 
   const { className, children } = props;
@@ -22,7 +23,6 @@ const Container = (props) => {
     window.scrollTo(0, 0);
 
     Events.on(window, 'message', ({ data }) => {
-      console.log(data);
       if (data.locale) {
         setLocale(data.locale);
       }
@@ -39,18 +39,20 @@ const Container = (props) => {
               <div className="setting-container">
                 <ul className="colors">
                   {[
-                    '#2f54ec',
+                    '#00bc70',
                     '#1890ff',
                     '#f5222d',
                     '#fa541b',
                     '#13c2c2',
+                    '#2f54ec',
                     '#712fd1',
-                    '#00bc70',
                   ].map((color, index) => {
                     return (
                       <li
                         key={+index}
-                        style={{ backgroundColor: color }}
+                        style={{
+                          backgroundColor: color,
+                        }}
                         onClick={() => {
                           setPrimaryColor(color);
                           window.localStorage.primaryColor = color;
@@ -94,7 +96,7 @@ const Container = (props) => {
                   <Radio value="enUS">EN</Radio>
                 </Radio.Group>
               </div>
-              <a className="github" href="https://github.com/ZhongAnTech/zarm">
+              <a className="github" href="https://github.com/zson-mobile/zson-mobile">
                 <Icons type="github" size="lg" />
               </a>
             </>

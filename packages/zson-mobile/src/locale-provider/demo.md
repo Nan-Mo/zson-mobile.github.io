@@ -125,4 +125,4 @@ ReactDOM.render(<Demo />, mountNode);
 
 | 属性   | 类型   | 默认值 | 说明                                                                          |
 | :----- | :----- | :----- | :---------------------------------------------------------------------------- |
-| locale | Object | -      | 语言包配置，默认为中文，语言包可到 zarm/lib/locale-provider/locale 目录下寻找 |
+| locale | Object | -      | 语言包配置，默认为中文，语言包可到 zson-mobile/lib/locale-provider/locale 目录下寻找 |

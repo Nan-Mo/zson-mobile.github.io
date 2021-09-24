@@ -1,6 +1,6 @@
 {
   "name": "@zson-design/icons",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "",
   "license": "MIT",
   "author": "wangzhixiang",
@@ -34,5 +34,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "61fd9b03e9acba7a85c4320bb7d1a2833ad32b25"
 }

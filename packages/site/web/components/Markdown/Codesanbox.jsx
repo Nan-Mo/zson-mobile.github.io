@@ -76,7 +76,7 @@ ${parsedSourceCode}
       target="_blank"
     >
       <input type="hidden" name="parameters" value="${params}" />
-      <button class="za-button za-button--default za-button--xs za-button--radius codesanbox" type="submit">在 CodeSandbox 中打开</button>
+      <button class="zs-button zs-button--default zs-button--xs zs-button--radius codesanbox" type="submit">在 CodeSandbox 中打开</button>
     </form>
     ${preview}
   </div>`;

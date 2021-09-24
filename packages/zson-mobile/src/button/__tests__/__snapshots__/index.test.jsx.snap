@@ -40,7 +40,7 @@ exports[`Button href and target 1`] = `
 <a
   aria-disabled="false"
   class="zs-button zs-button--default zs-button--md zs-button--radius zs-button--link"
-  href="https://zarm.design"
+  href="https://zson-mobile.design"
   target="_blank"
 >
   <span>

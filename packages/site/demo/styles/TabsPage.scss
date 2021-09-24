@@ -1,7 +1,7 @@
 @import "@/styles/index";
 
 .tabs-page {
-  .za-tabs + .za-tabs {
+  .zs-tabs + .zs-tabs {
     margin-top: r(10);
   }
 
@@ -13,7 +13,7 @@
     height: r(150);
   }
 
-  .za-tabs--vertical {
+  .zs-tabs--vertical {
     .content {
       height: 100%;
     }

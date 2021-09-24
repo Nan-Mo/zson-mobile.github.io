@@ -18,7 +18,7 @@ What needs to be done to address this issue? Ideally, provide a pull request wit
 
 ### Environment
 
-- zarm version
+- zson version
 - react/react-native version
 - system version
 - browser version

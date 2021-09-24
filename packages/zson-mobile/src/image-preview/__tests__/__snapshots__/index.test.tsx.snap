@@ -11,38 +11,38 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  prefixCls="za-image-preview"
+  prefixCls="zs-image-preview"
   showPagination={true}
   visible={true}
 >
   <ForwardRef(ForwardedRefComp)
-    className="za-image-preview"
+    className="zs-image-preview"
     direction="center"
     visible={true}
   >
     <WarnIfDeprecatedComp
-      className="za-image-preview"
+      className="zs-image-preview"
       direction="center"
       forwardedRef={null}
       visible={true}
     >
       <Popup
-        className="za-image-preview"
+        className="zs-image-preview"
         destroy={true}
         direction="center"
-        prefixCls="za-popup"
+        prefixCls="zs-popup"
         visible={true}
       >
         <Portal
           animationDuration={200}
           animationType="fade"
-          className="za-image-preview"
+          className="zs-image-preview"
           destroy={true}
           direction="center"
           handlePortalUnmount={[Function]}
           mask={true}
           maskType="normal"
-          prefixCls="za-popup"
+          prefixCls="zs-popup"
           visible={true}
         >
           <Trigger
@@ -53,39 +53,39 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
             <Portal
               containerInfo={
                 <div
-                  class="za-popup-container za-image-preview"
+                  class="zs-popup-container zs-image-preview"
                 >
                   <div
-                    class="za-mask za-fade-enter za-mask--normal"
+                    class="zs-mask zs-fade-enter zs-mask--normal"
                     style="animation-duration: 200ms;"
                   />
                   <div
-                    class="za-popup__wrapper za-fade-enter"
+                    class="zs-popup__wrapper zs-fade-enter"
                     data-width="0"
                     role="dialog"
                     style="animation-duration: 200ms;"
                   >
                     <div
-                      class="za-popup za-popup--center za-fade-enter"
+                      class="zs-popup zs-popup--center zs-fade-enter"
                       data-width="0"
                       role="document"
                       style="animation-duration: 200ms;"
                     >
                       <div
-                        class="za-image-preview__content"
+                        class="zs-image-preview__content"
                       >
                         <div
-                          class="za-carousel za-carousel--horizontal"
+                          class="zs-carousel zs-carousel--horizontal"
                         >
                           <div
-                            class="za-carousel__items"
+                            class="zs-carousel__items"
                             style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0);"
                           >
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -95,10 +95,10 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                               </div>
                             </div>
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -108,10 +108,10 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                               </div>
                             </div>
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -124,10 +124,10 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="za-image-preview__footer"
+                        class="zs-image-preview__footer"
                       >
                         <div
-                          class="za-image-preview__index"
+                          class="zs-image-preview__index"
                         >
                           1
                            / 
@@ -140,8 +140,8 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
               }
             >
               <Mask
-                className="za-fade-enter"
-                prefixCls="za-mask"
+                className="zs-fade-enter"
+                prefixCls="zs-mask"
                 style={
                   Object {
                     "WebkitAnimationDuration": "200ms",
@@ -152,7 +152,7 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                 visible={true}
               >
                 <div
-                  className="za-mask za-fade-enter za-mask--normal"
+                  className="zs-mask zs-fade-enter zs-mask--normal"
                   style={
                     Object {
                       "WebkitAnimationDuration": "200ms",
@@ -162,7 +162,7 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                 />
               </Mask>
               <div
-                className="za-popup__wrapper za-fade-enter"
+                className="zs-popup__wrapper zs-fade-enter"
                 data-width={0}
                 onClick={[Function]}
                 role="dialog"
@@ -174,7 +174,7 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                 }
               >
                 <div
-                  className="za-popup za-popup--center za-fade-enter"
+                  className="zs-popup zs-popup--center zs-fade-enter"
                   data-width={0}
                   role="document"
                   style={
@@ -186,7 +186,7 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                   }
                 >
                   <div
-                    className="za-image-preview__content"
+                    className="zs-image-preview__content"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseMove={[Function]}
@@ -207,12 +207,12 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                       moveDistanceRatio={0.5}
                       moveTimeSpan={300}
                       onChange={[Function]}
-                      prefixCls="za-carousel"
+                      prefixCls="zs-carousel"
                       showPagination={false}
                       swipeable={true}
                     >
                       <div
-                        className="za-carousel za-carousel--horizontal"
+                        className="zs-carousel zs-carousel--horizontal"
                       >
                         <Drag
                           onDragEnd={[Function]}
@@ -220,7 +220,7 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                           onDragStart={[Function]}
                         >
                           <div
-                            className="za-carousel__items"
+                            className="zs-carousel__items"
                             onMouseDown={[Function]}
                             onMouseMove={[Function]}
                             onMouseUp={[Function]}
@@ -231,17 +231,17 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                             style={Object {}}
                           >
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$0"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -254,17 +254,17 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                               </PinchZoom>
                             </div>
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$1"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -277,17 +277,17 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                               </PinchZoom>
                             </div>
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$2"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -305,10 +305,10 @@ exports[`ImagePreview snapshot renders correctly 1`] = `
                     </Carousel>
                   </div>
                   <div
-                    className="za-image-preview__footer"
+                    className="zs-image-preview__footer"
                   >
                     <div
-                      className="za-image-preview__index"
+                      className="zs-image-preview__index"
                     >
                       1
                        / 
@@ -346,38 +346,38 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  prefixCls="za-image-preview"
+  prefixCls="zs-image-preview"
   showPagination={true}
   visible={true}
 >
   <ForwardRef(ForwardedRefComp)
-    className="za-image-preview"
+    className="zs-image-preview"
     direction="center"
     visible={true}
   >
     <WarnIfDeprecatedComp
-      className="za-image-preview"
+      className="zs-image-preview"
       direction="center"
       forwardedRef={null}
       visible={true}
     >
       <Popup
-        className="za-image-preview"
+        className="zs-image-preview"
         destroy={true}
         direction="center"
-        prefixCls="za-popup"
+        prefixCls="zs-popup"
         visible={true}
       >
         <Portal
           animationDuration={200}
           animationType="fade"
-          className="za-image-preview"
+          className="zs-image-preview"
           destroy={true}
           direction="center"
           handlePortalUnmount={[Function]}
           mask={true}
           maskType="normal"
-          prefixCls="za-popup"
+          prefixCls="zs-popup"
           visible={true}
         >
           <Trigger
@@ -388,39 +388,39 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
             <Portal
               containerInfo={
                 <div
-                  class="za-popup-container za-image-preview"
+                  class="zs-popup-container zs-image-preview"
                 >
                   <div
-                    class="za-mask za-fade-enter za-mask--normal"
+                    class="zs-mask zs-fade-enter zs-mask--normal"
                     style="animation-duration: 200ms;"
                   />
                   <div
-                    class="za-popup__wrapper za-fade-enter"
+                    class="zs-popup__wrapper zs-fade-enter"
                     data-width="0"
                     role="dialog"
                     style="animation-duration: 200ms;"
                   >
                     <div
-                      class="za-popup za-popup--center za-fade-enter"
+                      class="zs-popup zs-popup--center zs-fade-enter"
                       data-width="0"
                       role="document"
                       style="animation-duration: 200ms;"
                     >
                       <div
-                        class="za-image-preview__content"
+                        class="zs-image-preview__content"
                       >
                         <div
-                          class="za-carousel za-carousel--horizontal"
+                          class="zs-carousel zs-carousel--horizontal"
                         >
                           <div
-                            class="za-carousel__items"
+                            class="zs-carousel__items"
                             style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0);"
                           >
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -430,10 +430,10 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                               </div>
                             </div>
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -443,10 +443,10 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                               </div>
                             </div>
                             <div
-                              class="za-carousel__item za-image-preview__item"
+                              class="zs-carousel__item zs-image-preview__item"
                             >
                               <div
-                                class="za-image-preview__item__img za-pinch-zoom"
+                                class="zs-image-preview__item__img zs-pinch-zoom"
                               >
                                 <img
                                   alt=""
@@ -459,13 +459,13 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                         </div>
                       </div>
                       <div
-                        class="za-image-preview__footer"
+                        class="zs-image-preview__footer"
                       >
                         <button
-                          class="za-image-preview__origin__button"
+                          class="zs-image-preview__origin__button"
                         />
                         <div
-                          class="za-image-preview__index"
+                          class="zs-image-preview__index"
                         >
                           1
                            / 
@@ -478,8 +478,8 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
               }
             >
               <Mask
-                className="za-fade-enter"
-                prefixCls="za-mask"
+                className="zs-fade-enter"
+                prefixCls="zs-mask"
                 style={
                   Object {
                     "WebkitAnimationDuration": "200ms",
@@ -490,7 +490,7 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                 visible={true}
               >
                 <div
-                  className="za-mask za-fade-enter za-mask--normal"
+                  className="zs-mask zs-fade-enter zs-mask--normal"
                   style={
                     Object {
                       "WebkitAnimationDuration": "200ms",
@@ -500,7 +500,7 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                 />
               </Mask>
               <div
-                className="za-popup__wrapper za-fade-enter"
+                className="zs-popup__wrapper zs-fade-enter"
                 data-width={0}
                 onClick={[Function]}
                 role="dialog"
@@ -512,7 +512,7 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                 }
               >
                 <div
-                  className="za-popup za-popup--center za-fade-enter"
+                  className="zs-popup zs-popup--center zs-fade-enter"
                   data-width={0}
                   role="document"
                   style={
@@ -524,7 +524,7 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                   }
                 >
                   <div
-                    className="za-image-preview__content"
+                    className="zs-image-preview__content"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseMove={[Function]}
@@ -545,12 +545,12 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                       moveDistanceRatio={0.5}
                       moveTimeSpan={300}
                       onChange={[Function]}
-                      prefixCls="za-carousel"
+                      prefixCls="zs-carousel"
                       showPagination={false}
                       swipeable={true}
                     >
                       <div
-                        className="za-carousel za-carousel--horizontal"
+                        className="zs-carousel zs-carousel--horizontal"
                       >
                         <Drag
                           onDragEnd={[Function]}
@@ -558,7 +558,7 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                           onDragStart={[Function]}
                         >
                           <div
-                            className="za-carousel__items"
+                            className="zs-carousel__items"
                             onMouseDown={[Function]}
                             onMouseMove={[Function]}
                             onMouseUp={[Function]}
@@ -569,17 +569,17 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                             style={Object {}}
                           >
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$0"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -592,17 +592,17 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                               </PinchZoom>
                             </div>
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$1"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -615,17 +615,17 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                               </PinchZoom>
                             </div>
                             <div
-                              className="za-carousel__item za-image-preview__item"
+                              className="zs-carousel__item zs-image-preview__item"
                               key=".$2"
                             >
                               <PinchZoom
-                                className="za-image-preview__item__img"
+                                className="zs-image-preview__item__img"
                                 maxScale={3}
                                 minScale={1}
-                                prefixCls="za-pinch-zoom"
+                                prefixCls="zs-pinch-zoom"
                               >
                                 <div
-                                  className="za-image-preview__item__img za-pinch-zoom"
+                                  className="zs-image-preview__item__img zs-pinch-zoom"
                                 >
                                   <img
                                     alt=""
@@ -643,14 +643,14 @@ exports[`ImagePreview snapshot renders correctly with origin 1`] = `
                     </Carousel>
                   </div>
                   <div
-                    className="za-image-preview__footer"
+                    className="zs-image-preview__footer"
                   >
                     <button
-                      className="za-image-preview__origin__button"
+                      className="zs-image-preview__origin__button"
                       onClick={[Function]}
                     />
                     <div
-                      className="za-image-preview__index"
+                      className="zs-image-preview__index"
                     >
                       1
                        / 
