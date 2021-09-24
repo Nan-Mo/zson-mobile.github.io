@@ -1,6 +1,6 @@
 {
   "name": "zson-mobile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于 React 的移动端UI库",
   "keywords": [
     "react",
@@ -67,7 +67,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.14.0",
-    "@zson-design/icons": "^0.1.0",
+    "@zson-design/icons": "^0.1.1",
     "better-scroll": "2.3.1",
     "classnames": "2.2.6",
     "color": "^3.1.3",
