@@ -80,13 +80,13 @@ describe('Button', () => {
   });
 
   it('onTouchStart in AnchorButton', () => {
-    const wrapper = shallow(<Button href="https://zarm.design">foo</Button>);
+    const wrapper = shallow(<Button href="https://zson-mobile.design">foo</Button>);
     wrapper.simulate('touchstart');
   });
 
   it('href and target', () => {
     const wrapper = render(
-      <Button href="https://zarm.design" target="_blank">
+      <Button href="https://zson-mobile.design" target="_blank">
         foo
       </Button>,
     );
