@@ -1,6 +1,6 @@
 {
   "name": "zson-mobile",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "基于 React 的移动端UI库",
   "keywords": [
     "react",
