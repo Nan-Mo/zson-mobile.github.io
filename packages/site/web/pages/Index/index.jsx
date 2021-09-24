@@ -7,7 +7,7 @@ import Container from '@/web/components/Container';
 import Meta from '@/web/components/Meta';
 import './style.scss';
 
-const page = () => {
+const Page = () => {
   const qrcode = useRef();
   const [dropdown, setDropdown] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -16,27 +16,28 @@ const page = () => {
 
   useEffect(() => {
     if (!dropdown || mounted) return;
-    new QRious({
+
+    const qr = new QRious({
       element: qrcode.current,
       value: demoURL,
       size: 134,
     });
     setMounted(true);
   }, [demoURL, dropdown, mounted]);
+
   return (
     <Container className="index-page">
       <FormattedMessage id="app.title">
-        {(txt) => <Meta title={`Zson Design Mobile - ${txt}`} />}
+        {(txt) => <Meta title={`Zarm Design - ${txt}`} />}
       </FormattedMessage>
       <main>
         <div className="banner">
-          {/* <img src={require('./images/banner@2x.png')} alt="banner" /> */}
+          {/* <img src={require('./images/banner@2x.png')} alt="" /> */}
         </div>
         <div className="introduce">
           <div className="title">
             <span>Zson</span>
             &nbsp;Design
-            &nbsp;Mobile
           </div>
           <div className="description">
             <FormattedMessage id="app.home.index.introduce" />
@@ -68,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

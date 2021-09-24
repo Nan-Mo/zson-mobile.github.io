@@ -88,7 +88,7 @@ header {
       }
 
       .algolia-docsearch-suggestion--highlight {
-        color: #2f54ec;
+        color: #00bc70;
       }
     }
   }
@@ -123,7 +123,7 @@ header {
 
           &.active,
           &:hover {
-            color: #2f54ec;
+            color: #00bc70;
           }
         }
       }
@@ -132,11 +132,6 @@ header {
     .lang,
     .github {
       margin-left: 30px;
-    }
-    .zs-radio-group--button .zs-radio.zs-radio--checked, 
-    .zs-radio-group--button .zs-radio.zs-radio--checked:hover {
-      background-color: #2f54ec;
-      border-color: #2f54ec;
     }
   }
 
