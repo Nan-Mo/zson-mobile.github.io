@@ -11,7 +11,7 @@ const Icons = Icon.createFromIconfont('//at.alicdn.com/t/font_1340918_uwg522sx17
 
 const Container = (props) => {
   const [locale, setLocale] = useState(window.localStorage.locale || 'zhCN');
-  const [primaryColor, setPrimaryColor] = useState(window.localStorage.primaryColor || '#00bc70');
+  const [primaryColor, setPrimaryColor] = useState(window.localStorage.primaryColor || '#2f54ec');
   const [theme, setTheme] = useState(window.localStorage.theme || 'light');
 
   const { className, children } = props;
@@ -96,7 +96,7 @@ const Container = (props) => {
                   <Radio value="enUS">EN</Radio>
                 </Radio.Group>
               </div>
-              <a className="github" href="https://github.com/zson-mobile/zson-mobile">
+              <a className="github" href="https://github.com/zson-mobile/zson-mobile.github.io">
                 <Icons type="github" size="lg" />
               </a>
             </>

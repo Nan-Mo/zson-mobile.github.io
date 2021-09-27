@@ -61,7 +61,6 @@ const Header = ({ children }) => {
       link: '#/design',
       title: <FormattedMessage id="app.home.nav.resources" />,
     },
-    { key: 'gitee', link: 'https://zarm.gitee.io', title: '国内镜像' },
   ];
 
   if (document.location.host.indexOf('gitee') > -1 || locale === 'enUS') {

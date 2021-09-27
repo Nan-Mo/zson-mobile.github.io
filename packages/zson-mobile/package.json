@@ -16,9 +16,9 @@
     "mobile"
   ],
   "bugs": {
-    "url": "https://github.com/zson-mobile/zson-mobile/issues"
+    "url": "https://github.com/zson-mobile/zson-mobile.github.io/issues"
   },
-  "repository": "git://github.com/zson-mobile/zson-mobile",
+  "repository": "git://github.com/zson-mobile/zson-mobile.github.io",
   "license": "MIT",
   "sideEffects": [
     "dist/*",
@@ -107,7 +107,6 @@
   "tags": [
     "zson",
     "zson-ui",
-    "zhongan",
     "component",
     "components",
     "react",

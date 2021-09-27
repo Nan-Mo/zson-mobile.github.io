@@ -61,7 +61,7 @@ class Footer extends Component {
           <ul>
             <li>
               <a
-                href="https://github.com/ZhongAnTech/zarm"
+                href="https://github.com/zson-mobile/zson-mobile.github.io"
                 rel="noopener noreferrer"
                 target="_blank"
               >

@@ -28,7 +28,7 @@ const Page = () => {
   return (
     <Container className="index-page">
       <FormattedMessage id="app.title">
-        {(txt) => <Meta title={`Zarm Design - ${txt}`} />}
+        {(txt) => <Meta title={`Zson Design - ${txt}`} />}
       </FormattedMessage>
       <main>
         <div className="banner">
