@@ -9,4 +9,11 @@
   .zw-menu-item {
     padding-left: 36px !important;
   }
+  .zw-menu-item:hover {
+    color: #2f54ec !important;
+  }
+  .zw-menu-item--active {
+    color: #2f54ec;
+    background: rgba(47, 84, 236, 0.1);
+  }
 }

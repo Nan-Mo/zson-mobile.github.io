@@ -11,7 +11,7 @@ class Footer extends Component {
             <FormattedMessage id="app.home.footer.resources" />
           </h2>
           <ul>
-            <li>
+            {/* <li>
               <a href="https://vue.zarm.design" rel="noopener noreferrer" target="_blank">
                 Zson Vue
               </a>{' '}
@@ -21,7 +21,7 @@ class Footer extends Component {
               <a href="https://web.zarm.design" rel="noopener noreferrer" target="_blank">
                 Zson Web
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/#/design/download">
                 <FormattedMessage id="app.home.resources" />
@@ -29,7 +29,7 @@ class Footer extends Component {
             </li>
           </ul>
         </div>
-        <div className="group">
+        {/* <div className="group">
           <h2>
             <FormattedMessage id="app.home.footer.community" />
           </h2>
@@ -53,7 +53,7 @@ class Footer extends Component {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="group">
           <h2>
             <FormattedMessage id="app.home.footer.help" />
@@ -73,7 +73,7 @@ class Footer extends Component {
                 <FormattedMessage id="app.home.footer.help.changelog" />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://github.com/ZhongAnTech/zarm/issues/new"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ class Footer extends Component {
               >
                 <FormattedMessage id="app.home.footer.help.chat" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </footer>
