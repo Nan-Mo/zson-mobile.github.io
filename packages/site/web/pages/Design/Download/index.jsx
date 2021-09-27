@@ -7,7 +7,7 @@ const RESOURCES = [
   {
     icon: require('./images/icon-zarm.png'),
     title: 'zson-mobile',
-    description: <FormattedMessage id="app.home.resources.type.zarm" />,
+    description: <FormattedMessage id="app.home.resources.type.zson" />,
     url: 'https://nstatic.zhongan.com/hfe-static/zarm/resources/Zarm.2.0.0-alpha.37.sketch',
   },
   // {
