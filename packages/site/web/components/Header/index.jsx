@@ -16,8 +16,8 @@ import 'zson/style/entry';
 
 const initDocSearch = () => {
   docsearch({
-    apiKey: '44e980b50447a3a5fac9dc2a4808c439',
-    indexName: 'zson-mobile',
+    apiKey: '0b658907591674d71e4d8664894fe887',
+    indexName: 'zson',
     inputSelector: '.search input',
     debug: false,
   });
@@ -61,6 +61,7 @@ const Header = ({ children }) => {
       link: '#/design',
       title: <FormattedMessage id="app.home.nav.resources" />,
     },
+    // { key: 'gitee', link: 'https://zarm.gitee.io', title: '国内镜像' },
   ];
 
   if (document.location.host.indexOf('gitee') > -1 || locale === 'enUS') {
