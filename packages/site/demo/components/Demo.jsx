@@ -15,7 +15,7 @@ export default ({ location, globalContext, children }) => {
   const renderSource = useCallback(() => {
     const source = document[2].match(/```(.*)\n?([^]+)```/);
 
-    import('zson-mobile')
+    import('zson')
       .then((Element) => {
         const locale = {
           en_US: enUS,
