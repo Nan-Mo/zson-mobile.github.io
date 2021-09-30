@@ -175,6 +175,14 @@ header {
 .header-nav {
   width: 150px;
   background-color: #fff;
+  .zw-menu-item:hover{
+    color: #2f54ec !important;
+    background-color: rgba(47, 84, 236, 0.1) !important;
+  }
+  .zw-menu-item--active {
+    color: #2f54ec !important;
+    background-color: rgba(47, 84, 236, 0.1) !important;
+  }
 }
 
 @media (max-width: 1200px) {
