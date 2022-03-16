@@ -22,7 +22,7 @@ export default {
   'app.home.footer.help.bug-report': '报告 Bug',
   'app.home.footer.help.bug-list': 'Bug 列表',
   'app.home.footer.help.chat': '在线讨论',
-  'app.home.index.introduce': '追求极致的用户体验，做有温度的组件库',
+  'app.home.index.introduce': '王志翔个人组件库',
   'app.home.index.getting-started': '开始使用',
   'app.home.index.scanning-code': '扫码体验',
   'app.home.components.simulator.affix': '设置悬浮',

@@ -1,6 +1,6 @@
 # Zson Design Mobile
 
-Zson Design Mobile 是基于 React、React-Native 研发的一款适用于企业级的移动端 UI 组件库。
+Zson Design Mobile 是基于 React 研发移动端 UI 组件库。
 
 ## 特性
 
